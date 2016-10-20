@@ -1,30 +1,32 @@
 package wenmin;
-import java.util.*;
 
 public class ParkingStructure{
-   private ParkingSpot[] parkingSpotArr;
-   private int numofavailableParkingSpots;
-   private int numofoccupiedParkingSpots;
-   private GeoLoc position;
+   private ParkingSpot[] spotArr;
+   private int numavailable;
+   private int numoccupied;
+   private Geoloc position;
 
-   public ParkingStruture(ParkingSpot parkingSpotArr, 
-	int numofavailableParkingSpots, int numofoccupiedParkingSpots,
-	Point position) {
-	   this.parkingSpotArr = parkingSpotArr;
-	   this.nuumofavailableParkingSpots = numofavailableParkingSpots;
-	   this.numofoccupiedParkingSpots = numofoccupirdParkingSpots;
+   public ParkingStructure(ParkingSpot[] spotArr, int numavailable, int numoccupied, Geoloc position) 
+   {
+	   this.spotArr = spotArr;
+	   this.numavailable = numavailable;
+	   this.numoccupied = numoccupied;
 	   this.position = position;
    }
    
+   public ParkingSpot[] getspotArr() {
+	   return spotArr;
+   }
+   
    public int getNumavailable() {
-	   reutrn numofavailableParkingSpots;
+	   return numavailable;
    }
    
    public int getNumOccupied() {
-	  return numofoccupiedParkingSpots; 
+	  return numoccupied; 
    }
    
-   public Point getParkingStructurePosition() {
+   public Geoloc getParkingStructurePosition() {
 	   return position;
    }
 }
