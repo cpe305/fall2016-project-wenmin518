@@ -1,9 +1,32 @@
 package wenmin;
+import java.util.*;
+
 
 public class Driver {
 	public static void main(String[] args) {
-		System.out.println("simple test");
+		ArrayList<ParkingStructure> strList = new ArrayList<ParkingStructure>();
+		Random ran = new Random();
+		int type, available, numStr = 8;
+
+		for (int i = 0; i < numStr; i++) {
+			ArrayList <ParkingSpot> spotlist = new ArrayList<ParkingSpot>();
+			
+			for (int j = 0; j < 100; j++) {
+				type = ran.nextInt(8) + 10;
+				available = ran.nextInt();
+				ParkingSpot ps = new ParkingSpot(new Geoloc(i, j), type % 4, available %2);
+				spotlist.add(ps);
+			}
+			ParkingStructure parkingStr = new ParkingStructure(spotlist, new Geoloc(i, 1));
+			strList.add(parkingStr);
+		}
+		
+		for (int i = 0; i < numStr; i++) {
+			
+			System.out.print("Parking "+ i +" has "+strList.get(i).getNumavailable() +" spots available, ");
+			System.out.print("and "+strList.get(i).getNumOccupied()+" spots occupied");
+			System.out.println();
+		}
 	}
-	
 
 }
