@@ -1,5 +1,4 @@
 package wenmin;
-import java.util.*;
 
 public class FindClosestSpot implements Observer {
 //	private Geoloc userloc;
