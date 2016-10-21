@@ -8,7 +8,6 @@ public class ParkingStructure{
    public ParkingStructure(ArrayList<ParkingSpot> spotArr, Geoloc position) 
    {
 	   this.spotArr = spotArr;
-
 	   this.position = position;
    }
    
@@ -27,13 +26,7 @@ public class ParkingStructure{
    }
    
    public int getNumOccupied() {
-	  int count = 0;
-	  for (int i = 0; i < spotArr.size(); i++) {
-		  if (!(spotArr.get(i).isAvailable())){
-			  count++;
-		  }
-	  }
-	  return count;
+	   return spotArr.size() - getNumavailable();
    }
    
    public Geoloc getParkingStructurePosition() {
