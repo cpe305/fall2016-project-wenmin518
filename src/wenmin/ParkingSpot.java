@@ -3,9 +3,9 @@ package wenmin;
 public class ParkingSpot {
 	private Geoloc position;
 	private int type;
-	private int available;
+	private boolean available;
 	
-	public ParkingSpot(Geoloc position, int type, int available) {
+	public ParkingSpot(Geoloc position, int type, boolean available) {
 		this.position = position;
 		this.type = type;
 		this.available = available;
@@ -20,8 +20,10 @@ public class ParkingSpot {
 	}
 	
 	public boolean isAvailable() {
-		if (available == 0)
-			return false;
-		return true;
+		return available;
+	}
+	
+	public boolean equals(ParkingSpot ps) {
+		return position.equals(ps.getPosition()) && ps.type == type && ps.isAvailable() == available;
 	}
 }

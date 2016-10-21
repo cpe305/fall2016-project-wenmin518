@@ -39,4 +39,5 @@ public class ParkingStructure{
    public Geoloc getParkingStructurePosition() {
 	   return position;
    }
+   
 }
