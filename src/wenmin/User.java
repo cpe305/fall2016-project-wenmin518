@@ -1,6 +1,6 @@
 package wenmin;
 
-public class User {
+public class User implements Subject{
 	private Geoloc position;
 	private int carType;
 	
@@ -15,6 +15,12 @@ public class User {
 	
 	public int getCarType() {
 		return carType;
+	}
+
+	@Override
+	public void notifyObs(Geoloc loc) {
+		// TODO Auto-generated method stub
+		System.out.println("Update");
 	}
 	
 }

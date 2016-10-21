@@ -3,12 +3,12 @@ import java.util.*;
 
 public class ParkingStructure{
    private ArrayList<ParkingSpot> spotArr;
-   private Geoloc position;
+   private Geoloc entPos;
 
-   public ParkingStructure(ArrayList<ParkingSpot> spotArr, Geoloc position) 
+   public ParkingStructure(ArrayList<ParkingSpot> spotArr, Geoloc entPos) 
    {
 	   this.spotArr = spotArr;
-	   this.position = position;
+	   this.entPos = entPos;
    }
    
    public ArrayList<ParkingSpot> getspotArr() {
@@ -25,12 +25,12 @@ public class ParkingStructure{
 	   return count;
    }
    
-   public int getNumOccupied() {
+   public int getNumoccupied() {
 	   return spotArr.size() - getNumavailable();
    }
    
-   public Geoloc getParkingStructurePosition() {
-	   return position;
+   public Geoloc getPosition() {
+	   return entPos;
    }
    
 }

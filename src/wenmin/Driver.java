@@ -32,7 +32,7 @@ public class Driver {
 		for (int i = 0; i < numStr; i++) {
 			
 			System.out.print("Parking "+ i +" has "+strList.get(i).getNumavailable() +" spots available, ");
-			System.out.print("and "+strList.get(i).getNumOccupied()+" spots occupied");
+			System.out.print("and "+strList.get(i).getNumoccupied()+" spots occupied");
 			System.out.println();
 		}
 	}
