@@ -28,19 +28,5 @@ public class TestParkingSpot {
 		assertEquals(ps.getType(), 3);
 		assertEquals(ps.isAvailable(), true);
 	}
-	
-	@Test
-	public void ParkingSpotTest4() {
-		ParkingSpot ps1 = new ParkingSpot(new Geoloc(10, 10), 1, true);
-		ParkingSpot ps2 = new ParkingSpot(new Geoloc(10, 10), 1, true);
-		assertTrue(ps1.equals(ps2));
-	}
-
-	@Test
-	public void ParkingSpotTest5() {
-		ParkingSpot ps1 = new ParkingSpot(new Geoloc(10, 10), 1, true);
-		ParkingSpot ps2 = new ParkingSpot(new Geoloc(10, 1), 2, false);
-		assertFalse(ps1.equals(ps2));
-	}
 
 }

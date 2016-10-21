@@ -22,8 +22,4 @@ public class ParkingSpot {
 	public boolean isAvailable() {
 		return available;
 	}
-	
-	public boolean equals(ParkingSpot ps) {
-		return position.equals(ps.getPosition()) && ps.type == type && ps.isAvailable() == available;
-	}
 }
