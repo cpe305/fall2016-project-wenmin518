@@ -1,5 +1,5 @@
 package main.java.edu.calpoly.cpe305.wenmin.ParkingApp;
 
 public interface Observer {
-	public void updateUserPos(Geoloc pos);
+  public void updateUserPos(Geoloc pos);
 }

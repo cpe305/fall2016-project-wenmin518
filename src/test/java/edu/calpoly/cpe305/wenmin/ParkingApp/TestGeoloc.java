@@ -1,4 +1,5 @@
 package test.java.edu.calpoly.cpe305.wenmin.ParkingApp;
+import main.java.edu.calpoly.cpe305.wenmin.ParkingApp.*;
 
 import junit.framework.TestCase;
 
