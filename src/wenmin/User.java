@@ -1,26 +1,26 @@
 package wenmin;
 
-public class User implements Subject{
-	private Geoloc position;
-	private int carType;
-	
-	public User(Geoloc position, int carType) {
-		this.position = position;
-		this.carType = carType;
-	}
-	
-	public Geoloc getPosition() {
-		return position;
-	}
-	
-	public int getCarType() {
-		return carType;
-	}
+public class User implements Subject {
+  private Geoloc position;
+  private int carType;
 
-	@Override
-	public void notifyObs(Geoloc loc) {
-		// TODO Auto-generated method stub
-		System.out.println("Update");
-	}
-	
+  public User(Geoloc position, int carType) {
+    this.position = position;
+    this.carType = carType;
+  }
+
+  public Geoloc getPosition() {
+    return position;
+  }
+
+  public int getCarType() {
+    return carType;
+  }
+
+  @Override
+  public void notifyObs(Geoloc loc) {
+    // TODO Auto-generated method stub
+    System.out.println("Update");
+  }
+
 }

@@ -1,4 +1,4 @@
-package test;
+package tests;
 
 import static org.junit.Assert.*;
 import wenmin.*;
@@ -15,10 +15,10 @@ public class TestParkingStructure {
 		list.add(ps1);
 		list.add(ps2);
 		ParkingStructure ps = new ParkingStructure(list, new Geoloc(4, 4));
-		assertEquals(ps.getPosition().getX(), 4);
-		assertEquals(ps.getPosition().getY(), 4);
+		assertEquals(ps.getParkingStructurePosition().getX(), 4);
+		assertEquals(ps.getParkingStructurePosition().getY(), 4);
 		assertEquals(ps.getNumavailable(), 1);
-		assertEquals(ps.getNumoccupied(), 1);
+		assertEquals(ps.getNumOccupied(), 1);
 		assertEquals(ps.getspotArr().get(1).getType(), 1);
 		assertEquals(ps.getspotArr().get(1).isAvailable(), false);
 	}
@@ -30,7 +30,7 @@ public class TestParkingStructure {
 		list.add(ps1);
 		ParkingStructure ps = new ParkingStructure(list, new Geoloc(3, 3));
 		assertEquals(ps.getNumavailable(), 0);
-		assertEquals(ps.getNumoccupied(), 1);
+		assertEquals(ps.getNumOccupied(), 1);
 		assertEquals(ps.getspotArr().get(0).getType(), 2);
 		assertEquals(ps.getspotArr().get(0).isAvailable(), false);
 	}

@@ -1,5 +1,5 @@
 package wenmin;
 
 public interface Observer {
-	public void updateUserPos(Geoloc pos);
+  public void updateUserPos(Geoloc pos);
 }

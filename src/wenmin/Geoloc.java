@@ -1,27 +1,32 @@
 package wenmin;
 
 public class Geoloc {
-	private int x;
-	private int y;
-	public Geoloc(int x, int y) {
-		this.x = x;
-		this.y = y;
-	}
-	
-	public int getX() {
-		return x;
-	}
-	
-	public int getY(){
-		return y;
-	}
-	
-	public boolean equals(Geoloc loc) {
-		if (loc.getX() == x && loc.getY() == y) {
-			return true;
-		}
-		return false;
-		
-	}
+  private int xloc;
+  private int yloc;
+
+  public Geoloc(int xloc, int yloc) {
+    this.xloc = xloc;
+    this.yloc = yloc;
+  }
+
+  public int getxloc() {
+    return xloc;
+  }
+
+  public int getyloc() {
+    return yloc;
+  }
+
+  /**
+   * @param loc refer to the location that contains x and y.
+   * @return whether one loc 1 is the same as loc 2.
+   */
+  public boolean equals(Geoloc loc) {
+    if (loc.getxloc() == xloc && loc.getyloc() == yloc) {
+      return true;
+    }
+    return false;
+
+  }
 }
 
