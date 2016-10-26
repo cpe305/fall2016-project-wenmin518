@@ -1,4 +1,4 @@
-package edu.calpoly.cpe305.wenmin.ParkingApp;
+package main.java.edu.calpoly.cpe305.wenmin.ParkingApp;
 
 public class User implements Subject{
 	private Geoloc position;
