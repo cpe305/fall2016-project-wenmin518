@@ -1,4 +1,4 @@
-package edu.calpoly.cpe305.wenmin.ParkingApplication;
+package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -6,10 +6,15 @@ import java.util.Random;
 
 
 public class Driver {
+  /**
+   * @param args no reference.
+   */
   public static void main(String[] args) {
     ArrayList<ParkingStructure> strList = new ArrayList<ParkingStructure>();
     Random ran = new Random();
-    int type, numStr = 8, num;
+    int type;
+    int numStr = 8;
+    int num;
     boolean available;
 
     for (int i = 0; i < numStr; i++) {
