@@ -1,4 +1,4 @@
-package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
+package edu.calpoly.cpe305.wenmin.ParkingApplication;
 
 import java.util.ArrayList;
 import java.util.Random;

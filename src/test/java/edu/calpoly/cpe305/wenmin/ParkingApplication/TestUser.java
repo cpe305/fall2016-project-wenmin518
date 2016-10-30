@@ -1,11 +1,8 @@
-package test.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
+package edu.calpoly.cpe305.wenmin.ParkingApplication;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-
-import main.java.edu.calpoly.cpe305.wenmin.ParkingApplication.Geoloc;
-import main.java.edu.calpoly.cpe305.wenmin.ParkingApplication.User;
 
 
 public class TestUser {

@@ -1,4 +1,4 @@
-package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
+package edu.calpoly.cpe305.wenmin.ParkingApplication;
 
 
 public class Geoloc {
@@ -17,11 +17,12 @@ public class Geoloc {
   public int getY() {
     return yloc;
   }
+  
+  
   /**
    * @param loc loction of the user.
    * @return whether Geoloc objects are the same 
    */
-  
   public boolean equals(Geoloc loc) {
     if (loc.getX() == xloc && loc.getY() == yloc) {
       return true;
