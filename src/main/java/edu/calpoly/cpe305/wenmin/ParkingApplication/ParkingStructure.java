@@ -1,4 +1,4 @@
-package edu.calpoly.cpe305.wenmin.ParkingApplication;
+package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
 
 import java.util.ArrayList;
 
@@ -16,6 +16,9 @@ public class ParkingStructure {
     return spotArr;
   }
 
+  /**
+   * @return number of parking spots available in that parking structure.
+   */
   public int getNumavailable() {
     int count = 0;
     for (int i = 0; i < spotArr.size(); i++) {

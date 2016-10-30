@@ -1,4 +1,4 @@
-package edu.calpoly.cpe305.wenmin.ParkingApplication;
+package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
 
 import java.util.ArrayList;
 
@@ -18,10 +18,10 @@ public class Calculation implements Observer {
    * @param adj the 2d array corresponding to the grid
    * @param visited used for whether each grid is been visited
    * @param userLoc user location is used to calculated the nearest partking structure
-   * @param row
-   * @param col
-   * @param numVertices
-   * @param parkingloc
+   * @param row refers to how many rows in the grid
+   * @param col number of colums in the grid
+   * @param numVertices count for number of verticies
+   * @param parkingloc give the location of Parking structures
    */
   public Calculation(int[][] adj, boolean[] visited, Geoloc userLoc, int row, int col,
       int numVertices, ArrayList<Geoloc> parkingloc) {
@@ -43,6 +43,11 @@ public class Calculation implements Observer {
     userLoc = pos;
   }
 
+  /**
+   * adding path between loc1 to loc2.
+   * @param loc1 starting location
+   * @param loc2 ending location
+   */
   public void addEdge(Geoloc loc1, Geoloc loc2) {
     int loc1Num = locToint(loc1);
     int loc2Num = locToint(loc2);
@@ -50,6 +55,10 @@ public class Calculation implements Observer {
     adj[loc2Num][loc1Num] = 1;
   }
 
+  /**
+   * Depth search through the component.
+   * @param ver any vertex in the component
+   */
   public void visit(int ver) {
     visited[ver] = true;
     for (int idx = 0; idx < numVertices; idx++) {
@@ -75,14 +84,14 @@ public class Calculation implements Observer {
     LinkedList queue = new LinkedList();
     queue.addLast(start);
     visited[start] = true;
-    int p = start;
+    int child = start;
     while (queue.isEmpty() == false) {
-      p = (Integer) queue.removeLast();
+      child = (Integer) queue.removeLast();
       for (int i = 0; i < numVertices; i++) {
-        if (adj[p][i] == 1 && visited[i] == false) {
+        if (adj[child][i] == 1 && visited[i] == false) {
           queue.addFirst(i);
           visited[i] = true;
-          path[i] = path[p] + 1;
+          path[i] = path[child] + 1;
         }
       }
     }
