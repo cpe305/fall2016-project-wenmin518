@@ -48,7 +48,7 @@ public class TestCalculation {
     int stop = cal.locToint(parkLoc.get(0).getPosition());
     assertEquals(cal.fewestEdgePath(start, stop), 2);
     cal.updateUserPos(new Geoloc(1, 0));
-    start = cal.locToint(cal.user.getPosition());
+    start = cal.locToint(cal.getUser().getPosition());
     assertEquals(cal.fewestEdgePath(start, stop), 1);
   }
 

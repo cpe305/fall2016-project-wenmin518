@@ -10,13 +10,13 @@ import java.util.ArrayList;
  */
 public class Calculation implements Observer {
 
-  public int[][] adj;
-  public boolean[] visited;
-  public User user;
-  public int row;
-  public int col;
-  public int numVertices;
-  public ArrayList<ParkingStructure> parkingLoc;
+  private int[][] adj;
+  private boolean[] visited;
+  private User user;
+  private int row;
+  private int col;
+  private int numVertices;
+  private ArrayList<ParkingStructure> parkingLoc;
 
   /**
    * Constructor.
@@ -42,6 +42,10 @@ public class Calculation implements Observer {
 
   public int locToint(Geoloc loc) {
     return loc.getX() + loc.getY() * col;
+  }
+  
+  public User getUser() {
+    return user;
   }
 
   public void updateUserPos(Geoloc pos) {

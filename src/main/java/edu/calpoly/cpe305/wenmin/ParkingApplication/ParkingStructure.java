@@ -5,11 +5,11 @@ import java.util.ArrayList;
 
 public class ParkingStructure {
   private ArrayList<ParkingSpot> spotArr;
-  private Geoloc entPos;
+  private Geoloc pos;
 
-  public ParkingStructure(Geoloc entPos) {
+  public ParkingStructure(Geoloc pos) {
     spotArr = new ArrayList<ParkingSpot>();
-    this.entPos = entPos;
+    this.pos = pos;
   }
 
   public ArrayList<ParkingSpot> getspotArr() {
@@ -38,7 +38,7 @@ public class ParkingStructure {
   }
 
   public Geoloc getPosition() {
-    return entPos;
+    return pos;
   }
 
   /**
