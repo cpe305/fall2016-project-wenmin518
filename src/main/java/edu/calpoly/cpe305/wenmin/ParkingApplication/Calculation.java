@@ -2,6 +2,11 @@ package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
 
 import java.util.ArrayList;
 
+/**
+ * Observer that does caluclation when user changes the location.
+ * @author wenmin518
+ *
+ */
 public class Calculation implements Observer {
 
   public int[][] adj;
@@ -84,7 +89,8 @@ public class Calculation implements Observer {
     LinkedList queue = new LinkedList();
     queue.addLast(start);
     visited[start] = true;
-    int child = start;
+    //Do not assign the unecessary child assignment
+    int child;
     while (queue.isEmpty() == false) {
       child = (Integer) queue.removeLast();
       for (int i = 0; i < numVertices; i++) {
@@ -98,4 +104,37 @@ public class Calculation implements Observer {
     return path[stop];
   }
 
+  /**
+   * This method calculate the distance between two points.
+   * @param user referring to the user Location
+   * @param spotLoc referring to the parking structure entrance location
+   * @return the distance between two points
+   */
+  public double distance(Geoloc user, Geoloc spotLoc) {
+    double xDis;
+    double yDis;
+    xDis = user.getX() - spotLoc.getX();
+    yDis = user.getY() - spotLoc.getY();
+    return Math.sqrt(xDis * xDis - yDis * yDis);
+  }
+  
+  /**
+   * This method compares the distance between 
+   * @param user
+   * @param parkStrLoc
+   * @return
+   */
+  public Geoloc nearbyParkingStr(Geoloc user, ArrayList<Geoloc> parkStrLoc) {
+    double dis = distance(user, parkStrLoc.get(0));
+    double newDis;
+    Geoloc locreturn = parkStrLoc.get(0);
+    for (int i = 1; i < parkStrLoc.size(); i++) {
+      newDis = distance(user, parkStrLoc.get(i));
+      if (dis < newDis) {
+        dis = newDis;
+        locreturn = parkStrLoc.get(i);
+      }
+    }
+    return locreturn;
+  }
 }

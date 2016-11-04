@@ -23,8 +23,10 @@ public class Geoloc {
    * @param loc loction of the user.
    * @return whether Geoloc objects are the same 
    */
-  public boolean equals(Geoloc loc) {
-    if (loc.getX() == xloc && loc.getY() == yloc) {
+  //Override the equals method instead of creating my own
+  @Override
+  public boolean equals(Object loc) {
+    if (((Geoloc)loc).getX() == xloc && ((Geoloc)loc).getY() == yloc) {
       return true;
     }
     return false;

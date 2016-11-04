@@ -2,7 +2,7 @@ package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
 
 
 public class ParkingSpot {
-  private Geoloc position;
+  private int num;
   private int type;
   private boolean available;
 
@@ -12,14 +12,14 @@ public class ParkingSpot {
    * @param type refer to the type of parking 1: Compact, 2: Electic, 3: Handicap, 4: Regular.
    * @param available tells whether the parking spot is currently available
    */
-  public ParkingSpot(Geoloc position, int type, boolean available) {
-    this.position = position;
+  public ParkingSpot(int num, int type, boolean available) {
+    this.num = num;
     this.type = type;
     this.available = available;
   }
 
-  public Geoloc getPosition() {
-    return position;
+  public int getNum() {
+    return num;
   }
 
   public int getType() {

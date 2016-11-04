@@ -183,6 +183,7 @@ public class LinkedList implements Cloneable {
   /**
    * Determine if the obj is the same as the object in LinkedLists.
    */
+  @Override
   public boolean equals(Object obj) {
     // Supply details as in the assignment description
 
@@ -283,6 +284,7 @@ public class LinkedList implements Cloneable {
     }
 
     public void remove() {
+      //should throw a specific exception than generic
       throw new UnsupportedOperationException();
     }
 

@@ -29,7 +29,7 @@ public class Driver {
           available = false;
         }
 
-        ParkingSpot ps = new ParkingSpot(new Geoloc(i, j), type % 4, available);
+        ParkingSpot ps = new ParkingSpot(j, type % 4, available);
         spotlist.add(ps);
       }
       ParkingStructure parkingStr = new ParkingStructure(spotlist, new Geoloc(i, 1));
