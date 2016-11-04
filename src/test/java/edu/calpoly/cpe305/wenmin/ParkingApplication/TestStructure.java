@@ -14,12 +14,11 @@ public class TestStructure {
 
   @Test
   public void structureTest1() {
-    ArrayList<ParkingSpot> list = new ArrayList<ParkingSpot>();
     ParkingSpot ps1 = new ParkingSpot(10, 3, true);
     ParkingSpot ps2 = new ParkingSpot(5, 1, false);
-    list.add(ps1);
-    list.add(ps2);
-    ParkingStructure ps = new ParkingStructure(list, new Geoloc(4, 4));
+    ParkingStructure ps = new ParkingStructure(new Geoloc(4, 4));
+    ps.addtoSpotArr(ps1);
+    ps.addtoSpotArr(ps2);
     assertEquals(ps.getPosition().getX(), 4);
     assertEquals(ps.getPosition().getY(), 4);
     assertEquals(ps.getNumavailable(), 1);
@@ -30,10 +29,9 @@ public class TestStructure {
 
   @Test
   public void structureTest2() {
-    ArrayList<ParkingSpot> list = new ArrayList<ParkingSpot>();
     ParkingSpot ps1 = new ParkingSpot(10, 2, false);
-    list.add(ps1);
-    ParkingStructure ps = new ParkingStructure(list, new Geoloc(3, 3));
+    ParkingStructure ps = new ParkingStructure(new Geoloc(3, 3));
+    ps.addtoSpotArr(ps1);
     assertEquals(ps.getNumavailable(), 0);
     assertEquals(ps.getNumoccupied(), 1);
     assertEquals(ps.getspotArr().get(0).getType(), 2);

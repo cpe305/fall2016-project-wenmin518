@@ -7,13 +7,17 @@ public class ParkingStructure {
   private ArrayList<ParkingSpot> spotArr;
   private Geoloc entPos;
 
-  public ParkingStructure(ArrayList<ParkingSpot> spotArr, Geoloc entPos) {
-    this.spotArr = spotArr;
+  public ParkingStructure(Geoloc entPos) {
+    spotArr = new ArrayList<ParkingSpot>();
     this.entPos = entPos;
   }
 
   public ArrayList<ParkingSpot> getspotArr() {
     return spotArr;
+  }
+
+  public void addtoSpotArr(ParkingSpot spot) {
+    spotArr.add(spot);
   }
 
   /**
@@ -35,6 +39,22 @@ public class ParkingStructure {
 
   public Geoloc getPosition() {
     return entPos;
+  }
+
+  /**
+   * returns the parking spot that is closest to the parking entrance.
+   * 
+   * @return the parkingSpot that is available
+   */
+  public int getSmallestSpotNum() {
+    if (getNumavailable() >= 1) {
+      for (int i = 0; i < spotArr.size(); i++) {
+        if (spotArr.get(i).isAvailable()) {
+          return i;
+        }
+      }
+    }
+    return -1;
   }
 
 }

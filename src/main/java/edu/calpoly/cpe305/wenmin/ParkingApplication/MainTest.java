@@ -11,7 +11,7 @@ public class MainTest {
   public static int numVertices;
   public static boolean[] visited;
   public static int[] vertices;
-  public static ArrayList<Geoloc> parkingLocs;
+  public static ArrayList<ParkingStructure> structArr;
 
   /**
    * add the connection between two vertices.
@@ -88,16 +88,32 @@ public class MainTest {
   }
   
   public static void setParkLocFromFile(String fileName) throws FileNotFoundException {
+    structArr = new ArrayList<ParkingStructure>();
     File file = new File(fileName);
     Scanner scan = new Scanner(file);
-    
+    Scanner lineScan;
+    String lineContent;
+    int parkingStrNum = -1;
+    while (scan.hasNextLine()) {
+      lineContent = scan.nextLine();
+      lineScan = new Scanner(lineContent);
+      String ele = lineScan.next();
+      if (ele.equals("ParkingStructure")){
+        parkingStrNum++;
+        ParkingStructure ps = new ParkingStructure(new Geoloc(lineScan.nextInt(), lineScan.nextInt()));
+        structArr.add(ps);
+      }
+      if (ele.equals("ParkingSpot")) {
+        ParkingSpot ps = new ParkingSpot(lineScan.nextInt(), lineScan.nextInt(), lineScan.nextBoolean());
+        
+        structArr.get(parkingStrNum).addtoSpotArr(ps);
+      }
+    }
     scan.close();
-  }
 
-  public static void main(String[] args) throws FileNotFoundException {
-    setadjFromFile("test.txt");
-//    setParkLocFromFile("");
-//    printAdj();
+  }
+  
+  public static void doFunctions() {
     Scanner scan = new Scanner(System.in);
     String permission;
     System.out.println("Welcome to POLYPARKTRACK, Press Y to continue");
@@ -109,11 +125,20 @@ public class MainTest {
       System.out.println("You entered (" + xVal + ", " + yVal+")");
       Geoloc userLoc = new Geoloc(xVal, yVal);
       System.out.print("x: "+userLoc.getX() +" y: "+ userLoc.getY() );
-      Calculation cal = new Calculation(adj,visited, userLoc, rows, cols, rows * cols, parkingLocs);
+      Calculation cal = new Calculation(adj,visited, userLoc, rows, cols, rows * cols, structArr);
+      System.out.println();
+      cal.printInfo(userLoc, structArr);
       System.out.println("Press Y if you want to continue");
       permission = scan.nextLine();
 
-//   }
     }
+  }
+
+  public static void main(String[] args) throws FileNotFoundException {
+    setadjFromFile("test.txt");
+    setParkLocFromFile("file1.txt");
+ 
+//    printAdj();
+    doFunctions();
   }
 }

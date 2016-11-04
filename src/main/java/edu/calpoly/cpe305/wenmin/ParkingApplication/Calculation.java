@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 /**
  * Observer that does caluclation when user changes the location.
+ * 
  * @author wenmin518
  *
  */
@@ -15,7 +16,7 @@ public class Calculation implements Observer {
   public int row;
   public int col;
   public int numVertices;
-  public ArrayList<Geoloc> parkingLoc;
+  public ArrayList<ParkingStructure> parkingLoc;
 
   /**
    * Constructor.
@@ -29,7 +30,7 @@ public class Calculation implements Observer {
    * @param parkingloc give the location of Parking structures
    */
   public Calculation(int[][] adj, boolean[] visited, Geoloc userLoc, int row, int col,
-      int numVertices, ArrayList<Geoloc> parkingloc) {
+      int numVertices, ArrayList<ParkingStructure> parkingLoc) {
     this.adj = adj;
     this.visited = visited;
     this.userLoc = userLoc;
@@ -50,6 +51,7 @@ public class Calculation implements Observer {
 
   /**
    * adding path between loc1 to loc2.
+   * 
    * @param loc1 starting location
    * @param loc2 ending location
    */
@@ -62,6 +64,7 @@ public class Calculation implements Observer {
 
   /**
    * Depth search through the component.
+   * 
    * @param ver any vertex in the component
    */
   public void visit(int ver) {
@@ -89,7 +92,7 @@ public class Calculation implements Observer {
     LinkedList queue = new LinkedList();
     queue.addLast(start);
     visited[start] = true;
-    //Do not assign the unecessary child assignment
+    // Do not assign the unecessary child assignment
     int child;
     while (queue.isEmpty() == false) {
       child = (Integer) queue.removeLast();
@@ -106,6 +109,7 @@ public class Calculation implements Observer {
 
   /**
    * This method calculate the distance between two points.
+   * 
    * @param user referring to the user Location
    * @param spotLoc referring to the parking structure entrance location
    * @return the distance between two points
@@ -115,26 +119,38 @@ public class Calculation implements Observer {
     double yDis;
     xDis = user.getX() - spotLoc.getX();
     yDis = user.getY() - spotLoc.getY();
-    return Math.sqrt(xDis * xDis - yDis * yDis);
+    return Math.sqrt(xDis * xDis + yDis * yDis);
   }
-  
+
   /**
-   * This method compares the distance between 
+   * This method compares the distance between
+   * 
    * @param user
    * @param parkStrLoc
    * @return
    */
-  public Geoloc nearbyParkingStr(Geoloc user, ArrayList<Geoloc> parkStrLoc) {
-    double dis = distance(user, parkStrLoc.get(0));
+  public int nearbyParkingStr(Geoloc user, ArrayList<ParkingStructure> parkStrLoc) {
     double newDis;
-    Geoloc locreturn = parkStrLoc.get(0);
+    int value = 0;
+    double dis = distance(user, parkStrLoc.get(value).getPosition());
     for (int i = 1; i < parkStrLoc.size(); i++) {
-      newDis = distance(user, parkStrLoc.get(i));
-      if (dis < newDis) {
+      newDis = distance(user, parkStrLoc.get(i).getPosition());
+      if (dis > newDis && parkStrLoc.get(i).getNumavailable() > 0) {
         dis = newDis;
-        locreturn = parkStrLoc.get(i);
+        value = i;
       }
     }
-    return locreturn;
+    return value;
+  }
+
+  public void printInfo(Geoloc userLoc, ArrayList<ParkingStructure> parkLoc) {
+    int parkingStrNum = nearbyParkingStr(userLoc, parkingLoc);
+    int start = locToint(userLoc);
+    double distance = fewestEdgePath(start, parkingStrNum) * 0.027;
+    System.out.println("The nearest ParkingStructre is " + (parkingStrNum + 1));
+    System.out.println("Parking Spot #" + (parkingLoc.get(parkingStrNum).getSmallestSpotNum() + 1));
+    
+    System.out.println("The parking spot is about ) " +distance + "miles away");
+    System.out.println("It is gonna take about " + distance / 10 * 60 +" minutes");
   }
 }

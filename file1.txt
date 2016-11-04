@@ -1,808 +1,808 @@
 ParkingStructure 15 18 
-Parking, 0 , 2, FALSE
-Parking, 1 , 1, TRUE
-Parking, 2 , 1, FALSE
-Parking, 3 , 0, TRUE
-Parking, 4 , 3, TRUE
-Parking, 5 , 0, TRUE
-Parking, 6 , 3, FALSE
-Parking, 7 , 1, FALSE
-Parking, 8 , 1, FALSE
-Parking, 9 , 1, FALSE
-Parking, 10 , 1, TRUE
-Parking, 11 , 1, FALSE
-Parking, 12 , 1, TRUE
-Parking, 13 , 2, FALSE
-Parking, 14 , 2, TRUE
-Parking, 15 , 2, FALSE
-Parking, 16 , 0, TRUE
-Parking, 17 , 0, FALSE
-Parking, 18 , 2, TRUE
-Parking, 19 , 2, FALSE
-Parking, 20 , 0, TRUE
-Parking, 21 , 0, TRUE
-Parking, 22 , 0, TRUE
-Parking, 23 , 3, TRUE
-Parking, 24 , 1, FALSE
-Parking, 25 , 3, FALSE
-Parking, 26 , 2, TRUE
-Parking, 27 , 3, FALSE
-Parking, 28 , 0, TRUE
-Parking, 29 , 0, FALSE
-Parking, 30 , 0, FALSE
-Parking, 31 , 3, TRUE
-Parking, 32 , 0, TRUE
-Parking, 33 , 0, TRUE
-Parking, 34 , 0, FALSE
-Parking, 35 , 1, TRUE
-Parking, 36 , 2, TRUE
-Parking, 37 , 1, TRUE
-Parking, 38 , 3, FALSE
-Parking, 39 , 0, FALSE
-Parking, 40 , 1, TRUE
-Parking, 41 , 3, TRUE
-Parking, 42 , 1, FALSE
-Parking, 43 , 3, FALSE
-Parking, 44 , 2, FALSE
-Parking, 45 , 1, TRUE
-Parking, 46 , 0, FALSE
-Parking, 47 , 0, TRUE
-Parking, 48 , 2, FALSE
-Parking, 49 , 2, FALSE
-Parking, 50 , 3, TRUE
-Parking, 51 , 2, TRUE
-Parking, 52 , 1, FALSE
-Parking, 53 , 2, TRUE
-Parking, 54 , 1, FALSE
-Parking, 55 , 0, FALSE
-Parking, 56 , 1, TRUE
-Parking, 57 , 3, TRUE
-Parking, 58 , 2, FALSE
-Parking, 59 , 3, TRUE
-Parking, 60 , 1, TRUE
-Parking, 61 , 1, TRUE
-Parking, 62 , 2, TRUE
-Parking, 63 , 0, FALSE
-Parking, 64 , 0, TRUE
-Parking, 65 , 1, TRUE
-Parking, 66 , 0, TRUE
-Parking, 67 , 1, FALSE
-Parking, 68 , 2, FALSE
-Parking, 69 , 0, TRUE
-Parking, 70 , 3, FALSE
-Parking, 71 , 1, TRUE
-Parking, 72 , 3, FALSE
-Parking, 73 , 3, FALSE
-Parking, 74 , 3, FALSE
-Parking, 75 , 1, TRUE
-Parking, 76 , 0, FALSE
-Parking, 77 , 2, FALSE
-Parking, 78 , 1, FALSE
-Parking, 79 , 3, TRUE
-Parking, 80 , 1, TRUE
-Parking, 81 , 1, FALSE
-Parking, 82 , 2, TRUE
-Parking, 83 , 0, FALSE
-Parking, 84 , 0, FALSE
-Parking, 85 , 3, TRUE
-Parking, 86 , 0, TRUE
-Parking, 87 , 1, FALSE
-Parking, 88 , 3, TRUE
-Parking, 89 , 3, FALSE
-Parking, 90 , 2, FALSE
-Parking, 91 , 2, FALSE
-Parking, 92 , 1, TRUE
-Parking, 93 , 1, FALSE
-Parking, 94 , 3, TRUE
-Parking, 95 , 3, TRUE
-Parking, 96 , 2, TRUE
-Parking, 97 , 1, TRUE
-Parking, 98 , 1, FALSE
-Parking, 99 , 1, TRUE
+ParkingSpot 0  2 TRUE
+ParkingSpot 1  0 FALSE
+ParkingSpot 2  2 FALSE
+ParkingSpot 3  2 TRUE
+ParkingSpot 4  1 FALSE
+ParkingSpot 5  0 TRUE
+ParkingSpot 6  3 TRUE
+ParkingSpot 7  1 FALSE
+ParkingSpot 8  0 FALSE
+ParkingSpot 9  3 FALSE
+ParkingSpot 10  0 TRUE
+ParkingSpot 11  3 TRUE
+ParkingSpot 12  1 TRUE
+ParkingSpot 13  0 FALSE
+ParkingSpot 14  0 FALSE
+ParkingSpot 15  1 TRUE
+ParkingSpot 16  0 TRUE
+ParkingSpot 17  3 TRUE
+ParkingSpot 18  0 TRUE
+ParkingSpot 19  1 TRUE
+ParkingSpot 20  2 TRUE
+ParkingSpot 21  3 TRUE
+ParkingSpot 22  2 FALSE
+ParkingSpot 23  0 FALSE
+ParkingSpot 24  1 TRUE
+ParkingSpot 25  2 TRUE
+ParkingSpot 26  3 TRUE
+ParkingSpot 27  1 FALSE
+ParkingSpot 28  3 FALSE
+ParkingSpot 29  2 TRUE
+ParkingSpot 30  1 FALSE
+ParkingSpot 31  0 TRUE
+ParkingSpot 32  0 FALSE
+ParkingSpot 33  1 FALSE
+ParkingSpot 34  2 TRUE
+ParkingSpot 35  2 FALSE
+ParkingSpot 36  0 FALSE
+ParkingSpot 37  3 TRUE
+ParkingSpot 38  2 FALSE
+ParkingSpot 39  3 TRUE
+ParkingSpot 40  0 FALSE
+ParkingSpot 41  0 FALSE
+ParkingSpot 42  1 TRUE
+ParkingSpot 43  3 FALSE
+ParkingSpot 44  3 TRUE
+ParkingSpot 45  2 FALSE
+ParkingSpot 46  1 TRUE
+ParkingSpot 47  2 TRUE
+ParkingSpot 48  3 TRUE
+ParkingSpot 49  3 TRUE
+ParkingSpot 50  0 TRUE
+ParkingSpot 51  1 FALSE
+ParkingSpot 52  3 TRUE
+ParkingSpot 53  2 TRUE
+ParkingSpot 54  3 TRUE
+ParkingSpot 55  1 TRUE
+ParkingSpot 56  3 FALSE
+ParkingSpot 57  2 FALSE
+ParkingSpot 58  1 TRUE
+ParkingSpot 59  0 FALSE
+ParkingSpot 60  3 TRUE
+ParkingSpot 61  3 FALSE
+ParkingSpot 62  3 FALSE
+ParkingSpot 63  2 FALSE
+ParkingSpot 64  3 TRUE
+ParkingSpot 65  3 TRUE
+ParkingSpot 66  1 TRUE
+ParkingSpot 67  3 TRUE
+ParkingSpot 68  0 FALSE
+ParkingSpot 69  3 FALSE
+ParkingSpot 70  2 FALSE
+ParkingSpot 71  3 TRUE
+ParkingSpot 72  1 TRUE
+ParkingSpot 73  1 TRUE
+ParkingSpot 74  2 TRUE
+ParkingSpot 75  2 TRUE
+ParkingSpot 76  1 FALSE
+ParkingSpot 77  0 TRUE
+ParkingSpot 78  2 TRUE
+ParkingSpot 79  2 FALSE
+ParkingSpot 80  0 FALSE
+ParkingSpot 81  1 FALSE
+ParkingSpot 82  0 FALSE
+ParkingSpot 83  1 FALSE
+ParkingSpot 84  3 TRUE
+ParkingSpot 85  0 TRUE
+ParkingSpot 86  0 FALSE
+ParkingSpot 87  0 TRUE
+ParkingSpot 88  2 FALSE
+ParkingSpot 89  3 TRUE
+ParkingSpot 90  0 FALSE
+ParkingSpot 91  3 TRUE
+ParkingSpot 92  0 FALSE
+ParkingSpot 93  0 TRUE
+ParkingSpot 94  2 TRUE
+ParkingSpot 95  3 TRUE
+ParkingSpot 96  0 FALSE
+ParkingSpot 97  3 FALSE
+ParkingSpot 98  1 FALSE
+ParkingSpot 99  2 FALSE
 ParkingStructure 15 10 
-Parking, 0 , 3, FALSE
-Parking, 1 , 0, TRUE
-Parking, 2 , 3, TRUE
-Parking, 3 , 2, TRUE
-Parking, 4 , 3, FALSE
-Parking, 5 , 2, TRUE
-Parking, 6 , 2, TRUE
-Parking, 7 , 2, TRUE
-Parking, 8 , 3, FALSE
-Parking, 9 , 3, FALSE
-Parking, 10 , 0, FALSE
-Parking, 11 , 2, FALSE
-Parking, 12 , 1, TRUE
-Parking, 13 , 2, TRUE
-Parking, 14 , 3, TRUE
-Parking, 15 , 0, TRUE
-Parking, 16 , 2, FALSE
-Parking, 17 , 1, FALSE
-Parking, 18 , 0, FALSE
-Parking, 19 , 2, TRUE
-Parking, 20 , 1, FALSE
-Parking, 21 , 2, FALSE
-Parking, 22 , 1, TRUE
-Parking, 23 , 3, TRUE
-Parking, 24 , 2, TRUE
-Parking, 25 , 1, FALSE
-Parking, 26 , 0, FALSE
-Parking, 27 , 1, TRUE
-Parking, 28 , 0, TRUE
-Parking, 29 , 2, TRUE
-Parking, 30 , 1, FALSE
-Parking, 31 , 0, TRUE
-Parking, 32 , 3, TRUE
-Parking, 33 , 1, TRUE
-Parking, 34 , 2, TRUE
-Parking, 35 , 1, FALSE
-Parking, 36 , 0, TRUE
-Parking, 37 , 3, TRUE
-Parking, 38 , 2, FALSE
-Parking, 39 , 2, FALSE
-Parking, 40 , 0, TRUE
-Parking, 41 , 2, TRUE
-Parking, 42 , 2, FALSE
-Parking, 43 , 0, FALSE
-Parking, 44 , 3, TRUE
-Parking, 45 , 1, TRUE
-Parking, 46 , 0, FALSE
-Parking, 47 , 2, FALSE
-Parking, 48 , 3, FALSE
-Parking, 49 , 3, FALSE
-Parking, 50 , 0, FALSE
-Parking, 51 , 2, TRUE
-Parking, 52 , 2, FALSE
-Parking, 53 , 1, TRUE
-Parking, 54 , 1, TRUE
-Parking, 55 , 2, TRUE
-Parking, 56 , 1, FALSE
-Parking, 57 , 1, TRUE
-Parking, 58 , 2, FALSE
-Parking, 59 , 0, TRUE
-Parking, 60 , 0, TRUE
-Parking, 61 , 2, FALSE
-Parking, 62 , 1, TRUE
-Parking, 63 , 2, FALSE
-Parking, 64 , 3, FALSE
-Parking, 65 , 1, FALSE
-Parking, 66 , 2, FALSE
-Parking, 67 , 1, TRUE
-Parking, 68 , 1, FALSE
-Parking, 69 , 2, TRUE
-Parking, 70 , 2, TRUE
-Parking, 71 , 1, FALSE
-Parking, 72 , 3, TRUE
-Parking, 73 , 0, TRUE
-Parking, 74 , 0, TRUE
-Parking, 75 , 1, FALSE
-Parking, 76 , 2, FALSE
-Parking, 77 , 3, FALSE
-Parking, 78 , 0, TRUE
-Parking, 79 , 3, FALSE
-Parking, 80 , 1, FALSE
-Parking, 81 , 0, TRUE
-Parking, 82 , 0, FALSE
-Parking, 83 , 0, FALSE
-Parking, 84 , 0, FALSE
-Parking, 85 , 3, TRUE
-Parking, 86 , 3, FALSE
-Parking, 87 , 0, TRUE
-Parking, 88 , 0, FALSE
-Parking, 89 , 1, TRUE
-Parking, 90 , 0, TRUE
-Parking, 91 , 1, FALSE
-Parking, 92 , 0, FALSE
-Parking, 93 , 3, TRUE
-Parking, 94 , 3, TRUE
-Parking, 95 , 0, FALSE
-Parking, 96 , 3, FALSE
-Parking, 97 , 2, TRUE
-Parking, 98 , 1, TRUE
-Parking, 99 , 3, TRUE
-ParkingStructure 22 40 
-Parking, 0 , 1, TRUE
-Parking, 1 , 1, TRUE
-Parking, 2 , 1, FALSE
-Parking, 3 , 3, TRUE
-Parking, 4 , 0, TRUE
-Parking, 5 , 3, TRUE
-Parking, 6 , 3, FALSE
-Parking, 7 , 0, TRUE
-Parking, 8 , 3, FALSE
-Parking, 9 , 3, TRUE
-Parking, 10 , 1, FALSE
-Parking, 11 , 3, FALSE
-Parking, 12 , 0, FALSE
-Parking, 13 , 3, FALSE
-Parking, 14 , 2, FALSE
-Parking, 15 , 3, FALSE
-Parking, 16 , 3, FALSE
-Parking, 17 , 1, TRUE
-Parking, 18 , 1, FALSE
-Parking, 19 , 3, TRUE
-Parking, 20 , 2, FALSE
-Parking, 21 , 0, FALSE
-Parking, 22 , 2, TRUE
-Parking, 23 , 0, FALSE
-Parking, 24 , 3, TRUE
-Parking, 25 , 2, FALSE
-Parking, 26 , 3, TRUE
-Parking, 27 , 0, FALSE
-Parking, 28 , 3, TRUE
-Parking, 29 , 2, FALSE
-Parking, 30 , 3, TRUE
-Parking, 31 , 0, FALSE
-Parking, 32 , 2, FALSE
-Parking, 33 , 0, TRUE
-Parking, 34 , 3, FALSE
-Parking, 35 , 1, FALSE
-Parking, 36 , 0, TRUE
-Parking, 37 , 1, TRUE
-Parking, 38 , 1, FALSE
-Parking, 39 , 3, TRUE
-Parking, 40 , 3, FALSE
-Parking, 41 , 1, FALSE
-Parking, 42 , 1, TRUE
-Parking, 43 , 0, FALSE
-Parking, 44 , 0, TRUE
-Parking, 45 , 2, TRUE
-Parking, 46 , 1, TRUE
-Parking, 47 , 0, TRUE
-Parking, 48 , 1, TRUE
-Parking, 49 , 3, FALSE
-Parking, 50 , 2, TRUE
-Parking, 51 , 1, TRUE
-Parking, 52 , 0, TRUE
-Parking, 53 , 3, FALSE
-Parking, 54 , 2, TRUE
-Parking, 55 , 1, TRUE
-Parking, 56 , 1, FALSE
-Parking, 57 , 1, FALSE
-Parking, 58 , 2, FALSE
-Parking, 59 , 3, FALSE
-Parking, 60 , 1, TRUE
-Parking, 61 , 1, FALSE
-Parking, 62 , 2, TRUE
-Parking, 63 , 1, FALSE
-Parking, 64 , 1, FALSE
-Parking, 65 , 2, TRUE
-Parking, 66 , 3, FALSE
-Parking, 67 , 1, FALSE
-Parking, 68 , 2, TRUE
-Parking, 69 , 3, FALSE
-Parking, 70 , 2, FALSE
-Parking, 71 , 1, FALSE
-Parking, 72 , 3, FALSE
-Parking, 73 , 3, FALSE
-Parking, 74 , 3, FALSE
-Parking, 75 , 0, TRUE
-Parking, 76 , 1, FALSE
-Parking, 77 , 3, TRUE
-Parking, 78 , 0, FALSE
-Parking, 79 , 0, FALSE
-Parking, 80 , 3, TRUE
-Parking, 81 , 3, FALSE
-Parking, 82 , 1, FALSE
-Parking, 83 , 0, TRUE
-Parking, 84 , 3, FALSE
-Parking, 85 , 1, TRUE
-Parking, 86 , 1, FALSE
-Parking, 87 , 1, FALSE
-Parking, 88 , 3, TRUE
-Parking, 89 , 0, TRUE
-Parking, 90 , 0, FALSE
-Parking, 91 , 2, TRUE
-Parking, 92 , 1, TRUE
-Parking, 93 , 0, TRUE
-Parking, 94 , 0, FALSE
-Parking, 95 , 2, FALSE
-Parking, 96 , 2, FALSE
-Parking, 97 , 3, FALSE
-Parking, 98 , 3, FALSE
-Parking, 99 , 2, TRUE
+ParkingSpot 0  1 FALSE
+ParkingSpot 1  1 FALSE
+ParkingSpot 2  2 TRUE
+ParkingSpot 3  2 TRUE
+ParkingSpot 4  2 FALSE
+ParkingSpot 5  1 FALSE
+ParkingSpot 6  1 TRUE
+ParkingSpot 7  0 FALSE
+ParkingSpot 8  0 TRUE
+ParkingSpot 9  2 TRUE
+ParkingSpot 10  1 TRUE
+ParkingSpot 11  2 TRUE
+ParkingSpot 12  1 FALSE
+ParkingSpot 13  3 FALSE
+ParkingSpot 14  3 FALSE
+ParkingSpot 15  3 FALSE
+ParkingSpot 16  0 FALSE
+ParkingSpot 17  0 TRUE
+ParkingSpot 18  3 FALSE
+ParkingSpot 19  0 FALSE
+ParkingSpot 20  1 TRUE
+ParkingSpot 21  0 FALSE
+ParkingSpot 22  1 FALSE
+ParkingSpot 23  2 TRUE
+ParkingSpot 24  3 FALSE
+ParkingSpot 25  1 FALSE
+ParkingSpot 26  1 TRUE
+ParkingSpot 27  2 TRUE
+ParkingSpot 28  2 TRUE
+ParkingSpot 29  2 FALSE
+ParkingSpot 30  0 TRUE
+ParkingSpot 31  3 FALSE
+ParkingSpot 32  2 FALSE
+ParkingSpot 33  3 FALSE
+ParkingSpot 34  1 TRUE
+ParkingSpot 35  0 FALSE
+ParkingSpot 36  2 FALSE
+ParkingSpot 37  3 TRUE
+ParkingSpot 38  0 FALSE
+ParkingSpot 39  0 FALSE
+ParkingSpot 40  0 TRUE
+ParkingSpot 41  3 FALSE
+ParkingSpot 42  1 TRUE
+ParkingSpot 43  3 TRUE
+ParkingSpot 44  3 TRUE
+ParkingSpot 45  0 FALSE
+ParkingSpot 46  2 TRUE
+ParkingSpot 47  0 FALSE
+ParkingSpot 48  0 TRUE
+ParkingSpot 49  1 FALSE
+ParkingSpot 50  0 TRUE
+ParkingSpot 51  3 TRUE
+ParkingSpot 52  3 FALSE
+ParkingSpot 53  1 TRUE
+ParkingSpot 54  0 FALSE
+ParkingSpot 55  2 TRUE
+ParkingSpot 56  2 FALSE
+ParkingSpot 57  0 TRUE
+ParkingSpot 58  0 FALSE
+ParkingSpot 59  2 TRUE
+ParkingSpot 60  1 TRUE
+ParkingSpot 61  3 TRUE
+ParkingSpot 62  3 TRUE
+ParkingSpot 63  3 FALSE
+ParkingSpot 64  2 TRUE
+ParkingSpot 65  0 FALSE
+ParkingSpot 66  1 FALSE
+ParkingSpot 67  0 FALSE
+ParkingSpot 68  3 TRUE
+ParkingSpot 69  3 FALSE
+ParkingSpot 70  2 FALSE
+ParkingSpot 71  0 TRUE
+ParkingSpot 72  0 TRUE
+ParkingSpot 73  1 FALSE
+ParkingSpot 74  3 TRUE
+ParkingSpot 75  3 FALSE
+ParkingSpot 76  0 FALSE
+ParkingSpot 77  0 TRUE
+ParkingSpot 78  0 TRUE
+ParkingSpot 79  3 FALSE
+ParkingSpot 80  3 TRUE
+ParkingSpot 81  2 FALSE
+ParkingSpot 82  0 TRUE
+ParkingSpot 83  2 TRUE
+ParkingSpot 84  0 FALSE
+ParkingSpot 85  2 FALSE
+ParkingSpot 86  2 FALSE
+ParkingSpot 87  2 FALSE
+ParkingSpot 88  2 TRUE
+ParkingSpot 89  0 TRUE
+ParkingSpot 90  0 FALSE
+ParkingSpot 91  0 FALSE
+ParkingSpot 92  3 FALSE
+ParkingSpot 93  3 FALSE
+ParkingSpot 94  1 FALSE
+ParkingSpot 95  2 TRUE
+ParkingSpot 96  1 FALSE
+ParkingSpot 97  2 FALSE
+ParkingSpot 98  2 TRUE
+ParkingSpot 99  1 FALSE
+ParkingStructure 22 4
+ParkingSpot 0  0 FALSE
+ParkingSpot 1  2 TRUE
+ParkingSpot 2  1 TRUE
+ParkingSpot 3  3 TRUE
+ParkingSpot 4  2 TRUE
+ParkingSpot 5  0 FALSE
+ParkingSpot 6  2 FALSE
+ParkingSpot 7  3 FALSE
+ParkingSpot 8  1 TRUE
+ParkingSpot 9  3 TRUE
+ParkingSpot 10  3 TRUE
+ParkingSpot 11  3 TRUE
+ParkingSpot 12  2 FALSE
+ParkingSpot 13  0 FALSE
+ParkingSpot 14  1 FALSE
+ParkingSpot 15  1 FALSE
+ParkingSpot 16  1 TRUE
+ParkingSpot 17  3 FALSE
+ParkingSpot 18  0 TRUE
+ParkingSpot 19  2 FALSE
+ParkingSpot 20  0 TRUE
+ParkingSpot 21  1 TRUE
+ParkingSpot 22  0 FALSE
+ParkingSpot 23  0 FALSE
+ParkingSpot 24  3 FALSE
+ParkingSpot 25  2 FALSE
+ParkingSpot 26  2 TRUE
+ParkingSpot 27  0 FALSE
+ParkingSpot 28  1 TRUE
+ParkingSpot 29  0 TRUE
+ParkingSpot 30  2 TRUE
+ParkingSpot 31  0 TRUE
+ParkingSpot 32  2 FALSE
+ParkingSpot 33  2 FALSE
+ParkingSpot 34  2 FALSE
+ParkingSpot 35  2 TRUE
+ParkingSpot 36  3 FALSE
+ParkingSpot 37  0 TRUE
+ParkingSpot 38  3 TRUE
+ParkingSpot 39  3 FALSE
+ParkingSpot 40  0 FALSE
+ParkingSpot 41  0 FALSE
+ParkingSpot 42  2 FALSE
+ParkingSpot 43  2 FALSE
+ParkingSpot 44  3 FALSE
+ParkingSpot 45  1 TRUE
+ParkingSpot 46  0 TRUE
+ParkingSpot 47  0 FALSE
+ParkingSpot 48  3 FALSE
+ParkingSpot 49  3 TRUE
+ParkingSpot 50  0 FALSE
+ParkingSpot 51  2 TRUE
+ParkingSpot 52  3 TRUE
+ParkingSpot 53  2 TRUE
+ParkingSpot 54  0 TRUE
+ParkingSpot 55  0 TRUE
+ParkingSpot 56  1 FALSE
+ParkingSpot 57  1 TRUE
+ParkingSpot 58  1 FALSE
+ParkingSpot 59  1 FALSE
+ParkingSpot 60  3 FALSE
+ParkingSpot 61  3 FALSE
+ParkingSpot 62  1 TRUE
+ParkingSpot 63  2 TRUE
+ParkingSpot 64  0 TRUE
+ParkingSpot 65  0 TRUE
+ParkingSpot 66  3 FALSE
+ParkingSpot 67  1 FALSE
+ParkingSpot 68  2 FALSE
+ParkingSpot 69  1 TRUE
+ParkingSpot 70  0 FALSE
+ParkingSpot 71  1 TRUE
+ParkingSpot 72  0 TRUE
+ParkingSpot 73  2 TRUE
+ParkingSpot 74  3 TRUE
+ParkingSpot 75  0 FALSE
+ParkingSpot 76  0 TRUE
+ParkingSpot 77  0 TRUE
+ParkingSpot 78  1 TRUE
+ParkingSpot 79  2 FALSE
+ParkingSpot 80  1 TRUE
+ParkingSpot 81  0 TRUE
+ParkingSpot 82  2 TRUE
+ParkingSpot 83  2 TRUE
+ParkingSpot 84  2 FALSE
+ParkingSpot 85  3 TRUE
+ParkingSpot 86  2 TRUE
+ParkingSpot 87  3 TRUE
+ParkingSpot 88  0 TRUE
+ParkingSpot 89  0 TRUE
+ParkingSpot 90  3 TRUE
+ParkingSpot 91  0 FALSE
+ParkingSpot 92  2 FALSE
+ParkingSpot 93  2 FALSE
+ParkingSpot 94  3 TRUE
+ParkingSpot 95  1 FALSE
+ParkingSpot 96  0 TRUE
+ParkingSpot 97  2 TRUE
+ParkingSpot 98  1 TRUE
+ParkingSpot 99  3 FALSE
 ParkingStructure 32 1 
-Parking, 0 , 3, FALSE
-Parking, 1 , 3, TRUE
-Parking, 2 , 1, TRUE
-Parking, 3 , 3, FALSE
-Parking, 4 , 3, TRUE
-Parking, 5 , 2, FALSE
-Parking, 6 , 3, FALSE
-Parking, 7 , 1, TRUE
-Parking, 8 , 0, TRUE
-Parking, 9 , 3, TRUE
-Parking, 10 , 2, TRUE
-Parking, 11 , 0, TRUE
-Parking, 12 , 1, TRUE
-Parking, 13 , 0, TRUE
-Parking, 14 , 3, TRUE
-Parking, 15 , 0, FALSE
-Parking, 16 , 0, FALSE
-Parking, 17 , 1, FALSE
-Parking, 18 , 2, FALSE
-Parking, 19 , 3, TRUE
-Parking, 20 , 3, TRUE
-Parking, 21 , 0, TRUE
-Parking, 22 , 1, TRUE
-Parking, 23 , 0, FALSE
-Parking, 24 , 1, FALSE
-Parking, 25 , 1, TRUE
-Parking, 26 , 0, TRUE
-Parking, 27 , 3, TRUE
-Parking, 28 , 1, FALSE
-Parking, 29 , 2, TRUE
-Parking, 30 , 0, FALSE
-Parking, 31 , 3, FALSE
-Parking, 32 , 0, TRUE
-Parking, 33 , 0, FALSE
-Parking, 34 , 1, TRUE
-Parking, 35 , 2, TRUE
-Parking, 36 , 0, TRUE
-Parking, 37 , 2, FALSE
-Parking, 38 , 1, FALSE
-Parking, 39 , 0, FALSE
-Parking, 40 , 3, TRUE
-Parking, 41 , 1, TRUE
-Parking, 42 , 3, FALSE
-Parking, 43 , 2, TRUE
-Parking, 44 , 1, FALSE
-Parking, 45 , 2, FALSE
-Parking, 46 , 3, TRUE
-Parking, 47 , 3, TRUE
-Parking, 48 , 1, FALSE
-Parking, 49 , 3, TRUE
-Parking, 50 , 3, TRUE
-Parking, 51 , 0, TRUE
-Parking, 52 , 3, FALSE
-Parking, 53 , 0, TRUE
-Parking, 54 , 0, FALSE
-Parking, 55 , 0, TRUE
-Parking, 56 , 0, FALSE
-Parking, 57 , 2, FALSE
-Parking, 58 , 0, TRUE
-Parking, 59 , 1, TRUE
-Parking, 60 , 1, FALSE
-Parking, 61 , 1, FALSE
-Parking, 62 , 1, TRUE
-Parking, 63 , 0, TRUE
-Parking, 64 , 0, FALSE
-Parking, 65 , 3, TRUE
-Parking, 66 , 3, TRUE
-Parking, 67 , 0, TRUE
-Parking, 68 , 3, FALSE
-Parking, 69 , 3, FALSE
-Parking, 70 , 2, FALSE
-Parking, 71 , 2, FALSE
-Parking, 72 , 1, TRUE
-Parking, 73 , 1, TRUE
-Parking, 74 , 2, TRUE
-Parking, 75 , 1, FALSE
-Parking, 76 , 3, TRUE
-Parking, 77 , 3, FALSE
-Parking, 78 , 2, TRUE
-Parking, 79 , 1, FALSE
-Parking, 80 , 0, TRUE
-Parking, 81 , 0, FALSE
-Parking, 82 , 1, FALSE
-Parking, 83 , 2, TRUE
-Parking, 84 , 1, TRUE
-Parking, 85 , 1, FALSE
-Parking, 86 , 2, FALSE
-Parking, 87 , 3, FALSE
-Parking, 88 , 0, TRUE
-Parking, 89 , 2, FALSE
-Parking, 90 , 3, FALSE
-Parking, 91 , 0, FALSE
-Parking, 92 , 0, TRUE
-Parking, 93 , 2, FALSE
-Parking, 94 , 3, FALSE
-Parking, 95 , 2, FALSE
-Parking, 96 , 3, FALSE
-Parking, 97 , 1, FALSE
-Parking, 98 , 2, TRUE
-Parking, 99 , 1, TRUE
+ParkingSpot 0  0 TRUE
+ParkingSpot 1  2 TRUE
+ParkingSpot 2  2 TRUE
+ParkingSpot 3  1 TRUE
+ParkingSpot 4  2 FALSE
+ParkingSpot 5  3 TRUE
+ParkingSpot 6  1 FALSE
+ParkingSpot 7  0 TRUE
+ParkingSpot 8  1 FALSE
+ParkingSpot 9  3 FALSE
+ParkingSpot 10  3 FALSE
+ParkingSpot 11  0 TRUE
+ParkingSpot 12  1 FALSE
+ParkingSpot 13  2 TRUE
+ParkingSpot 14  1 FALSE
+ParkingSpot 15  2 TRUE
+ParkingSpot 16  0 FALSE
+ParkingSpot 17  3 FALSE
+ParkingSpot 18  0 TRUE
+ParkingSpot 19  0 TRUE
+ParkingSpot 20  0 TRUE
+ParkingSpot 21  0 TRUE
+ParkingSpot 22  0 TRUE
+ParkingSpot 23  2 FALSE
+ParkingSpot 24  2 TRUE
+ParkingSpot 25  2 FALSE
+ParkingSpot 26  1 TRUE
+ParkingSpot 27  3 FALSE
+ParkingSpot 28  2 FALSE
+ParkingSpot 29  1 TRUE
+ParkingSpot 30  0 FALSE
+ParkingSpot 31  1 TRUE
+ParkingSpot 32  2 FALSE
+ParkingSpot 33  3 FALSE
+ParkingSpot 34  3 TRUE
+ParkingSpot 35  2 FALSE
+ParkingSpot 36  1 TRUE
+ParkingSpot 37  3 FALSE
+ParkingSpot 38  0 TRUE
+ParkingSpot 39  1 TRUE
+ParkingSpot 40  2 FALSE
+ParkingSpot 41  3 TRUE
+ParkingSpot 42  3 FALSE
+ParkingSpot 43  1 TRUE
+ParkingSpot 44  3 FALSE
+ParkingSpot 45  1 FALSE
+ParkingSpot 46  3 TRUE
+ParkingSpot 47  3 FALSE
+ParkingSpot 48  2 TRUE
+ParkingSpot 49  0 TRUE
+ParkingSpot 50  0 FALSE
+ParkingSpot 51  1 FALSE
+ParkingSpot 52  0 TRUE
+ParkingSpot 53  1 TRUE
+ParkingSpot 54  0 TRUE
+ParkingSpot 55  2 FALSE
+ParkingSpot 56  1 FALSE
+ParkingSpot 57  2 TRUE
+ParkingSpot 58  0 FALSE
+ParkingSpot 59  0 FALSE
+ParkingSpot 60  1 TRUE
+ParkingSpot 61  0 TRUE
+ParkingSpot 62  0 TRUE
+ParkingSpot 63  2 FALSE
+ParkingSpot 64  0 FALSE
+ParkingSpot 65  3 FALSE
+ParkingSpot 66  0 TRUE
+ParkingSpot 67  0 TRUE
+ParkingSpot 68  0 TRUE
+ParkingSpot 69  3 FALSE
+ParkingSpot 70  1 TRUE
+ParkingSpot 71  1 FALSE
+ParkingSpot 72  3 TRUE
+ParkingSpot 73  3 FALSE
+ParkingSpot 74  0 FALSE
+ParkingSpot 75  2 FALSE
+ParkingSpot 76  3 FALSE
+ParkingSpot 77  1 FALSE
+ParkingSpot 78  0 FALSE
+ParkingSpot 79  3 FALSE
+ParkingSpot 80  1 FALSE
+ParkingSpot 81  1 FALSE
+ParkingSpot 82  1 FALSE
+ParkingSpot 83  2 FALSE
+ParkingSpot 84  3 TRUE
+ParkingSpot 85  1 TRUE
+ParkingSpot 86  0 TRUE
+ParkingSpot 87  3 TRUE
+ParkingSpot 88  0 FALSE
+ParkingSpot 89  3 FALSE
+ParkingSpot 90  0 FALSE
+ParkingSpot 91  2 TRUE
+ParkingSpot 92  1 TRUE
+ParkingSpot 93  2 TRUE
+ParkingSpot 94  3 FALSE
+ParkingSpot 95  0 FALSE
+ParkingSpot 96  0 TRUE
+ParkingSpot 97  3 TRUE
+ParkingSpot 98  3 TRUE
+ParkingSpot 99  1 FALSE
 ParkingStructure 31 15 
-Parking, 0 , 1, TRUE
-Parking, 1 , 1, TRUE
-Parking, 2 , 1, TRUE
-Parking, 3 , 3, TRUE
-Parking, 4 , 1, TRUE
-Parking, 5 , 2, FALSE
-Parking, 6 , 0, TRUE
-Parking, 7 , 3, FALSE
-Parking, 8 , 1, TRUE
-Parking, 9 , 1, TRUE
-Parking, 10 , 3, TRUE
-Parking, 11 , 0, FALSE
-Parking, 12 , 0, TRUE
-Parking, 13 , 1, FALSE
-Parking, 14 , 1, TRUE
-Parking, 15 , 0, TRUE
-Parking, 16 , 0, TRUE
-Parking, 17 , 3, TRUE
-Parking, 18 , 2, TRUE
-Parking, 19 , 2, FALSE
-Parking, 20 , 2, FALSE
-Parking, 21 , 3, TRUE
-Parking, 22 , 0, FALSE
-Parking, 23 , 2, FALSE
-Parking, 24 , 2, FALSE
-Parking, 25 , 3, FALSE
-Parking, 26 , 1, TRUE
-Parking, 27 , 3, FALSE
-Parking, 28 , 1, TRUE
-Parking, 29 , 0, FALSE
-Parking, 30 , 1, TRUE
-Parking, 31 , 3, TRUE
-Parking, 32 , 1, TRUE
-Parking, 33 , 3, FALSE
-Parking, 34 , 1, TRUE
-Parking, 35 , 1, TRUE
-Parking, 36 , 1, TRUE
-Parking, 37 , 0, TRUE
-Parking, 38 , 0, TRUE
-Parking, 39 , 2, TRUE
-Parking, 40 , 2, TRUE
-Parking, 41 , 3, TRUE
-Parking, 42 , 1, TRUE
-Parking, 43 , 3, FALSE
-Parking, 44 , 2, FALSE
-Parking, 45 , 0, FALSE
-Parking, 46 , 1, TRUE
-Parking, 47 , 2, TRUE
-Parking, 48 , 2, FALSE
-Parking, 49 , 1, FALSE
-Parking, 50 , 1, TRUE
-Parking, 51 , 1, FALSE
-Parking, 52 , 3, FALSE
-Parking, 53 , 1, FALSE
-Parking, 54 , 3, FALSE
-Parking, 55 , 1, TRUE
-Parking, 56 , 1, TRUE
-Parking, 57 , 0, FALSE
-Parking, 58 , 3, TRUE
-Parking, 59 , 2, FALSE
-Parking, 60 , 0, TRUE
-Parking, 61 , 3, FALSE
-Parking, 62 , 1, FALSE
-Parking, 63 , 1, TRUE
-Parking, 64 , 3, TRUE
-Parking, 65 , 1, TRUE
-Parking, 66 , 3, FALSE
-Parking, 67 , 0, TRUE
-Parking, 68 , 2, TRUE
-Parking, 69 , 1, FALSE
-Parking, 70 , 3, FALSE
-Parking, 71 , 0, TRUE
-Parking, 72 , 3, TRUE
-Parking, 73 , 1, TRUE
-Parking, 74 , 0, FALSE
-Parking, 75 , 2, FALSE
-Parking, 76 , 3, TRUE
-Parking, 77 , 3, FALSE
-Parking, 78 , 0, TRUE
-Parking, 79 , 3, FALSE
-Parking, 80 , 3, FALSE
-Parking, 81 , 0, TRUE
-Parking, 82 , 2, TRUE
-Parking, 83 , 0, FALSE
-Parking, 84 , 2, TRUE
-Parking, 85 , 2, TRUE
-Parking, 86 , 0, TRUE
-Parking, 87 , 1, TRUE
-Parking, 88 , 2, FALSE
-Parking, 89 , 1, FALSE
-Parking, 90 , 2, FALSE
-Parking, 91 , 3, FALSE
-Parking, 92 , 3, TRUE
-Parking, 93 , 0, TRUE
-Parking, 94 , 2, TRUE
-Parking, 95 , 2, FALSE
-Parking, 96 , 2, TRUE
-Parking, 97 , 0, FALSE
-Parking, 98 , 3, FALSE
-Parking, 99 , 2, TRUE
+ParkingSpot 0  2 TRUE
+ParkingSpot 1  2 FALSE
+ParkingSpot 2  3 FALSE
+ParkingSpot 3  1 TRUE
+ParkingSpot 4  0 FALSE
+ParkingSpot 5  3 FALSE
+ParkingSpot 6  3 TRUE
+ParkingSpot 7  3 TRUE
+ParkingSpot 8  0 FALSE
+ParkingSpot 9  2 FALSE
+ParkingSpot 10  0 TRUE
+ParkingSpot 11  1 FALSE
+ParkingSpot 12  3 TRUE
+ParkingSpot 13  1 TRUE
+ParkingSpot 14  3 TRUE
+ParkingSpot 15  2 TRUE
+ParkingSpot 16  0 TRUE
+ParkingSpot 17  3 TRUE
+ParkingSpot 18  1 TRUE
+ParkingSpot 19  3 FALSE
+ParkingSpot 20  0 TRUE
+ParkingSpot 21  0 TRUE
+ParkingSpot 22  0 FALSE
+ParkingSpot 23  1 TRUE
+ParkingSpot 24  3 TRUE
+ParkingSpot 25  2 FALSE
+ParkingSpot 26  3 TRUE
+ParkingSpot 27  2 TRUE
+ParkingSpot 28  2 TRUE
+ParkingSpot 29  3 TRUE
+ParkingSpot 30  2 TRUE
+ParkingSpot 31  0 TRUE
+ParkingSpot 32  1 TRUE
+ParkingSpot 33  1 TRUE
+ParkingSpot 34  2 TRUE
+ParkingSpot 35  0 TRUE
+ParkingSpot 36  2 FALSE
+ParkingSpot 37  0 FALSE
+ParkingSpot 38  2 TRUE
+ParkingSpot 39  2 TRUE
+ParkingSpot 40  2 FALSE
+ParkingSpot 41  1 FALSE
+ParkingSpot 42  1 FALSE
+ParkingSpot 43  1 TRUE
+ParkingSpot 44  1 TRUE
+ParkingSpot 45  2 TRUE
+ParkingSpot 46  0 TRUE
+ParkingSpot 47  1 FALSE
+ParkingSpot 48  1 FALSE
+ParkingSpot 49  2 TRUE
+ParkingSpot 50  3 FALSE
+ParkingSpot 51  2 TRUE
+ParkingSpot 52  3 TRUE
+ParkingSpot 53  3 TRUE
+ParkingSpot 54  0 TRUE
+ParkingSpot 55  3 TRUE
+ParkingSpot 56  3 TRUE
+ParkingSpot 57  0 FALSE
+ParkingSpot 58  1 FALSE
+ParkingSpot 59  1 TRUE
+ParkingSpot 60  2 TRUE
+ParkingSpot 61  3 TRUE
+ParkingSpot 62  3 FALSE
+ParkingSpot 63  0 FALSE
+ParkingSpot 64  2 TRUE
+ParkingSpot 65  3 TRUE
+ParkingSpot 66  0 FALSE
+ParkingSpot 67  3 FALSE
+ParkingSpot 68  3 TRUE
+ParkingSpot 69  2 TRUE
+ParkingSpot 70  1 TRUE
+ParkingSpot 71  2 FALSE
+ParkingSpot 72  2 TRUE
+ParkingSpot 73  2 FALSE
+ParkingSpot 74  1 FALSE
+ParkingSpot 75  1 TRUE
+ParkingSpot 76  2 TRUE
+ParkingSpot 77  3 TRUE
+ParkingSpot 78  2 TRUE
+ParkingSpot 79  3 FALSE
+ParkingSpot 80  0 TRUE
+ParkingSpot 81  1 TRUE
+ParkingSpot 82  0 TRUE
+ParkingSpot 83  2 FALSE
+ParkingSpot 84  3 TRUE
+ParkingSpot 85  1 FALSE
+ParkingSpot 86  0 TRUE
+ParkingSpot 87  1 FALSE
+ParkingSpot 88  3 TRUE
+ParkingSpot 89  3 FALSE
+ParkingSpot 90  0 TRUE
+ParkingSpot 91  2 TRUE
+ParkingSpot 92  2 FALSE
+ParkingSpot 93  3 FALSE
+ParkingSpot 94  2 TRUE
+ParkingSpot 95  1 TRUE
+ParkingSpot 96  3 FALSE
+ParkingSpot 97  1 TRUE
+ParkingSpot 98  3 TRUE
+ParkingSpot 99  2 TRUE
 ParkingStructure 49 22 
-Parking, 0 , 3, FALSE
-Parking, 1 , 3, TRUE
-Parking, 2 , 3, FALSE
-Parking, 3 , 1, FALSE
-Parking, 4 , 0, FALSE
-Parking, 5 , 2, FALSE
-Parking, 6 , 1, FALSE
-Parking, 7 , 1, FALSE
-Parking, 8 , 1, FALSE
-Parking, 9 , 0, FALSE
-Parking, 10 , 2, TRUE
-Parking, 11 , 1, FALSE
-Parking, 12 , 1, TRUE
-Parking, 13 , 2, FALSE
-Parking, 14 , 3, FALSE
-Parking, 15 , 1, FALSE
-Parking, 16 , 0, TRUE
-Parking, 17 , 2, TRUE
-Parking, 18 , 0, TRUE
-Parking, 19 , 0, FALSE
-Parking, 20 , 3, FALSE
-Parking, 21 , 1, FALSE
-Parking, 22 , 1, FALSE
-Parking, 23 , 2, FALSE
-Parking, 24 , 1, FALSE
-Parking, 25 , 0, TRUE
-Parking, 26 , 2, FALSE
-Parking, 27 , 3, TRUE
-Parking, 28 , 0, TRUE
-Parking, 29 , 0, FALSE
-Parking, 30 , 3, TRUE
-Parking, 31 , 0, TRUE
-Parking, 32 , 3, TRUE
-Parking, 33 , 2, TRUE
-Parking, 34 , 2, TRUE
-Parking, 35 , 2, TRUE
-Parking, 36 , 2, TRUE
-Parking, 37 , 2, FALSE
-Parking, 38 , 3, TRUE
-Parking, 39 , 3, TRUE
-Parking, 40 , 3, FALSE
-Parking, 41 , 1, TRUE
-Parking, 42 , 2, TRUE
-Parking, 43 , 3, TRUE
-Parking, 44 , 0, TRUE
-Parking, 45 , 0, FALSE
-Parking, 46 , 0, FALSE
-Parking, 47 , 0, TRUE
-Parking, 48 , 2, TRUE
-Parking, 49 , 3, FALSE
-Parking, 50 , 3, TRUE
-Parking, 51 , 0, TRUE
-Parking, 52 , 3, FALSE
-Parking, 53 , 2, TRUE
-Parking, 54 , 0, FALSE
-Parking, 55 , 1, TRUE
-Parking, 56 , 0, TRUE
-Parking, 57 , 1, FALSE
-Parking, 58 , 0, FALSE
-Parking, 59 , 2, FALSE
-Parking, 60 , 3, TRUE
-Parking, 61 , 1, TRUE
-Parking, 62 , 3, TRUE
-Parking, 63 , 2, FALSE
-Parking, 64 , 2, FALSE
-Parking, 65 , 2, TRUE
-Parking, 66 , 2, FALSE
-Parking, 67 , 1, FALSE
-Parking, 68 , 2, FALSE
-Parking, 69 , 2, TRUE
-Parking, 70 , 0, TRUE
-Parking, 71 , 0, TRUE
-Parking, 72 , 1, FALSE
-Parking, 73 , 0, FALSE
-Parking, 74 , 1, FALSE
-Parking, 75 , 1, TRUE
-Parking, 76 , 0, FALSE
-Parking, 77 , 2, FALSE
-Parking, 78 , 3, TRUE
-Parking, 79 , 1, FALSE
-Parking, 80 , 0, FALSE
-Parking, 81 , 2, FALSE
-Parking, 82 , 1, TRUE
-Parking, 83 , 1, TRUE
-Parking, 84 , 0, FALSE
-Parking, 85 , 0, FALSE
-Parking, 86 , 1, TRUE
-Parking, 87 , 0, FALSE
-Parking, 88 , 2, TRUE
-Parking, 89 , 0, TRUE
-Parking, 90 , 2, TRUE
-Parking, 91 , 3, TRUE
-Parking, 92 , 3, FALSE
-Parking, 93 , 1, TRUE
-Parking, 94 , 1, TRUE
-Parking, 95 , 3, TRUE
-Parking, 96 , 2, FALSE
-Parking, 97 , 0, TRUE
-Parking, 98 , 2, TRUE
-Parking, 99 , 2, FALSE
+ParkingSpot 0  1 TRUE
+ParkingSpot 1  1 FALSE
+ParkingSpot 2  1 TRUE
+ParkingSpot 3  2 FALSE
+ParkingSpot 4  1 FALSE
+ParkingSpot 5  3 FALSE
+ParkingSpot 6  0 FALSE
+ParkingSpot 7  2 FALSE
+ParkingSpot 8  3 FALSE
+ParkingSpot 9  2 TRUE
+ParkingSpot 10  2 FALSE
+ParkingSpot 11  0 TRUE
+ParkingSpot 12  3 TRUE
+ParkingSpot 13  3 FALSE
+ParkingSpot 14  0 FALSE
+ParkingSpot 15  2 FALSE
+ParkingSpot 16  2 FALSE
+ParkingSpot 17  1 FALSE
+ParkingSpot 18  3 FALSE
+ParkingSpot 19  3 FALSE
+ParkingSpot 20  1 FALSE
+ParkingSpot 21  0 TRUE
+ParkingSpot 22  0 TRUE
+ParkingSpot 23  3 FALSE
+ParkingSpot 24  3 FALSE
+ParkingSpot 25  0 FALSE
+ParkingSpot 26  3 FALSE
+ParkingSpot 27  2 FALSE
+ParkingSpot 28  1 FALSE
+ParkingSpot 29  0 TRUE
+ParkingSpot 30  3 FALSE
+ParkingSpot 31  0 FALSE
+ParkingSpot 32  3 FALSE
+ParkingSpot 33  0 FALSE
+ParkingSpot 34  2 TRUE
+ParkingSpot 35  3 FALSE
+ParkingSpot 36  0 TRUE
+ParkingSpot 37  0 FALSE
+ParkingSpot 38  0 FALSE
+ParkingSpot 39  2 TRUE
+ParkingSpot 40  2 TRUE
+ParkingSpot 41  3 TRUE
+ParkingSpot 42  3 FALSE
+ParkingSpot 43  0 FALSE
+ParkingSpot 44  2 FALSE
+ParkingSpot 45  1 FALSE
+ParkingSpot 46  1 TRUE
+ParkingSpot 47  1 FALSE
+ParkingSpot 48  0 FALSE
+ParkingSpot 49  3 FALSE
+ParkingSpot 50  1 TRUE
+ParkingSpot 51  3 TRUE
+ParkingSpot 52  3 FALSE
+ParkingSpot 53  3 TRUE
+ParkingSpot 54  3 FALSE
+ParkingSpot 55  3 FALSE
+ParkingSpot 56  0 FALSE
+ParkingSpot 57  1 FALSE
+ParkingSpot 58  1 TRUE
+ParkingSpot 59  1 FALSE
+ParkingSpot 60  3 FALSE
+ParkingSpot 61  2 TRUE
+ParkingSpot 62  0 TRUE
+ParkingSpot 63  0 TRUE
+ParkingSpot 64  0 TRUE
+ParkingSpot 65  0 FALSE
+ParkingSpot 66  0 FALSE
+ParkingSpot 67  0 TRUE
+ParkingSpot 68  3 FALSE
+ParkingSpot 69  1 FALSE
+ParkingSpot 70  2 FALSE
+ParkingSpot 71  3 FALSE
+ParkingSpot 72  2 TRUE
+ParkingSpot 73  0 FALSE
+ParkingSpot 74  3 FALSE
+ParkingSpot 75  1 TRUE
+ParkingSpot 76  0 FALSE
+ParkingSpot 77  0 FALSE
+ParkingSpot 78  2 TRUE
+ParkingSpot 79  3 FALSE
+ParkingSpot 80  2 TRUE
+ParkingSpot 81  1 TRUE
+ParkingSpot 82  3 FALSE
+ParkingSpot 83  0 TRUE
+ParkingSpot 84  0 FALSE
+ParkingSpot 85  2 FALSE
+ParkingSpot 86  1 FALSE
+ParkingSpot 87  2 FALSE
+ParkingSpot 88  3 FALSE
+ParkingSpot 89  1 FALSE
+ParkingSpot 90  2 TRUE
+ParkingSpot 91  1 TRUE
+ParkingSpot 92  3 TRUE
+ParkingSpot 93  0 FALSE
+ParkingSpot 94  2 FALSE
+ParkingSpot 95  3 FALSE
+ParkingSpot 96  1 TRUE
+ParkingSpot 97  1 FALSE
+ParkingSpot 98  3 TRUE
+ParkingSpot 99  1 TRUE
 ParkingStructure 46 46 
-Parking, 0 , 3, TRUE
-Parking, 1 , 1, FALSE
-Parking, 2 , 3, FALSE
-Parking, 3 , 1, FALSE
-Parking, 4 , 0, FALSE
-Parking, 5 , 3, TRUE
-Parking, 6 , 3, TRUE
-Parking, 7 , 0, FALSE
-Parking, 8 , 1, FALSE
-Parking, 9 , 1, FALSE
-Parking, 10 , 2, FALSE
-Parking, 11 , 1, TRUE
-Parking, 12 , 0, FALSE
-Parking, 13 , 0, FALSE
-Parking, 14 , 1, TRUE
-Parking, 15 , 0, FALSE
-Parking, 16 , 1, TRUE
-Parking, 17 , 2, FALSE
-Parking, 18 , 3, TRUE
-Parking, 19 , 1, TRUE
-Parking, 20 , 1, TRUE
-Parking, 21 , 0, FALSE
-Parking, 22 , 2, TRUE
-Parking, 23 , 2, TRUE
-Parking, 24 , 2, TRUE
-Parking, 25 , 2, FALSE
-Parking, 26 , 3, TRUE
-Parking, 27 , 1, FALSE
-Parking, 28 , 2, FALSE
-Parking, 29 , 0, TRUE
-Parking, 30 , 2, TRUE
-Parking, 31 , 2, TRUE
-Parking, 32 , 2, TRUE
-Parking, 33 , 1, FALSE
-Parking, 34 , 1, FALSE
-Parking, 35 , 3, FALSE
-Parking, 36 , 0, FALSE
-Parking, 37 , 3, FALSE
-Parking, 38 , 0, FALSE
-Parking, 39 , 0, FALSE
-Parking, 40 , 2, FALSE
-Parking, 41 , 1, FALSE
-Parking, 42 , 3, FALSE
-Parking, 43 , 1, FALSE
-Parking, 44 , 0, TRUE
-Parking, 45 , 1, TRUE
-Parking, 46 , 1, FALSE
-Parking, 47 , 3, FALSE
-Parking, 48 , 0, TRUE
-Parking, 49 , 2, TRUE
-Parking, 50 , 2, FALSE
-Parking, 51 , 1, FALSE
-Parking, 52 , 2, FALSE
-Parking, 53 , 1, FALSE
-Parking, 54 , 0, FALSE
-Parking, 55 , 3, TRUE
-Parking, 56 , 1, FALSE
-Parking, 57 , 1, FALSE
-Parking, 58 , 3, FALSE
-Parking, 59 , 0, FALSE
-Parking, 60 , 1, FALSE
-Parking, 61 , 2, FALSE
-Parking, 62 , 1, FALSE
-Parking, 63 , 2, TRUE
-Parking, 64 , 3, FALSE
-Parking, 65 , 0, TRUE
-Parking, 66 , 2, FALSE
-Parking, 67 , 2, TRUE
-Parking, 68 , 2, TRUE
-Parking, 69 , 2, FALSE
-Parking, 70 , 1, TRUE
-Parking, 71 , 3, FALSE
-Parking, 72 , 0, TRUE
-Parking, 73 , 1, TRUE
-Parking, 74 , 1, TRUE
-Parking, 75 , 3, FALSE
-Parking, 76 , 1, FALSE
-Parking, 77 , 2, FALSE
-Parking, 78 , 2, TRUE
-Parking, 79 , 2, FALSE
-Parking, 80 , 3, FALSE
-Parking, 81 , 1, TRUE
-Parking, 82 , 1, FALSE
-Parking, 83 , 0, FALSE
-Parking, 84 , 3, FALSE
-Parking, 85 , 0, FALSE
-Parking, 86 , 3, FALSE
-Parking, 87 , 3, TRUE
-Parking, 88 , 0, FALSE
-Parking, 89 , 1, TRUE
-Parking, 90 , 3, FALSE
-Parking, 91 , 1, TRUE
-Parking, 92 , 2, FALSE
-Parking, 93 , 0, TRUE
-Parking, 94 , 2, FALSE
-Parking, 95 , 1, FALSE
-Parking, 96 , 0, FALSE
-Parking, 97 , 1, TRUE
-Parking, 98 , 0, FALSE
-Parking, 99 , 0, TRUE
+ParkingSpot 0  0 FALSE
+ParkingSpot 1  1 TRUE
+ParkingSpot 2  2 TRUE
+ParkingSpot 3  1 TRUE
+ParkingSpot 4  0 TRUE
+ParkingSpot 5  1 TRUE
+ParkingSpot 6  3 TRUE
+ParkingSpot 7  3 FALSE
+ParkingSpot 8  3 TRUE
+ParkingSpot 9  1 TRUE
+ParkingSpot 10  3 TRUE
+ParkingSpot 11  0 FALSE
+ParkingSpot 12  1 FALSE
+ParkingSpot 13  1 TRUE
+ParkingSpot 14  1 FALSE
+ParkingSpot 15  0 TRUE
+ParkingSpot 16  0 FALSE
+ParkingSpot 17  0 TRUE
+ParkingSpot 18  0 FALSE
+ParkingSpot 19  2 FALSE
+ParkingSpot 20  0 FALSE
+ParkingSpot 21  0 FALSE
+ParkingSpot 22  0 FALSE
+ParkingSpot 23  0 FALSE
+ParkingSpot 24  1 TRUE
+ParkingSpot 25  3 TRUE
+ParkingSpot 26  1 FALSE
+ParkingSpot 27  3 TRUE
+ParkingSpot 28  3 FALSE
+ParkingSpot 29  3 FALSE
+ParkingSpot 30  1 TRUE
+ParkingSpot 31  2 FALSE
+ParkingSpot 32  2 FALSE
+ParkingSpot 33  3 TRUE
+ParkingSpot 34  0 FALSE
+ParkingSpot 35  0 FALSE
+ParkingSpot 36  2 TRUE
+ParkingSpot 37  1 FALSE
+ParkingSpot 38  3 TRUE
+ParkingSpot 39  1 TRUE
+ParkingSpot 40  1 FALSE
+ParkingSpot 41  1 TRUE
+ParkingSpot 42  1 FALSE
+ParkingSpot 43  2 TRUE
+ParkingSpot 44  2 FALSE
+ParkingSpot 45  3 FALSE
+ParkingSpot 46  2 FALSE
+ParkingSpot 47  2 FALSE
+ParkingSpot 48  1 FALSE
+ParkingSpot 49  3 TRUE
+ParkingSpot 50  3 TRUE
+ParkingSpot 51  2 FALSE
+ParkingSpot 52  1 TRUE
+ParkingSpot 53  0 FALSE
+ParkingSpot 54  0 TRUE
+ParkingSpot 55  0 FALSE
+ParkingSpot 56  2 FALSE
+ParkingSpot 57  2 FALSE
+ParkingSpot 58  0 TRUE
+ParkingSpot 59  3 FALSE
+ParkingSpot 60  2 TRUE
+ParkingSpot 61  3 TRUE
+ParkingSpot 62  0 TRUE
+ParkingSpot 63  1 TRUE
+ParkingSpot 64  3 FALSE
+ParkingSpot 65  1 FALSE
+ParkingSpot 66  1 TRUE
+ParkingSpot 67  0 TRUE
+ParkingSpot 68  0 TRUE
+ParkingSpot 69  2 TRUE
+ParkingSpot 70  3 FALSE
+ParkingSpot 71  0 FALSE
+ParkingSpot 72  2 FALSE
+ParkingSpot 73  0 FALSE
+ParkingSpot 74  1 TRUE
+ParkingSpot 75  2 TRUE
+ParkingSpot 76  3 TRUE
+ParkingSpot 77  0 TRUE
+ParkingSpot 78  1 TRUE
+ParkingSpot 79  3 FALSE
+ParkingSpot 80  3 FALSE
+ParkingSpot 81  3 FALSE
+ParkingSpot 82  1 TRUE
+ParkingSpot 83  3 TRUE
+ParkingSpot 84  3 FALSE
+ParkingSpot 85  1 FALSE
+ParkingSpot 86  3 TRUE
+ParkingSpot 87  1 TRUE
+ParkingSpot 88  2 TRUE
+ParkingSpot 89  1 TRUE
+ParkingSpot 90  3 FALSE
+ParkingSpot 91  2 FALSE
+ParkingSpot 92  0 FALSE
+ParkingSpot 93  0 TRUE
+ParkingSpot 94  3 FALSE
+ParkingSpot 95  2 TRUE
+ParkingSpot 96  2 FALSE
+ParkingSpot 97  1 TRUE
+ParkingSpot 98  2 FALSE
+ParkingSpot 99  0 FALSE
 ParkingStructure 42 55 
-Parking, 0 , 1, FALSE
-Parking, 1 , 0, FALSE
-Parking, 2 , 0, TRUE
-Parking, 3 , 1, FALSE
-Parking, 4 , 3, TRUE
-Parking, 5 , 0, FALSE
-Parking, 6 , 2, TRUE
-Parking, 7 , 2, TRUE
-Parking, 8 , 1, FALSE
-Parking, 9 , 0, TRUE
-Parking, 10 , 2, FALSE
-Parking, 11 , 0, TRUE
-Parking, 12 , 3, TRUE
-Parking, 13 , 1, TRUE
-Parking, 14 , 2, TRUE
-Parking, 15 , 0, FALSE
-Parking, 16 , 2, FALSE
-Parking, 17 , 0, FALSE
-Parking, 18 , 0, TRUE
-Parking, 19 , 3, FALSE
-Parking, 20 , 1, TRUE
-Parking, 21 , 0, FALSE
-Parking, 22 , 1, TRUE
-Parking, 23 , 3, TRUE
-Parking, 24 , 2, FALSE
-Parking, 25 , 0, FALSE
-Parking, 26 , 2, TRUE
-Parking, 27 , 3, FALSE
-Parking, 28 , 1, TRUE
-Parking, 29 , 2, TRUE
-Parking, 30 , 0, TRUE
-Parking, 31 , 1, TRUE
-Parking, 32 , 2, TRUE
-Parking, 33 , 3, FALSE
-Parking, 34 , 1, FALSE
-Parking, 35 , 0, TRUE
-Parking, 36 , 1, FALSE
-Parking, 37 , 2, TRUE
-Parking, 38 , 1, TRUE
-Parking, 39 , 3, TRUE
-Parking, 40 , 0, TRUE
-Parking, 41 , 1, FALSE
-Parking, 42 , 2, TRUE
-Parking, 43 , 1, TRUE
-Parking, 44 , 0, TRUE
-Parking, 45 , 2, TRUE
-Parking, 46 , 1, TRUE
-Parking, 47 , 2, FALSE
-Parking, 48 , 3, FALSE
-Parking, 49 , 2, FALSE
-Parking, 50 , 2, FALSE
-Parking, 51 , 3, FALSE
-Parking, 52 , 1, TRUE
-Parking, 53 , 1, FALSE
-Parking, 54 , 2, TRUE
-Parking, 55 , 1, FALSE
-Parking, 56 , 3, TRUE
-Parking, 57 , 2, TRUE
-Parking, 58 , 2, TRUE
-Parking, 59 , 0, TRUE
-Parking, 60 , 3, TRUE
-Parking, 61 , 0, FALSE
-Parking, 62 , 1, FALSE
-Parking, 63 , 3, TRUE
-Parking, 64 , 0, FALSE
-Parking, 65 , 0, TRUE
-Parking, 66 , 1, TRUE
-Parking, 67 , 3, FALSE
-Parking, 68 , 1, TRUE
-Parking, 69 , 3, TRUE
-Parking, 70 , 2, TRUE
-Parking, 71 , 2, FALSE
-Parking, 72 , 0, TRUE
-Parking, 73 , 2, TRUE
-Parking, 74 , 3, TRUE
-Parking, 75 , 3, FALSE
-Parking, 76 , 0, FALSE
-Parking, 77 , 2, FALSE
-Parking, 78 , 1, TRUE
-Parking, 79 , 0, FALSE
-Parking, 80 , 2, FALSE
-Parking, 81 , 0, FALSE
-Parking, 82 , 2, TRUE
-Parking, 83 , 1, TRUE
-Parking, 84 , 1, FALSE
-Parking, 85 , 1, TRUE
-Parking, 86 , 0, FALSE
-Parking, 87 , 1, FALSE
-Parking, 88 , 2, FALSE
-Parking, 89 , 1, TRUE
-Parking, 90 , 2, FALSE
-Parking, 91 , 3, FALSE
-Parking, 92 , 3, FALSE
-Parking, 93 , 3, FALSE
-Parking, 94 , 1, TRUE
-Parking, 95 , 1, FALSE
-Parking, 96 , 3, TRUE
-Parking, 97 , 2, TRUE
-Parking, 98 , 0, TRUE
-Parking, 99 , 2, TRUE
+ParkingSpot 0  2 FALSE
+ParkingSpot 1  2 TRUE
+ParkingSpot 2  0 FALSE
+ParkingSpot 3  0 TRUE
+ParkingSpot 4  2 TRUE
+ParkingSpot 5  2 FALSE
+ParkingSpot 6  0 TRUE
+ParkingSpot 7  2 TRUE
+ParkingSpot 8  2 TRUE
+ParkingSpot 9  1 TRUE
+ParkingSpot 10  1 FALSE
+ParkingSpot 11  0 FALSE
+ParkingSpot 12  2 FALSE
+ParkingSpot 13  0 FALSE
+ParkingSpot 14  1 TRUE
+ParkingSpot 15  0 FALSE
+ParkingSpot 16  1 TRUE
+ParkingSpot 17  2 FALSE
+ParkingSpot 18  1 FALSE
+ParkingSpot 19  3 TRUE
+ParkingSpot 20  1 TRUE
+ParkingSpot 21  1 TRUE
+ParkingSpot 22  2 FALSE
+ParkingSpot 23  3 TRUE
+ParkingSpot 24  0 TRUE
+ParkingSpot 25  2 TRUE
+ParkingSpot 26  2 TRUE
+ParkingSpot 27  2 FALSE
+ParkingSpot 28  1 TRUE
+ParkingSpot 29  3 TRUE
+ParkingSpot 30  0 FALSE
+ParkingSpot 31  1 FALSE
+ParkingSpot 32  1 FALSE
+ParkingSpot 33  2 TRUE
+ParkingSpot 34  0 FALSE
+ParkingSpot 35  3 TRUE
+ParkingSpot 36  3 TRUE
+ParkingSpot 37  0 FALSE
+ParkingSpot 38  0 TRUE
+ParkingSpot 39  1 FALSE
+ParkingSpot 40  1 TRUE
+ParkingSpot 41  3 FALSE
+ParkingSpot 42  1 FALSE
+ParkingSpot 43  3 TRUE
+ParkingSpot 44  3 FALSE
+ParkingSpot 45  2 FALSE
+ParkingSpot 46  0 FALSE
+ParkingSpot 47  2 TRUE
+ParkingSpot 48  0 FALSE
+ParkingSpot 49  2 TRUE
+ParkingSpot 50  3 FALSE
+ParkingSpot 51  3 TRUE
+ParkingSpot 52  2 FALSE
+ParkingSpot 53  3 TRUE
+ParkingSpot 54  3 TRUE
+ParkingSpot 55  1 FALSE
+ParkingSpot 56  2 FALSE
+ParkingSpot 57  0 FALSE
+ParkingSpot 58  0 FALSE
+ParkingSpot 59  0 FALSE
+ParkingSpot 60  1 FALSE
+ParkingSpot 61  3 FALSE
+ParkingSpot 62  2 TRUE
+ParkingSpot 63  1 TRUE
+ParkingSpot 64  1 FALSE
+ParkingSpot 65  2 TRUE
+ParkingSpot 66  3 TRUE
+ParkingSpot 67  1 FALSE
+ParkingSpot 68  2 TRUE
+ParkingSpot 69  3 TRUE
+ParkingSpot 70  2 TRUE
+ParkingSpot 71  2 FALSE
+ParkingSpot 72  2 FALSE
+ParkingSpot 73  3 TRUE
+ParkingSpot 74  3 FALSE
+ParkingSpot 75  1 TRUE
+ParkingSpot 76  3 TRUE
+ParkingSpot 77  2 TRUE
+ParkingSpot 78  1 FALSE
+ParkingSpot 79  2 FALSE
+ParkingSpot 80  3 FALSE
+ParkingSpot 81  1 TRUE
+ParkingSpot 82  2 FALSE
+ParkingSpot 83  1 FALSE
+ParkingSpot 84  2 FALSE
+ParkingSpot 85  1 TRUE
+ParkingSpot 86  1 TRUE
+ParkingSpot 87  0 TRUE
+ParkingSpot 88  2 TRUE
+ParkingSpot 89  0 FALSE
+ParkingSpot 90  1 FALSE
+ParkingSpot 91  1 FALSE
+ParkingSpot 92  0 TRUE
+ParkingSpot 93  0 TRUE
+ParkingSpot 94  0 FALSE
+ParkingSpot 95  0 FALSE
+ParkingSpot 96  2 TRUE
+ParkingSpot 97  2 TRUE
+ParkingSpot 98  2 TRUE
+ParkingSpot 99  2 FALSE

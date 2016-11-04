@@ -18,7 +18,7 @@ public class Driver {
     boolean available;
 
     for (int i = 0; i < numStr; i++) {
-      ArrayList<ParkingSpot> spotlist = new ArrayList<ParkingSpot>();
+      ParkingStructure parkingStr = new ParkingStructure(new Geoloc(i, 1));
 
       for (int j = 0; j < 100; j++) {
         type = ran.nextInt(8) + 10;
@@ -30,9 +30,9 @@ public class Driver {
         }
 
         ParkingSpot ps = new ParkingSpot(j, type % 4, available);
-        spotlist.add(ps);
+        parkingStr.addtoSpotArr(ps);
       }
-      ParkingStructure parkingStr = new ParkingStructure(spotlist, new Geoloc(i, 1));
+      
       strList.add(parkingStr);
     }
 
