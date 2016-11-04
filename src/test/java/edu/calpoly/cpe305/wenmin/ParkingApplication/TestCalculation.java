@@ -7,6 +7,7 @@ import org.junit.Test;
 import main.java.edu.calpoly.cpe305.wenmin.ParkingApplication.Calculation;
 import main.java.edu.calpoly.cpe305.wenmin.ParkingApplication.Geoloc;
 import main.java.edu.calpoly.cpe305.wenmin.ParkingApplication.ParkingStructure;
+import main.java.edu.calpoly.cpe305.wenmin.ParkingApplication.User;
 
 import java.util.ArrayList;
 
@@ -37,23 +38,24 @@ public class TestCalculation {
     parkLoc.add(new ParkingStructure(new Geoloc(1, 1)));
 
     initAdjVis();
-
-    Calculation cal = new Calculation(adj, visited, userLoc, vert / 2, vert / 2, vert, parkLoc);
+    User user = new User(userLoc, 1);
+    Calculation cal = new Calculation(adj, visited, user, vert / 2, vert / 2, vert, parkLoc);
     cal.addEdge(new Geoloc(0, 0), new Geoloc(1, 0));
     cal.addEdge(new Geoloc(0, 0), new Geoloc(0, 1));
     cal.addEdge(new Geoloc(1, 0), new Geoloc(1, 1));
     cal.addEdge(new Geoloc(0, 1), new Geoloc(1, 1));
-    int start = cal.locToint(userLoc);
+    int start = cal.locToint(user.getPosition());
     int stop = cal.locToint(parkLoc.get(0).getPosition());
     assertEquals(cal.fewestEdgePath(start, stop), 2);
     cal.updateUserPos(new Geoloc(1, 0));
-    start = cal.locToint(cal.userLoc);
+    start = cal.locToint(cal.user.getPosition());
     assertEquals(cal.fewestEdgePath(start, stop), 1);
   }
 
   @Test
   public void calculationTest2() {
-    Calculation cal = new Calculation(adj, visited, userLoc, vert / 2, vert / 2, vert, parkLoc);
+    User user = new User(userLoc, 2);
+    Calculation cal = new Calculation(adj, visited, user, vert / 2, vert / 2, vert, parkLoc);
     cal.addEdge(new Geoloc(0, 0), new Geoloc(1, 0));
     cal.addEdge(new Geoloc(0, 0), new Geoloc(0, 1));
     cal.addEdge(new Geoloc(1, 0), new Geoloc(1, 1));
@@ -66,8 +68,9 @@ public class TestCalculation {
   
   @Test
   public void testDistance() {
-    Calculation cal= new Calculation(adj, visited, userLoc, vert/2, vert/2, vert, parkLoc);
-    System.out.println(cal.distance(new Geoloc(0, 0), new Geoloc(3, 4)));
+    User user = new User(userLoc, 1);
+    Calculation cal= new Calculation(adj, visited, user, vert/2, vert/2, vert, parkLoc);
+    assertTrue(cal.distance(new Geoloc(0, 0), new Geoloc(3, 4)) == 5);
   }
 
 }

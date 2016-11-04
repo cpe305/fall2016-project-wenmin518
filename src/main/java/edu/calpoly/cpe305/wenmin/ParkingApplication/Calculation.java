@@ -12,7 +12,7 @@ public class Calculation implements Observer {
 
   public int[][] adj;
   public boolean[] visited;
-  public Geoloc userLoc;
+  public User user;
   public int row;
   public int col;
   public int numVertices;
@@ -23,17 +23,17 @@ public class Calculation implements Observer {
    * 
    * @param adj the 2d array corresponding to the grid
    * @param visited used for whether each grid is been visited
-   * @param userLoc user location is used to calculated the nearest partking structure
+   * @param user referring to the user object
    * @param row refers to how many rows in the grid
    * @param col number of colums in the grid
    * @param numVertices count for number of verticies
-   * @param parkingloc give the location of Parking structures
+   * @param parkingLoc give the location of Parking structures
    */
-  public Calculation(int[][] adj, boolean[] visited, Geoloc userLoc, int row, int col,
-      int numVertices, ArrayList<ParkingStructure> parkingLoc) {
+  public Calculation(int[][] adj, boolean[] visited, User user, int row, int col, int numVertices,
+      ArrayList<ParkingStructure> parkingLoc) {
     this.adj = adj;
     this.visited = visited;
-    this.userLoc = userLoc;
+    this.user = user;
     this.row = row;
     this.col = col;
     this.numVertices = numVertices;
@@ -46,7 +46,7 @@ public class Calculation implements Observer {
 
   public void updateUserPos(Geoloc pos) {
     // TODO Auto-generated method stub
-    userLoc = pos;
+    user.setPosition(pos);
   }
 
   /**
@@ -115,29 +115,31 @@ public class Calculation implements Observer {
    * @return the distance between two points
    */
   public double distance(Geoloc user, Geoloc spotLoc) {
-    double xDis;
-    double yDis;
-    xDis = user.getX() - spotLoc.getX();
-    yDis = user.getY() - spotLoc.getY();
-    return Math.sqrt(xDis * xDis + yDis * yDis);
+    double xdis;
+    double ydis;
+    xdis = user.getX() - spotLoc.getX();
+    ydis = user.getY() - spotLoc.getY();
+    return Math.sqrt(xdis * xdis + ydis * ydis);
   }
 
   /**
-   * This method compares the distance between
+   * This method return the parking structure number that is closest to user.
    * 
-   * @param user
-   * @param parkStrLoc
-   * @return
+   * @param user referring to the user's location in the map
+   * @param parkStrLoc referring to the parking structure locations
+   * @return the number of blocks to parking the closest parking structure
    */
   public int nearbyParkingStr(Geoloc user, ArrayList<ParkingStructure> parkStrLoc) {
     double newDis;
-    int value = 0;
-    double dis = distance(user, parkStrLoc.get(value).getPosition());
-    for (int i = 1; i < parkStrLoc.size(); i++) {
+    int value = -1;
+    double dis = -1;
+    for (int i = 0; i < parkStrLoc.size(); i++) {
       newDis = distance(user, parkStrLoc.get(i).getPosition());
-      if (dis > newDis && parkStrLoc.get(i).getNumavailable() > 0) {
-        dis = newDis;
-        value = i;
+      if (parkStrLoc.get(i).getNumavailable() > 0) {
+        if (dis > newDis || dis == -1) {
+          dis = newDis;
+          value = i;
+        }
       }
     }
     return value;
@@ -145,12 +147,38 @@ public class Calculation implements Observer {
 
   public void printInfo(Geoloc userLoc, ArrayList<ParkingStructure> parkLoc) {
     int parkingStrNum = nearbyParkingStr(userLoc, parkingLoc);
-    int start = locToint(userLoc);
-    double distance = fewestEdgePath(start, parkingStrNum) * 0.027;
-    System.out.println("The nearest ParkingStructre is " + (parkingStrNum + 1));
-    System.out.println("Parking Spot #" + (parkingLoc.get(parkingStrNum).getSmallestSpotNum() + 1));
-    
-    System.out.println("The parking spot is about ) " +distance + "miles away");
-    System.out.println("It is gonna take about " + distance / 10 * 60 +" minutes");
+    String car = null;
+    if (parkingStrNum != -1) {
+      int start = locToint(userLoc);
+      double distance = fewestEdgePath(start, parkingStrNum) * 0.027;
+      System.out.println("The nearest ParkingStructre is " + (parkingStrNum + 1));
+      System.out.println("Parking Spot #" + (parkingLoc.get(parkingStrNum).getSmallestSpotNum() + 1)
+          + " is the first available parking spot");
+      if (user.getCarType() == 1) {
+        car = "Compact";
+      }
+      if (user.getCarType() == 2) {
+        car = "Electric";
+      }
+      if (user.getCarType() == 3) {
+        car = "Handicap";
+      }
+      if (user.getCarType() == 4) {
+        car = "Normal";
+      }
+      if (parkingLoc.get(parkingStrNum).getSmallestTypeNum(user.getCarType()) == -1) {
+        System.out.println(car +" car that you are looking for is not available in parking " + parkingStrNum);
+      }
+      else {
+        System.out.println("Parking Spot #"
+          + (parkingLoc.get(parkingStrNum).getSmallestTypeNum(user.getCarType()) + 1) + " is " + car
+          + " that you are looking for");
+      }
+      System.out.println("The parking spot is about " + distance + " miles away");
+      System.out.println("It is gonna take about " + distance / 10 * 60 + " minutes");
+    } else {
+      System.out.println("Sorry, every parking spot is taken, try tomorrow, ---");
+    }
+
   }
 }

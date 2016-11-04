@@ -23,5 +23,12 @@ public class User implements Subject {
     // TODO Auto-generated method stub
     System.out.println("Update");
   }
-
+  
+  public void setPosition(Geoloc loc) {
+    position = loc;
+  }
+  
+  public void setcarType(int type) {
+    carType = type;
+  }
 }

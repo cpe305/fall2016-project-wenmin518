@@ -86,7 +86,7 @@ public class MainTest {
       System.out.println();
     }
   }
-  
+
   public static void setParkLocFromFile(String fileName) throws FileNotFoundException {
     structArr = new ArrayList<ParkingStructure>();
     File file = new File(fileName);
@@ -98,21 +98,23 @@ public class MainTest {
       lineContent = scan.nextLine();
       lineScan = new Scanner(lineContent);
       String ele = lineScan.next();
-      if (ele.equals("ParkingStructure")){
+      if (ele.equals("ParkingStructure")) {
         parkingStrNum++;
-        ParkingStructure ps = new ParkingStructure(new Geoloc(lineScan.nextInt(), lineScan.nextInt()));
+        ParkingStructure ps =
+            new ParkingStructure(new Geoloc(lineScan.nextInt(), lineScan.nextInt()));
         structArr.add(ps);
       }
       if (ele.equals("ParkingSpot")) {
-        ParkingSpot ps = new ParkingSpot(lineScan.nextInt(), lineScan.nextInt(), lineScan.nextBoolean());
-        
+        ParkingSpot ps =
+            new ParkingSpot(lineScan.nextInt(), lineScan.nextInt(), lineScan.nextBoolean());
+
         structArr.get(parkingStrNum).addtoSpotArr(ps);
       }
     }
     scan.close();
 
   }
-  
+
   public static void doFunctions() {
     Scanner scan = new Scanner(System.in);
     String permission;
@@ -122,12 +124,26 @@ public class MainTest {
       System.out.println("as x y");
       int xVal = scan.nextInt();
       int yVal = scan.nextInt();
-      System.out.println("You entered (" + xVal + ", " + yVal+")");
-      Geoloc userLoc = new Geoloc(xVal, yVal);
-      System.out.print("x: "+userLoc.getX() +" y: "+ userLoc.getY() );
-      Calculation cal = new Calculation(adj,visited, userLoc, rows, cols, rows * cols, structArr);
-      System.out.println();
-      cal.printInfo(userLoc, structArr);
+      if (xVal > rows || yVal > cols) {
+        System.out.println("your x or y is out of range");
+      } else {
+        Geoloc userLoc = new Geoloc(xVal, yVal);
+        System.out.println("You entered (" + xVal + ", " + yVal + ")");
+        System.out.print("x: " + userLoc.getX() + " y: " + userLoc.getY());
+        System.out.println("Please Enter the type of parking spot that you are looking for:");
+        System.out.println("1: Compact. 2: Electric. 3: Handicap. 4: Normal");
+        int typeInput = scan.nextInt();
+        if (1 > typeInput && typeInput > 4) {
+          System.out.println("Your input is out of range");
+        }
+        else {
+          User user = new User(userLoc, typeInput);
+          Calculation cal =
+              new Calculation(adj, visited, user, rows, cols, rows * cols, structArr);
+          System.out.println();
+          cal.printInfo(userLoc, structArr);
+        }
+      }
       System.out.println("Press Y if you want to continue");
       permission = scan.nextLine();
 
@@ -136,9 +152,9 @@ public class MainTest {
 
   public static void main(String[] args) throws FileNotFoundException {
     setadjFromFile("test.txt");
-    setParkLocFromFile("file1.txt");
- 
-//    printAdj();
+    setParkLocFromFile("Structure1full.txt");
+
+    // printAdj();
     doFunctions();
   }
 }

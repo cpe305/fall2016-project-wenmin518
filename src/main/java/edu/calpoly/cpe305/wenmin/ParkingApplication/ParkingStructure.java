@@ -56,6 +56,19 @@ public class ParkingStructure {
     }
     return -1;
   }
+  
+  public int getSmallestTypeNum(int type) {
+    if (getNumavailable() >= 1) {
+      for (int i = 0; i < spotArr.size(); i++) {
+        if (spotArr.get(i).isAvailable() ) {
+          if (spotArr.get(i).getType() == type) {
+            return i;
+          }
+        }
+      }
+    }
+    return -1;
+  }
 
 }
 
