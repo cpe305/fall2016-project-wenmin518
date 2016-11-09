@@ -2,7 +2,19 @@ language: java
 
 jdk:
  - oraclejdk8
+<<<<<<< HEAD
 
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarQube analysis
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+=======
+ 
+#addons:
+  #sonarqube: true
+  
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarQube analysis
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+#  "tools/travis-sonarqube.sh make VERBOSE=1 && ctest --output-on-failure --timeout 100"
+
+>>>>>>> 93b1ed1abeaa58ed5f14e8fdfdabfb562ea1787a
