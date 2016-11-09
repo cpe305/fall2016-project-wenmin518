@@ -73,3 +73,13 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.core.resources 2 10035 2016-11-01 20:06:36.524
 !MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2016-11-08 13:28:12.319 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/wenmin518/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/wenmin518/.eclipse_keyring
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-11-08 13:28:37.998
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
