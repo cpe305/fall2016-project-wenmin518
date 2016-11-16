@@ -5,6 +5,7 @@ public class User implements Subject {
 
   private Geoloc position;
   private int carType;
+  private Observer obs;
 
   public User(Geoloc position, int carType) {
     this.position = position;
@@ -21,7 +22,7 @@ public class User implements Subject {
 
   public void notifyObs(Geoloc loc) {
     // TODO Auto-generated method stub
-    System.out.println("Update");
+    obs.updateUserPos(loc);
   }
   
   public void setPosition(Geoloc loc) {

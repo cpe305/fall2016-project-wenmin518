@@ -1,4 +1,5 @@
 main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/ParkingStructure.class
+main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/ReadFromJason.class
 main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/User.class
 main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/Geoloc.class
 main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/LinkedList$Node.class
@@ -9,6 +10,4 @@ main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/Subject.class
 main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/Calculation.class
 main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/Observer.class
 main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/LinkedList$1.class
-main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/Driver.class
 main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/ParkingSpot.class
-main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/MainTest.class

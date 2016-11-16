@@ -25,6 +25,8 @@ public class TestStructure {
     assertEquals(ps.getNumoccupied(), 1);
     assertEquals(ps.getspotArr().get(1).getType(), 1);
     assertEquals(ps.getspotArr().get(1).isAvailable(), false);
+    assertEquals(ps.getSmallestSpotNum(), 0);
+    assertEquals(ps.getSmallestTypeNum(3), 0);
   }
 
   @Test

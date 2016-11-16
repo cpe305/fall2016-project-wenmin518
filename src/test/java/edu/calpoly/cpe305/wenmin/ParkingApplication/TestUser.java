@@ -13,8 +13,11 @@ public class TestUser {
   @Test
   public void userTest1() {
     User user = new User(new Geoloc(10, 10), 3);
-    assertTrue(user.getPosition().equals(new Geoloc(10, 10)));
+    assertTrue(user.getPosition().getX() == 10);
+    assertTrue(user.getPosition().getY() == 10);
     assertEquals(user.getCarType(), 3);
+    user.setcarType(1);
+    assertEquals(user.getCarType(), 1);
   }
 
   @Test

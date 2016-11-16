@@ -22,8 +22,6 @@ public class TestLinkedList {
     assertFalse(list.equals(2));
     assertTrue(list.contains(3));
     assertEquals(listtwo, list);
-    listtwo.remove(3);
-    assertFalse(list.contains(3));
   }
 
   @Test
