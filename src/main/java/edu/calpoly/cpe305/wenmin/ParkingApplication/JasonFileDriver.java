@@ -32,9 +32,6 @@ public class JasonFileDriver {
     adj[end][from] = 1;
   }
 
-  public static Geoloc locToPoint(int num, int col) {
-    return new Geoloc(num % col, num / col);
-  }
 
   /**
    * setup the adjacency matrix.

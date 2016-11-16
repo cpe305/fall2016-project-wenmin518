@@ -17,10 +17,13 @@ public class TestLinkedList {
     list.addLast(3);
     list.addFirst(3);
     listtwo = (LinkedList) list.clone();
+    assertEquals(list.length(), 2);
     assertFalse(list.isEmpty());
     assertFalse(list.equals(2));
     assertTrue(list.contains(3));
     assertEquals(listtwo, list);
+    listtwo.remove(3);
+    assertFalse(list.contains(3));
   }
 
   @Test
