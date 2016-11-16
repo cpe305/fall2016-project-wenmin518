@@ -12,7 +12,8 @@ public class TestGeoloc {
   @Test
   public void geolocTest1() {
     Geoloc loc = new Geoloc(10, 10);
-    assertEquals(loc, new Geoloc(10, 10));
+    assertEquals(loc.getX(), 10);
+    assertEquals(loc.getY(), 10);
   }
 
   @Test
