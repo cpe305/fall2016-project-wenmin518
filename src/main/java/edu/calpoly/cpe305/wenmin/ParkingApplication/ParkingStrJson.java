@@ -39,7 +39,7 @@ public class ParkingStrJson {
         String availability = (String) parkingSpot.get("availability");
 
         ParkingSpot parkSpot =
-            new ParkingSpot(num, type, Boolean.parseBoolean(availability);
+            new ParkingSpot(num, type, Boolean.parseBoolean(availability));
 
         ps.addtoSpotArr(parkSpot);
       }
