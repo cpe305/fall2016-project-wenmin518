@@ -36,10 +36,10 @@ public class ParkingStrJson {
         JSONObject parkingSpot = (JSONObject) o;
         int num = (int) Integer.valueOf((String) parkingSpot.get("Parking Number"));
         int type = (int) Integer.valueOf((String) parkingSpot.get("Type"));
-        boolean availability = (boolean) parkingSpot.get("availability");
+        String availability = (String) parkingSpot.get("availability");
 
         ParkingSpot parkSpot =
-            new ParkingSpot(num, type, availability);
+            new ParkingSpot(num, type, Boolean.parseBoolean(availability);
 
         ps.addtoSpotArr(parkSpot);
       }
