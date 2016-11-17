@@ -99,6 +99,7 @@ public class Calculation implements Observer {
 
   /**
    * get the row.
+   * 
    * @return the number of rows in the array.
    */
   public int getRow() {
@@ -107,14 +108,16 @@ public class Calculation implements Observer {
 
   /**
    * get the colume.
+   * 
    * @return the number of colums in the array.
    */
   public int getCol() {
     return col;
   }
-  
+
   /**
    * number of vertices = number of rows * number of columns.
+   * 
    * @return integer specifying number of vertices
    */
   public int getNumVer() {
@@ -123,6 +126,7 @@ public class Calculation implements Observer {
 
   /**
    * gets the user object.
+   * 
    * @return user object with location and other attributes
    */
   public User getUser() {
@@ -140,6 +144,7 @@ public class Calculation implements Observer {
 
   /**
    * gets the parking array
+   * 
    * @return the memory that contains parking structure arraylist.
    */
   public ArrayList<ParkingStructure> getParkStr() {
@@ -213,11 +218,9 @@ public class Calculation implements Observer {
    * @return the distance between two points
    */
   public double distance(Geoloc user, Geoloc spotLoc) {
-    double xdis;
-    double ydis;
-    xdis = user.getX() - spotLoc.getX();
-    ydis = user.getY() - spotLoc.getY();
-    return Math.sqrt(xdis * xdis + ydis * ydis);
+
+    return Math.sqrt(Math.multiplyExact(user.getX() - spotLoc.getX(), user.getX() - spotLoc.getX())
+        + Math.multiplyExact(user.getY() - spotLoc.getY(), user.getY() - spotLoc.getY()));
   }
 
   /**
@@ -230,11 +233,11 @@ public class Calculation implements Observer {
   public int nearbyParkingStr(Geoloc user, ArrayList<ParkingStructure> parkStrLoc) {
     double newDis;
     int value = -1;
-    double dis = -1;
+    double dis = -1.0;
     for (int i = 0; i < parkStrLoc.size(); i++) {
       newDis = distance(user, parkStrLoc.get(i).getPosition());
       if (parkStrLoc.get(i).getNumavailable() > 0) {
-        if (dis > newDis || dis == -1) {
+        if (dis > newDis || dis == -1.0) {
           dis = newDis;
           value = i;
         }
