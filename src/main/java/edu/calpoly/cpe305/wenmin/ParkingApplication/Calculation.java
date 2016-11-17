@@ -1,6 +1,7 @@
 package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Observer that does caluclation when user changes the location.
@@ -39,52 +40,108 @@ public class Calculation implements Observer {
     this.numVertices = numVertices;
     this.parkingLoc = parkingLoc;
   }
-  
+
+  /**
+   * Observer updates the subject location if subject has changed.
+   */
   public void updateUserPos(Geoloc pos) {
     // TODO Auto-generated method stub
     user.setPosition(pos);
   }
-  
+
+  /**
+   * convert Geoloc object to a single point.
+   * 
+   * @param loc referring to a Geoloc object that contains x and y.
+   * @return a integer that is referring to the same location is a grid.
+   */
   public int locToint(Geoloc loc) {
     return loc.getX() + loc.getY() * col;
   }
 
+  /**
+   * get the number in adj specified at row and col.
+   * 
+   * @param rowNum referring to the row at the table.
+   * @param colNum referring to the col at the table.
+   * @return number at the adj
+   */
   public int getAdjAt(int rowNum, int colNum) {
     return adj[rowNum][colNum];
   }
-  
+
+  /**
+   * gets the adj object.
+   * 
+   * @return 2d arr.
+   */
   public int[][] getAdj() {
     return adj;
   }
-  
+
+  /**
+   * gets the visited object.
+   * 
+   * @return boolean array indicates whether each vertex is being visited.
+   */
   public boolean[] getVisited() {
     return visited;
   }
-  
+
+  /**
+   * 
+   * @param idx referring to the index of the visited arr.
+   * @return the boolean at specified index
+   */
   public boolean getVisitedAt(int idx) {
     return visited[idx];
   }
-  
+
+  /**
+   * get the row.
+   * @return the number of rows in the array.
+   */
   public int getRow() {
     return row;
   }
 
+  /**
+   * get the colume.
+   * @return the number of colums in the array.
+   */
   public int getCol() {
     return col;
   }
-
+  
+  /**
+   * number of vertices = number of rows * number of columns.
+   * @return integer specifying number of vertices
+   */
   public int getNumVer() {
     return numVertices;
   }
-  
+
+  /**
+   * gets the user object.
+   * @return user object with location and other attributes
+   */
   public User getUser() {
     return user;
   }
 
+  /**
+   * 
+   * @param idx referring to the index of the list.
+   * @return Parking structure at specified index.
+   */
   public ParkingStructure getStrAt(int idx) {
     return parkingLoc.get(idx);
   }
-  
+
+  /**
+   * gets the parking array
+   * @return the memory that contains parking structure arraylist.
+   */
   public ArrayList<ParkingStructure> getParkStr() {
     return parkingLoc;
   }

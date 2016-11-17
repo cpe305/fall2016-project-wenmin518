@@ -12,10 +12,19 @@ import org.json.simple.parser.ParseException;
 public class ParkingStrJson {
   private ArrayList<ParkingStructure> structArr;
   
+  /**
+   * Constructor.
+   */
   public ParkingStrJson() {
     structArr = new ArrayList<ParkingStructure>();
   }
   
+  /**
+   * 
+   * @param fileName referring to the file name to read in.
+   * @throws IOException prevent from file not found.
+   * @throws ParseException gets thrown when json file is not read correctly.
+   */
   public void setParkLocFromFile(String fileName) throws IOException, ParseException {
     JSONParser parser = new JSONParser();
     Object obj = parser.parse(new FileReader(fileName));
@@ -47,10 +56,19 @@ public class ParkingStrJson {
     }
   }
   
+  /**
+   * 
+   * @param idx referring to the index of the structure array
+   * @return the parking structure at specified index.
+   */
   public ParkingStructure getStrcutre(int idx) {
     return structArr.get(idx);
   }
   
+  /**
+   * gets the parking structure arraylist.
+   * @return the memory containing the parking strucuture arraylist.
+   */
   public ArrayList<ParkingStructure> getStructArr() {
     return structArr;
   }

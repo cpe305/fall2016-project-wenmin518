@@ -75,6 +75,7 @@ public class LinkedList implements Cloneable {
 
   /**
    * Return the number of items in the list.
+   * 
    * @return integer indicating number of elements
    */
   public int length() {
@@ -264,6 +265,7 @@ public class LinkedList implements Cloneable {
 
   /**
    * Iterator default methods and class.
+   * 
    * @author wenmin518
    */
   public class itr implements Iterator {
@@ -284,7 +286,7 @@ public class LinkedList implements Cloneable {
     }
 
     public void remove() {
-      //should throw a specific exception than generic
+      // should throw a specific exception than generic
       throw new UnsupportedOperationException();
     }
 

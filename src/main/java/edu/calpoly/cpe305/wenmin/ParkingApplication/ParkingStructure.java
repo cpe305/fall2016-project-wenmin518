@@ -7,15 +7,29 @@ public class ParkingStructure {
   private ArrayList<ParkingSpot> spotArr;
   private Geoloc pos;
 
+  /**
+   * Constructor.
+   * 
+   * @param pos referring to the location of parking structure.
+   */
   public ParkingStructure(Geoloc pos) {
     spotArr = new ArrayList<ParkingSpot>();
     this.pos = pos;
   }
 
+  /**
+   * gets the parkign spot arraylist of parking Strucutre.
+   * 
+   * @return memory address that contains parking spot array.
+   */
   public ArrayList<ParkingSpot> getspotArr() {
     return spotArr;
   }
 
+  /**
+   * 
+   * @param spot referring to the spot to the spot array.
+   */
   public void addtoSpotArr(ParkingSpot spot) {
     spotArr.add(spot);
   }
@@ -33,14 +47,26 @@ public class ParkingStructure {
     return count;
   }
 
+  /**
+   *
+   * @return integer indicates number of parking spots occupied.
+   */
   public int getNumoccupied() {
     return spotArr.size() - getNumavailable();
   }
 
+  /**
+   * gets the position of parking structure.
+   * @return the position of parking structure.
+   */
   public Geoloc getPosition() {
     return pos;
   }
 
+  /**
+   * 
+   * @param newLoc referring to the location of parking location to be changed to.
+   */
   public void setPosition(Geoloc newLoc) {
     pos = newLoc;
   }

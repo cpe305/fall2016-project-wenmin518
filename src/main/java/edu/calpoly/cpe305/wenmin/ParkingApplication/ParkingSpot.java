@@ -19,26 +19,53 @@ public class ParkingSpot {
     this.available = available;
   }
 
+  /**
+   * gets the number of parking spot.
+   * 
+   * @return an integer referring to the parking spot number.
+   */
   public int getNum() {
     return num;
   }
 
+  /**
+   * gets the type of parking spot.
+   * 
+   * @return an integer referring to the parking spot type.
+   */
   public int getType() {
     return type;
   }
 
+  /**
+   * gets the availability of parking spot
+   * 
+   * @return a boolean referring to the parking spot availability.
+   */
   public boolean isAvailable() {
     return available;
   }
-  
+
+  /**
+   *
+   * @param number referring to the parking spot number to set to the parking spot.
+   */
   public void setNum(int number) {
     num = number;
   }
-  
+
+  /**
+   * 
+   * @param theType referring to the parking spot type to assign the the parking spot.
+   */
   public void setType(int theType) {
     type = theType;
   }
-  
+
+  /**
+   * 
+   * @param avail referring to the parking spot availability to set to the parking spot.
+   */
   public void setAvailability(boolean avail) {
     available = avail;
   }
