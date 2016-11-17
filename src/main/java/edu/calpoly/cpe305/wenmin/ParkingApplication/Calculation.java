@@ -39,19 +39,56 @@ public class Calculation implements Observer {
     this.numVertices = numVertices;
     this.parkingLoc = parkingLoc;
   }
-
+  
+  public void updateUserPos(Geoloc pos) {
+    // TODO Auto-generated method stub
+    user.setPosition(pos);
+  }
+  
   public int locToint(Geoloc loc) {
     return loc.getX() + loc.getY() * col;
+  }
+
+  public int getAdjAt(int rowNum, int colNum) {
+    return adj[rowNum][colNum];
+  }
+  
+  public int[][] getAdj() {
+    return adj;
+  }
+  
+  public boolean[] getVisited() {
+    return visited;
+  }
+  
+  public boolean getVisitedAt(int idx) {
+    return visited[idx];
+  }
+  
+  public int getRow() {
+    return row;
+  }
+
+  public int getCol() {
+    return col;
+  }
+
+  public int getNumVer() {
+    return numVertices;
   }
   
   public User getUser() {
     return user;
   }
 
-  public void updateUserPos(Geoloc pos) {
-    // TODO Auto-generated method stub
-    user.setPosition(pos);
+  public ParkingStructure getStrAt(int idx) {
+    return parkingLoc.get(idx);
   }
+  
+  public ArrayList<ParkingStructure> getParkStr() {
+    return parkingLoc;
+  }
+
 
   /**
    * adding path between loc1 to loc2.
@@ -149,12 +186,19 @@ public class Calculation implements Observer {
     return value;
   }
 
+  /**
+   * Print necessary information to find the nearest parking structure and parking spot.
+   * 
+   * @param userLoc referring to the position of user.
+   * @param parkLoc referring to the parking structure locations.
+   */
   public void printInfo(Geoloc userLoc, ArrayList<ParkingStructure> parkLoc) {
     int parkingStrNum = nearbyParkingStr(userLoc, parkingLoc);
     String car = null;
     if (parkingStrNum != -1) {
       int start = locToint(userLoc);
-      double distance = fewestEdgePath(start, parkingStrNum) * 0.027;
+      double distance = fewestEdgePath(start, parkingStrNum);
+      distance *= 0.027;
       System.out.println("The nearest ParkingStructre is " + (parkingStrNum + 1));
       System.out.println("Parking Spot #" + (parkingLoc.get(parkingStrNum).getSmallestSpotNum() + 1)
           + " is the first available parking spot");
@@ -171,12 +215,12 @@ public class Calculation implements Observer {
         car = "Normal";
       }
       if (parkingLoc.get(parkingStrNum).getSmallestTypeNum(user.getCarType()) == -1) {
-        System.out.println(car +" car that you are looking for is not available in parking " + parkingStrNum);
-      }
-      else {
+        System.out.println(
+            car + " car that you are looking for is not available in parking " + parkingStrNum);
+      } else {
         System.out.println("Parking Spot #"
-          + (parkingLoc.get(parkingStrNum).getSmallestTypeNum(user.getCarType()) + 1) + " is " + car
-          + " that you are looking for");
+            + (parkingLoc.get(parkingStrNum).getSmallestTypeNum(user.getCarType()) + 1) + " is "
+            + car + " that you are looking for");
       }
       System.out.println("The parking spot is about " + distance + " miles away");
       System.out.println("It is gonna take about " + distance / 10 * 60 + " minutes");

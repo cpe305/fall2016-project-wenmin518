@@ -5,58 +5,20 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ParkingJsonObj {
+public class ParkingPath {
   private int[][] adj;
   private int rows;
   private int cols;
   private int numVertices;
   private boolean[] visited;
   private int[] vertices;
-  private ArrayList<ParkingStructure> structArr;
   
-  public ParkingJsonObj(int[][] adj, int rows, int cols, boolean[] visited,int[] vertices, ArrayList<ParkingStructure> structArr) {
-    this.adj = adj;
-    this.rows = rows;
-    this.cols = cols;
-    numVertices = rows * cols;
-    this.visited = visited;
-    this.vertices = vertices;
-    this.structArr = structArr;
-  }
-  
-  public int getAdj(int rowNum, int colNum) {
-    return adj[rowNum][colNum];
-  }
-  
-  public void setAdj(int rowNum, int colNum, int value) {
-    adj[rowNum][colNum] = value;
-  }
-  
-  public int getRows() {
-    return rows;
-  }
-  
-  public int getCols() {
-    return cols;
-  }
-  
-  public int getVertices() {
-    return numVertices;
-  }
-  
-  public boolean getVisited(int vertex) {
-    return visited[vertex];
-  }
-  
-  public ParkingStructure getArr(int idx) {
-    return structArr.get(idx);
-  }
-  
-  public void addEdge(int from, int end) {
-    adj[from][end] = 1;
-    adj[end][from] = 1;
-  }
-  
+  /**
+   * Set up the adj matrix table.
+   * 
+   * @param ver referring to the vertex array.
+   * @param cols referring to number of columns in the give input file.
+   */
   public void setAdj(int[] ver, int cols) {
     for (int i = 0; i < numVertices; i++) {
       if (ver[i] == 0) {
@@ -72,9 +34,56 @@ public class ParkingJsonObj {
           }
         }
       }
-    }  
+    }
   }
   
+  public void setAdj(int rowNum, int colNum, int value) {
+    adj[rowNum][colNum] = value;
+  }
+
+  public int getAdjAt(int rowNum, int colNum) {
+    return adj[rowNum][colNum];
+  }
+
+  public int[][] getAdj() {
+    return adj;
+  }
+
+  public int getRows() {
+    return rows;
+  }
+
+  public int getCols() {
+    return cols;
+  }
+
+  public int getNumVer() {
+    return numVertices;
+  }
+
+  public boolean getVisitedAt(int vertex) {
+    return visited[vertex];
+  }
+
+  public boolean[] getVisited() {
+    return visited;
+  }
+
+  public int[] getVertices() {
+    return vertices;
+  }
+
+  public void addEdge(int from, int end) {
+    adj[from][end] = 1;
+    adj[end][from] = 1;
+  }
+
+  /**
+   * Set up the matrix from a file.
+   * 
+   * @param fileName referring to the file that contains numbers
+   * @throws FileNotFoundException is thrown if file is not find.
+   */
   public void setadjFromFile(String fileName) throws FileNotFoundException {
     File file = new File(fileName);
     Scanner scan = new Scanner(file);
@@ -87,7 +96,6 @@ public class ParkingJsonObj {
     for (int i = 0; i < numVertices; i++) {
       vertices[i] = scan.nextInt();
     }
-
     setAdj(vertices, cols);
     scan.close();
   }

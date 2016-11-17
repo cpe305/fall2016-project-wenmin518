@@ -41,6 +41,10 @@ public class ParkingStructure {
     return pos;
   }
 
+  public void setPosition(Geoloc newLoc) {
+    pos = newLoc;
+  }
+
   /**
    * returns the parking spot that is closest to the parking entrance.
    * 
@@ -56,11 +60,17 @@ public class ParkingStructure {
     }
     return -1;
   }
-  
+
+  /**
+   * finds the nearest parking spot with specified type.
+   * 
+   * @param type referring to the type of the car
+   * @return the smallest number of parking spot that is available with specified type
+   */
   public int getSmallestTypeNum(int type) {
     if (getNumavailable() >= 1) {
       for (int i = 0; i < spotArr.size(); i++) {
-        if (spotArr.get(i).isAvailable() ) {
+        if (spotArr.get(i).isAvailable()) {
           if (spotArr.get(i).getType() == type) {
             return i;
           }
@@ -69,6 +79,5 @@ public class ParkingStructure {
     }
     return -1;
   }
-
 }
 

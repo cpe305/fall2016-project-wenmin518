@@ -8,7 +8,8 @@ public class ParkingSpot {
 
   /**
    * Constructor.
-   * @param position Geoloc of the parking spot
+   * 
+   * @param position Geoloc Object of the parking spot.
    * @param type refer to the type of parking 1: Compact, 2: Electic, 3: Handicap, 4: Regular.
    * @param available tells whether the parking spot is currently available
    */
@@ -28,6 +29,18 @@ public class ParkingSpot {
 
   public boolean isAvailable() {
     return available;
+  }
+  
+  public void setNum(int number) {
+    num = number;
+  }
+  
+  public void setType(int theType) {
+    type = theType;
+  }
+  
+  public void setAvailability(boolean avail) {
+    available = avail;
   }
 }
 
