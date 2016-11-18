@@ -48,9 +48,9 @@ public class DemoDriver {
         typeInput = scan.nextInt();
       }
       User user = new User(userLoc, typeInput);
-      Calculation cal = new Calculation(parkingPath.getAdj(), parkingPath.getVisited(),
-          user.getPosition(), user.getCarType(), parkingPath.getRows(), parkingPath.getCols(),
-          parkingPath.getNumVer(), structJson.getStructArr());
+      Calculation cal = new Calculation(parkingPath.getAdj(), parkingPath.getVisited(), user,
+          parkingPath.getRows(), parkingPath.getCols(), parkingPath.getNumVer(),
+          structJson.getStructArr());
       System.out.println();
       cal.printInfo(userLoc);
 

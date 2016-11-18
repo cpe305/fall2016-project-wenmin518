@@ -8,12 +8,11 @@ import java.util.ArrayList;
  * @author wenmin518
  *
  */
-public class Calculation {
+public class Calculation implements Observer{
 
   private int[][] adj;
   private boolean[] visited;
-  private Geoloc userLoc;
-  private int userCarType;
+  private User user;
   private int row;
   private int col;
   private int numVertices;
@@ -30,29 +29,17 @@ public class Calculation {
    * @param numVertices count for number of verticies
    * @param parkingLoc give the location of Parking structures
    */
-  public Calculation(int[][] adj, boolean[] visited, Geoloc userLoc, int userCarType, int row, int col, int numVertices,
+  public Calculation(int[][] adj, boolean[] visited, User user, int row, int col, int numVertices,
       ArrayList<ParkingStructure> parkingLoc) {
     this.adj = adj;
     this.visited = visited;
-    this.userLoc = userLoc;
-    this.userCarType = userCarType;
+    this.user = user;
     this.row = row;
     this.col = col;
     this.numVertices = numVertices;
     this.parkingLoc = parkingLoc;
   }
 
-  /**
-   * Observer updates the subject location if subject has changed.
-   * @param pos referring to the Geoloc to be chanegd.
-   */
-  public void updateUserPos(Geoloc pos) {
-    userLoc = pos;
-  }
-  
-  public void updateUserType(int type) {
-    userCarType = type;
-  }
 
   /**
    * convert Geoloc object to a single point.
@@ -134,12 +121,8 @@ public class Calculation {
    * 
    * @return user object with location and other attributes
    */
-  public Geoloc getUserLoc() {
-    return userLoc;
-  }
-  
-  public int getUserType() {
-    return userCarType;
+  public User getUser() {
+    return user;
   }
 
   /**
@@ -275,28 +258,28 @@ public class Calculation {
       System.out.println("The nearest ParkingStructre is " + (parkingStrNum + 1));
       System.out.println("Parking Spot #" + (parkingLoc.get(parkingStrNum).getSmallestSpotNum() + 1)
           + " is the first available parking spot");
-      if (userCarType == 1) {
+      if (user.getCarType() == 1) {
         car = "Compact";
       }
-      if (userCarType == 2) {
+      if (user.getCarType() == 2) {
         car = "Electric";
       }
-      if (userCarType == 3) {
+      if (user.getCarType() == 3) {
         car = "Handicap";
       }
-      if (userCarType == 4) {
+      if (user.getCarType() == 4) {
         car = "Normal";
       }
-      if (parkingLoc.get(parkingStrNum).getSmallestTypeNum(userCarType) == -1) {
+      if (parkingLoc.get(parkingStrNum).getSmallestTypeNum(user.getCarType()) == -1) {
         System.out.println(
             car + " car that you are looking for is not available in parking " + parkingStrNum);
       } else {
         System.out.println("Parking Spot #"
-            + (parkingLoc.get(parkingStrNum).getSmallestTypeNum(userCarType) + 1) + " is "
+            + (parkingLoc.get(parkingStrNum).getSmallestTypeNum(user.getCarType()) + 1) + " is "
             + car + " that you are looking for");
       }
-      System.out.println("The parking spot is about " + distance + " miles away");
-      System.out.println("It is gonna take about " + distance / 10 * 60 + " minutes");
+      System.out.printf("The parking spot is about %.1f miles away\n", distance);
+      System.out.println("It is gonna take about " + ((int) (distance / 10 * 60)) + " minutes");
     } else {
       System.out.println("Sorry, every parking spot is taken, try tomorrow, ---");
     }
@@ -338,10 +321,7 @@ public class Calculation {
     if (row != cal.getRow()) {
       return false;
     }
-    if (userCarType != cal.getUserType()) {
-      return false;
-    }
-    if (!(userLoc.equals(cal.getUserLoc()))) {
+    if (!(user.equals(cal.getUser()))) {
       return false;
     }
     for (int idx = 0; idx < visited.length; idx++) {
@@ -350,6 +330,17 @@ public class Calculation {
       }
     }
     return true;
+  }
+
+  @Override
+  public void updateUserLoc(Geoloc loc) {
+    user.setPosition(loc);
+    
+  }
+
+  @Override
+  public void updateCartype(int type) {
+    user.setcarType(type);
   }
 
 }

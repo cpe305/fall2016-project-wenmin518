@@ -39,8 +39,7 @@ public class TestCalculation {
 
     initAdjVis();
     User user = new User(userLoc, 1);
-    Calculation cal = new Calculation(adj, visited, user.getPosition(), user.getCarType(), vert / 2,
-        vert / 2, vert, parkLoc);
+    Calculation cal = new Calculation(adj, visited, user, vert / 2, vert / 2, vert, parkLoc);
     cal.addEdge(new Geoloc(0, 0), new Geoloc(1, 0));
     cal.addEdge(new Geoloc(0, 0), new Geoloc(0, 1));
     cal.addEdge(new Geoloc(1, 0), new Geoloc(1, 1));
@@ -48,16 +47,15 @@ public class TestCalculation {
     int start = cal.locToint(user.getPosition());
     int stop = cal.locToint(parkLoc.get(0).getPosition());
     assertEquals(cal.fewestEdgePath(start, stop), 2);
-    cal.updateUserPos(new Geoloc(1, 0));
-    start = cal.locToint(cal.getUserLoc());
+    cal.updateUserLoc(new Geoloc(1, 0));
+    start = cal.locToint(cal.getUser().getPosition());
     assertEquals(cal.fewestEdgePath(start, stop), 1);
   }
 
   @Test
   public void calculationTest2() {
     User user = new User(userLoc, 2);
-    Calculation cal = new Calculation(adj, visited, user.getPosition(), user.getCarType(), vert / 2,
-        vert / 2, vert, parkLoc);
+    Calculation cal = new Calculation(adj, visited, user, vert / 2, vert / 2, vert, parkLoc);
     cal.addEdge(new Geoloc(0, 0), new Geoloc(1, 0));
     cal.addEdge(new Geoloc(0, 0), new Geoloc(0, 1));
     cal.addEdge(new Geoloc(1, 0), new Geoloc(1, 1));
@@ -71,8 +69,7 @@ public class TestCalculation {
   @Test
   public void testDistance() {
     User user = new User(userLoc, 1);
-    Calculation cal = new Calculation(adj, visited, user.getPosition(), user.getCarType(), vert / 2,
-        vert / 2, vert, parkLoc);
+    Calculation cal = new Calculation(adj, visited, user, vert / 2, vert / 2, vert, parkLoc);
     assertTrue(cal.distance(new Geoloc(0, 0), new Geoloc(3, 4)) == 5);
   }
 

@@ -49,18 +49,13 @@ public class ParkingStrJson {
         JSONObject parkingSpot = (JSONObject) o;
         int num = (int) Integer.valueOf((String) parkingSpot.get("Parking Number"));
         int type = (int) Integer.valueOf((String) parkingSpot.get("Type"));
-        /**
-         * There is one problem here if I were to change to String it will work for json. but not
-         * for java
-         */
-
-         boolean availability = (boolean) parkingSpot.get("availability");
-//        String availability = (String) parkingSpot.get("availability");
-
-//         System.out.println(availability);
+        int avail = (int) Integer.valueOf((String) parkingSpot.get("availability"));
+        boolean availability = false;;
+        if (avail == 1) {
+          availability = true;
+        }
         ParkingSpot parkSpot =
-             new ParkingSpot(num, type, availability);
-//            new ParkingSpot(num, type, Boolean.parseBoolean(availability));
+            new ParkingSpot(num, type, availability);
         ps.addtoSpotArr(parkSpot);
       }
       structArr.add(ps);
