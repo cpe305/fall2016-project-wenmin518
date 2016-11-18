@@ -59,4 +59,19 @@ public class User implements Subject {
   public void setcarType(int type) {
     carType = type;
   }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (obj == null) {
+      return false;
+    }
+    if (!(obj instanceof User)) {
+      return false;
+    }
+    User user = (User) obj;
+    if ((!position.equals(user.getPosition())) && carType != user.getCarType()) {
+      return false;
+    }
+    return true;
+  }
 }

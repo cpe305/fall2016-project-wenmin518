@@ -34,4 +34,22 @@ public class Geoloc {
     return yloc;
   }
 
+  @Override
+  public boolean equals(Object obj) {
+    if (obj == null) {
+      return false;
+    }
+    
+    if (!(obj instanceof LinkedList)) {
+      return false;
+    }
+    
+    Geoloc other = (Geoloc) obj;
+    if (this.xloc != other.getX() || this.yloc != other.getY()) {
+      return false;
+    }
+    
+    return true;
+  }
+
 }

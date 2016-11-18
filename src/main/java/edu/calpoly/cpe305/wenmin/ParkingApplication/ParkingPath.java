@@ -153,5 +153,4 @@ public class ParkingPath {
     setAdj(vertices, cols);
     scan.close();
   }
-
 }

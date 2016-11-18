@@ -289,4 +289,51 @@ public class Calculation implements Observer {
     }
 
   }
+  
+  @Override
+  public boolean equals(Object obj) {
+    if (obj == null) {
+      return false;
+    }
+    if (!(obj instanceof Calculation)) {
+      return false;
+    }
+    
+    Calculation cal = (Calculation) obj;
+    for (int j = 0; j < row; j++) {
+      for (int k = 0; k < col; k++) {
+        if (adj[j][k] != cal.getAdjAt(j, k)) {
+          return false;
+        }
+      }
+    }
+    
+    if (col != cal.getCol()) {
+      return false;
+    }
+    if (numVertices != cal.getNumVer()) {
+      return false;
+    }
+    if (parkingLoc.size() != cal.getParkStr().size()) {
+      return false;
+    }
+    for (int index = 0; index < parkingLoc.size(); index++) {
+      if (parkingLoc.get(index).equals(cal.getParkStr().get(index))) {
+        return false;
+      }
+    }
+    if (row != cal.getRow()) {
+      return false;
+    }
+    if (!(user.equals(cal.getUser()))) {
+      return false;
+    }
+    for (int idx = 0; idx < visited.length; idx++) {
+      if (visited[idx] != cal.getVisitedAt(idx)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
 }

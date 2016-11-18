@@ -69,5 +69,20 @@ public class ParkingSpot {
   public void setAvailability(boolean avail) {
     available = avail;
   }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (obj == null) {
+      return false;
+    }
+    if (!(obj instanceof ParkingSpot)) {
+      return false;
+    }
+    ParkingSpot ps = (ParkingSpot) obj;
+    if (num != ps.getNum() && type != ps.getType()) {
+      return false;
+    }
+    return true;
+  }
 }
 

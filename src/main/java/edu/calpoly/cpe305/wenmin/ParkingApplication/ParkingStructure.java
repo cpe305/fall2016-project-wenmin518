@@ -3,6 +3,7 @@ package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
 import java.util.ArrayList;
 
 
+
 public class ParkingStructure {
   private ArrayList<ParkingSpot> spotArr;
   private Geoloc pos;
@@ -105,5 +106,32 @@ public class ParkingStructure {
     }
     return -1;
   }
+  
+  @Override
+  public boolean equals(Object obj) {
+    // Supply details as in the assignment description
+
+    if (obj == null) {
+      return false;
+    }
+    if (!(obj instanceof LinkedList)) {
+      return false;
+    }
+
+    ParkingStructure ps = (ParkingStructure) obj;
+    if (!(pos.equals(ps.getPosition()))) {
+      return false;
+    }
+    if (spotArr.size() != ps.getspotArr().size()) {
+      return false;
+    }
+    for (int idx = 0; idx < spotArr.size(); idx++) {
+      if (spotArr.get(idx).equals(ps.getspotArr().get(idx))) {
+        return false;
+      }
+    }
+    return true;
+  }
+
 }
 
