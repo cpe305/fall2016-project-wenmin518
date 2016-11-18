@@ -196,10 +196,10 @@ public class Calculation implements Observer {
     visited[start] = true;
     // Do not assign the unecessary child assignment
     int child;
-    while (queue.isEmpty()) {
+    while (!queue.isEmpty()) {
       child = (Integer) queue.removeLast();
       for (int i = 0; i < numVertices; i++) {
-        if (adj[child][i] == 1 && visited[i]) {
+        if (adj[child][i] == 1 && !(visited[i])) {
           queue.addFirst(i);
           visited[i] = true;
           path[i] = path[child] + 1;
