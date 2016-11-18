@@ -5,6 +5,12 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * The first driver class that reads in the regular text file.
+ * 
+ * @author wenmin518
+ *
+ */
 public class FirstDriver {
 
   private static int[][] adj;
@@ -14,6 +20,8 @@ public class FirstDriver {
   private static boolean[] visited;
   private static int[] vertices;
   private static ArrayList<ParkingStructure> structArr;
+
+  private FirstDriver() {}
 
   /**
    * add the connection between two index.
@@ -27,6 +35,13 @@ public class FirstDriver {
     adj[end][from] = 1;
   }
 
+  /**
+   * Convert a single integer point to a geoloc object.
+   * 
+   * @param num referring to the number to be converted.
+   * @param col referring to how many columns are in the adjacency matrix.
+   * @return the geoloc object.
+   */
   public static Geoloc locToPoint(int num, int col) {
     return new Geoloc(num % col, num / col);
   }
@@ -41,20 +56,17 @@ public class FirstDriver {
   public static void setAdj(int[] ver, int cols) {
     for (int i = 0; i < numVertices; i++) {
       if (ver[i] == 0) {
-        if (i - cols > 1) {
-          if (ver[i - cols] == 0) {
-            addEdge(i, i - cols);
-          }
+        if (i - cols > 1 && (ver[i - cols] == 0)) {
+          addEdge(i, i - cols);
         }
+      }
 
-        if ((i + 1) % cols != 0) {
-          if (ver[i + 1] == 0) {
-            addEdge(i, i + 1);
-          }
-        }
+      if (((i + 1) % cols != 0) && (ver[i + 1] == 0)) {
+        addEdge(i, i + 1);
       }
     }
   }
+
 
   /**
    * Read in the file and set up the 2d array.
@@ -156,7 +168,7 @@ public class FirstDriver {
           User user = new User(userLoc, typeInput);
           Calculation cal = new Calculation(adj, visited, user, rows, cols, rows * cols, structArr);
           System.out.println();
-          cal.printInfo(userLoc, structArr);
+          cal.printInfo(userLoc);
         }
       }
       System.out.println("Press Y if you want to continue");
@@ -175,7 +187,6 @@ public class FirstDriver {
     setadjFromFile("test.txt");
     setParkLocFromFile("Structure1full.txt");
 
-    // printAdj();
     doFunctions();
   }
 }

@@ -1,7 +1,6 @@
 package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Observer that does caluclation when user changes the location.
@@ -43,9 +42,9 @@ public class Calculation implements Observer {
 
   /**
    * Observer updates the subject location if subject has changed.
+   * @param pos referring to the Geoloc to be chanegd.
    */
   public void updateUserPos(Geoloc pos) {
-    // TODO Auto-generated method stub
     user.setPosition(pos);
   }
 
@@ -197,10 +196,10 @@ public class Calculation implements Observer {
     visited[start] = true;
     // Do not assign the unecessary child assignment
     int child;
-    while (queue.isEmpty() == false) {
+    while (queue.isEmpty()) {
       child = (Integer) queue.removeLast();
       for (int i = 0; i < numVertices; i++) {
-        if (adj[child][i] == 1 && visited[i] == false) {
+        if (adj[child][i] == 1 && visited[i]) {
           queue.addFirst(i);
           visited[i] = true;
           path[i] = path[child] + 1;
@@ -237,7 +236,11 @@ public class Calculation implements Observer {
     for (int i = 0; i < parkStrLoc.size(); i++) {
       newDis = distance(user, parkStrLoc.get(i).getPosition());
       if (parkStrLoc.get(i).getNumavailable() > 0) {
-        if (dis > newDis || dis == -1.0) {
+        if (dis > newDis) {
+          dis = newDis;
+          value = i;
+        }
+        else if (dis == -1.0) {
           dis = newDis;
           value = i;
         }
@@ -252,7 +255,7 @@ public class Calculation implements Observer {
    * @param userLoc referring to the position of user.
    * @param parkLoc referring to the parking structure locations.
    */
-  public void printInfo(Geoloc userLoc, ArrayList<ParkingStructure> parkLoc) {
+  public void printInfo(Geoloc userLoc) {
     int parkingStrNum = nearbyParkingStr(userLoc, parkingLoc);
     String car = null;
     if (parkingStrNum != -1) {

@@ -3,6 +3,12 @@ package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
 
 import java.util.Iterator;
 
+/**
+ * My own linkedlist class that has the the functionality of java linkedlist.
+ * 
+ * @author wenmin518
+ *
+ */
 public class LinkedList implements Cloneable {
 
   private class Node {
@@ -246,7 +252,10 @@ public class LinkedList implements Cloneable {
 
   /**
    * copy the linkedList.
+   * 
+   * @return the same linkedlist object
    */
+  @Override
   public Object clone() {
     LinkedList theClone = new LinkedList();
     Node previous = this.first;
@@ -259,8 +268,13 @@ public class LinkedList implements Cloneable {
     return theClone;
   }
 
+  /**
+   * Interator of linkedlist.
+   * 
+   * @return the iterator of the linkedlist.
+   */
   public Iterator iterator() {
-    return new itr();
+    return new iter();
   }
 
   /**
@@ -268,15 +282,18 @@ public class LinkedList implements Cloneable {
    * 
    * @author wenmin518
    */
-  public class itr implements Iterator {
+  public class iter implements Iterator {
     private Node current;
 
-    public itr() {
+    /**
+     * returns the iterator.
+     */
+    public iter() {
       current = first;
     }
 
     /**
-     * return whether the linkedlist has next element.
+     * @return whether the linkedlist has next element.
      */
     public boolean hasNext() {
       if (current == null) {
@@ -285,6 +302,9 @@ public class LinkedList implements Cloneable {
       return true;
     }
 
+    /**
+     * remove which is not void operation in linkedlist.
+     */
     public void remove() {
       // should throw a specific exception than generic
       throw new UnsupportedOperationException();
@@ -292,6 +312,7 @@ public class LinkedList implements Cloneable {
 
     /**
      * next return the next object in the linkedlist.
+     * @return the next object in the linkedlist.
      */
     public Object next() {
       if (current == null) {

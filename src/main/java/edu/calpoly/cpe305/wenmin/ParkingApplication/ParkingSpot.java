@@ -1,6 +1,11 @@
 package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
 
-
+/**
+ * Referring to the parkingspot object that has a number, a type, and availability attributes.
+ * 
+ * @author wenmin518
+ *
+ */
 public class ParkingSpot {
   private int num;
   private int type;
@@ -9,7 +14,7 @@ public class ParkingSpot {
   /**
    * Constructor.
    * 
-   * @param position Geoloc Object of the parking spot.
+   * @param num referring to the number of the spot.
    * @param type refer to the type of parking 1: Compact, 2: Electic, 3: Handicap, 4: Regular.
    * @param available tells whether the parking spot is currently available
    */

@@ -4,6 +4,13 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * Referring to the object that sets up the required path and 2d array for parking structure
+ * application from a preset text file.
+ * 
+ * @author wenmin518
+ *
+ */
 public class ParkingPath {
   private int[][] adj;
   private int rows;
@@ -21,16 +28,12 @@ public class ParkingPath {
   public void setAdj(int[] ver, int cols) {
     for (int i = 0; i < numVertices; i++) {
       if (ver[i] == 0) {
-        if (i - cols > -1) {
-          if (ver[i - cols] == 0) {
-            addEdge(i, i - cols);
-          }
+        if ((i - cols > -1) && (ver[i - cols] == 0)) {
+          addEdge(i, i - cols);
         }
 
-        if ((i + 1) % cols != 0) {
-          if (ver[i + 1] == 0) {
-            addEdge(i, i + 1);
-          }
+        if (((i + 1) % cols != 0) && (ver[i + 1] == 0)) {
+          addEdge(i, i + 1);
         }
       }
     }

@@ -1,6 +1,11 @@
 package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
 
-
+/**
+ * User object has the position and car type.
+ * 
+ * @author wenmin518
+ *
+ */
 public class User implements Subject {
 
   private Geoloc position;
@@ -37,10 +42,9 @@ public class User implements Subject {
   }
 
   /**
-   * changes the location of observer.
+   * @param referring the location that subject is changing to.
    */
   public void notifyObs(Geoloc loc) {
-    // TODO Auto-generated method stub
     obs.updateUserPos(loc);
   }
 

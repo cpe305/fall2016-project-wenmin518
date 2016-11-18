@@ -1,17 +1,21 @@
 package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import org.json.simple.parser.ParseException;
 
+/**
+ * this class reads in the json file and do the demo.
+ * @author wenmin518
+ *
+ */
 public class DemoDriver {
   private static ParkingPath parkingPath;
   private static ParkingStrJson structJson;
   private static Scanner scan;
 
+  private DemoDriver(){}
   /**
    * The main method of driver.
    */
@@ -45,7 +49,7 @@ public class DemoDriver {
           parkingPath.getRows(), parkingPath.getCols(), parkingPath.getNumVer(),
           structJson.getStructArr());
       System.out.println();
-      cal.printInfo(userLoc, structJson.getStructArr());
+      cal.printInfo(userLoc);
 
     }
     System.out.println("Press Y if you want to continue");

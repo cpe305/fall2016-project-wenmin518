@@ -3,7 +3,12 @@ package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
 import java.util.ArrayList;
 
 
-
+/**
+ * Parking structure object contains the location and parking spots.
+ * 
+ * @author wenmin518
+ *
+ */
 public class ParkingStructure {
   private ArrayList<ParkingSpot> spotArr;
   private Geoloc pos;
@@ -58,6 +63,7 @@ public class ParkingStructure {
 
   /**
    * gets the position of parking structure.
+   * 
    * @return the position of parking structure.
    */
   public Geoloc getPosition() {
@@ -97,16 +103,15 @@ public class ParkingStructure {
   public int getSmallestTypeNum(int type) {
     if (getNumavailable() >= 1) {
       for (int i = 0; i < spotArr.size(); i++) {
-        if (spotArr.get(i).isAvailable()) {
-          if (spotArr.get(i).getType() == type) {
-            return i;
-          }
+        if (spotArr.get(i).isAvailable() && (spotArr.get(i).getType() == type)) {
+          return i;
         }
       }
     }
     return -1;
+
   }
-  
+
   @Override
   public boolean equals(Object obj) {
     // Supply details as in the assignment description
