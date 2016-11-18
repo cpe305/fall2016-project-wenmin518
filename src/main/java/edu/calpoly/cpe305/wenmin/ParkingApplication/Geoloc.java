@@ -40,7 +40,7 @@ public class Geoloc {
       return false;
     }
     
-    if (!(obj instanceof LinkedList)) {
+    if (!(obj instanceof Geoloc)) {
       return false;
     }
     
