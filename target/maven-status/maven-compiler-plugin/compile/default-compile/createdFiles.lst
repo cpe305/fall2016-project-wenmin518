@@ -4,7 +4,7 @@ main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/Geoloc.class
 main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/LinkedList$Node.class
 main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/LinkedList.class
 main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/FirstDriver.class
-main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/LinkedList$itr.class
+main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/LinkedList$iter.class
 main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/Subject.class
 main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/Calculation.class
 main/java/edu/calpoly/cpe305/wenmin/ParkingApplication/DemoDriver.class

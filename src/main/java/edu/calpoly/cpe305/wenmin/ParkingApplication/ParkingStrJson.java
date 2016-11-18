@@ -54,12 +54,12 @@ public class ParkingStrJson {
          * for java
          */
 
-        // boolean availability = (boolean) parkingSpot.get("availability");
+//         boolean availability = (boolean) parkingSpot.get("availability");
         String availability = (String) parkingSpot.get("availability");
 
-        // System.out.println(availability);
+//         System.out.println(availability);
         ParkingSpot parkSpot =
-            // new ParkingSpot(num, type, availability);
+//             new ParkingSpot(num, type, availability);
             new ParkingSpot(num, type, Boolean.parseBoolean(availability));
         ps.addtoSpotArr(parkSpot);
       }
