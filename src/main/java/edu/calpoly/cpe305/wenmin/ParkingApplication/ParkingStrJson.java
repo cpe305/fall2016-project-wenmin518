@@ -50,7 +50,7 @@ public class ParkingStrJson {
          */
         
 //        boolean availability = (boolean) parkingSpot.get("availability");
-        String availability = (String) parkingSpot,get("availability");
+        String availability = (String) parkingSpot.get("availability");
 
         //        System.out.println(availability);
         ParkingSpot parkSpot =
