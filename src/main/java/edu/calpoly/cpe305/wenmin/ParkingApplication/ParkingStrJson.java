@@ -49,13 +49,13 @@ public class ParkingStrJson {
          * There is one problem here if I were to change to String it will work for json, but not for java
          */
         
-        boolean availability = (boolean) parkingSpot.get("availability");
-//        String availability = (String) parkingSpot.get("availability");
+//        boolean availability = (boolean) parkingSpot.get("availability");
+        String availability = (String) parkingSpot.get("availability");
 
         //        System.out.println(availability);
         ParkingSpot parkSpot =
-            new ParkingSpot(num, type, availability);
-//             new ParkingSpot(num, type, Boolean.parseBoolean(availability));
+//            new ParkingSpot(num, type, availability);
+             new ParkingSpot(num, type, Boolean.parseBoolean(availability));
         ps.addtoSpotArr(parkSpot);
       }
       structArr.add(ps);
