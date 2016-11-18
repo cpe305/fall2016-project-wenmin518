@@ -1,0 +1,21 @@
+{
+	"Structure List": [
+		{
+			"Structure Number" : "0"
+			"x" : "15",
+			"y" : "18",
+			"Parking Spot List": [
+				{
+					"Parking Number": "0",
+					"Type": "3",
+					"availability": false
+				}
+				{
+					"Parking Number": "1",
+					"Type": "4",
+					"availability": false
+				}
+			]
+		}
+	]
+}

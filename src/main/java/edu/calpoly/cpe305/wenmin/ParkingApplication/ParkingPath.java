@@ -43,7 +43,7 @@ public class ParkingPath {
    * @param colNum referring to the col of adj matrix.
    * @param value referring to the value to be changed.
    */
-  public void setAdj(int rowNum, int colNum, int value) {
+  public void setAdjAt(int rowNum, int colNum, int value) {
     adj[rowNum][colNum] = value;
   }
 

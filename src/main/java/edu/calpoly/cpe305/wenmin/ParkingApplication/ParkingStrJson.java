@@ -36,7 +36,7 @@ public class ParkingStrJson {
       int strNum = Integer.valueOf((String) structObj.get("Structure Number"));
       int xloc = Integer.valueOf((String) structObj.get("x"));
       int yloc = Integer.valueOf((String) structObj.get("y"));
-
+      
       ParkingStructure ps =
           new ParkingStructure(new Geoloc(xloc, yloc));
       
@@ -45,11 +45,17 @@ public class ParkingStrJson {
         JSONObject parkingSpot = (JSONObject) o;
         int num = (int) Integer.valueOf((String) parkingSpot.get("Parking Number"));
         int type = (int) Integer.valueOf((String) parkingSpot.get("Type"));
-        String availability = (String) parkingSpot.get("availability");
+        /**
+         * There is one problem here if I were to change to String it will work for json, but not for java
+         */
+        
+        boolean availability = (boolean) parkingSpot.get("availability");
+//        String availability = (String)parkingSpot,get("availability");
 
+        //        System.out.println(availability);
         ParkingSpot parkSpot =
-            new ParkingSpot(num, type, Boolean.parseBoolean(availability));
-
+            new ParkingSpot(num, type, availability);
+        //new ParkingSpot(num, type, Boolean.parseBoolean(availability));
         ps.addtoSpotArr(parkSpot);
       }
       structArr.add(ps);
