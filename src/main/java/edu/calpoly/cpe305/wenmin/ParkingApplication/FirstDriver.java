@@ -166,7 +166,7 @@ public class FirstDriver {
           System.out.println("Your input is out of range");
         } else {
           User user = new User(userLoc, typeInput);
-          Calculation cal = new Calculation(adj, visited, user, rows, cols, rows * cols, structArr);
+          Calculation cal = new Calculation(adj, visited, user.getPosition(), user.getCarType(), rows, cols, rows * cols, structArr);
           System.out.println();
           cal.printInfo(userLoc);
         }

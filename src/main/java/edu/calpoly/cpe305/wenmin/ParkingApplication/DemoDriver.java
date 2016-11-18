@@ -7,6 +7,7 @@ import org.json.simple.parser.ParseException;
 
 /**
  * this class reads in the json file and do the demo.
+ * 
  * @author wenmin518
  *
  */
@@ -15,7 +16,8 @@ public class DemoDriver {
   private static ParkingStrJson structJson;
   private static Scanner scan;
 
-  private DemoDriver(){}
+  private DemoDriver() {}
+
   /**
    * The main method of driver.
    */
@@ -34,6 +36,7 @@ public class DemoDriver {
         xval = scan.nextInt();
         yval = scan.nextInt();
       }
+
       Geoloc userLoc = new Geoloc(xval, yval);
       System.out.println("You entered (" + xval + ", " + yval + ")");
       System.out.println("Please Enter the type of parking spot that you are looking for:");
@@ -45,9 +48,9 @@ public class DemoDriver {
         typeInput = scan.nextInt();
       }
       User user = new User(userLoc, typeInput);
-      Calculation cal = new Calculation(parkingPath.getAdj(), parkingPath.getVisited(), user,
-          parkingPath.getRows(), parkingPath.getCols(), parkingPath.getNumVer(),
-          structJson.getStructArr());
+      Calculation cal = new Calculation(parkingPath.getAdj(), parkingPath.getVisited(),
+          user.getPosition(), user.getCarType(), parkingPath.getRows(), parkingPath.getCols(),
+          parkingPath.getNumVer(), structJson.getStructArr());
       System.out.println();
       cal.printInfo(userLoc);
 

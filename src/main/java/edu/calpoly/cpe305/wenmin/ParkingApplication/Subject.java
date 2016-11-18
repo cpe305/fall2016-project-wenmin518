@@ -11,5 +11,6 @@ public interface Subject {
    * notify observer to change location
    * @param loc referrin to the location to be changed.
    */
-  public void notifyObs(Geoloc loc);
+  public void notifyObsLoc(Geoloc loc);
+  public void notifyObsType(int type);
 }

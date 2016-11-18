@@ -10,7 +10,8 @@ public class User implements Subject {
 
   private Geoloc position;
   private int carType;
-  private Observer obs;
+  private Calculation obs;
+  private boolean hasObs;
 
   /**
    * Constructor
@@ -21,6 +22,8 @@ public class User implements Subject {
   public User(Geoloc position, int carType) {
     this.position = position;
     this.carType = carType;
+    obs = null;
+    hasObs = false;
   }
 
   /**
@@ -44,8 +47,37 @@ public class User implements Subject {
   /**
    * @param referring the location that subject is changing to.
    */
-  public void notifyObs(Geoloc loc) {
+  public void notifyObsLoc(Geoloc loc) {
     obs.updateUserPos(loc);
+  }
+  
+  public void notifyObsType(int type) {
+    obs.updateUserType(type);
+  }
+
+  /**
+   * Register the calculation observer, but only register once
+   * 
+   * @param cal referring to the calculation observer to be added if there is no calculation.
+   *        observer in the user, then add the calculation observer. if there is a calculation
+   *        observer already, then do not do anything.
+   */
+  public void registerObs(Calculation cal) {
+    if (!hasObs) {
+      obs = cal;
+      hasObs = true;
+    }
+  }
+
+  /**
+   * To unregister the calculation observer. If there is observer to be removed, then remove the
+   * observer else do not do anything.
+   */
+  public void unregisterObs() {
+    if (hasObs) {
+      obs = null;
+      hasObs = false;
+    }
   }
 
   /**
@@ -78,4 +110,5 @@ public class User implements Subject {
     }
     return true;
   }
+
 }
