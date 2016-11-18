@@ -7,13 +7,13 @@ import java.util.Scanner;
 
 public class FirstDriver {
 
-  public static int[][] adj;
-  public static int rows;
-  public static int cols;
-  public static int numVertices;
-  public static boolean[] visited;
-  public static int[] vertices;
-  public static ArrayList<ParkingStructure> structArr;
+  private static int[][] adj;
+  private static int rows;
+  private static int cols;
+  private static int numVertices;
+  private static boolean[] visited;
+  private static int[] vertices;
+  private static ArrayList<ParkingStructure> structArr;
 
   /**
    * add the connection between two index.
