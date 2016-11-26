@@ -52,7 +52,7 @@ public class DemoDriver {
           parkingPath.getRows(), parkingPath.getCols(), parkingPath.getNumVer(),
           structJson.getStructArr());
       System.out.println();
-      cal.printInfo(userLoc);
+      System.out.print(cal.printInfo(userLoc));
 
     }
     System.out.println("Press Y if you want to continue");
@@ -71,7 +71,7 @@ public class DemoDriver {
     parkingPath = new ParkingPath();
     parkingPath.setadjFromFile("test.txt");
     structJson = new ParkingStrJson();
-    structJson.setParkLocFromFile("test1.json");
+    structJson.setParkLocFromFile("JsonTest2.json");
     doFunctions();
   }
 }

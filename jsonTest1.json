@@ -8,12 +8,12 @@
 				{
 					"Parking Number": "0",
 					"Type": "3",
-					"availability": false
+					"availability": "0"
 				}
 				{
 					"Parking Number": "1",
 					"Type": "4",
-					"availability": false
+					"availability": "0"
 				}
 			]
 		}

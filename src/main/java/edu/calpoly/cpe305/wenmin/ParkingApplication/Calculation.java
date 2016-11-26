@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * @author wenmin518
  *
  */
-public class Calculation implements Observer{
+public class Calculation implements Observer {
 
   private int[][] adj;
   private boolean[] visited;
@@ -16,6 +16,7 @@ public class Calculation implements Observer{
   private int row;
   private int col;
   private int numVertices;
+  private int[] previous;
   private ArrayList<ParkingStructure> parkingLoc;
 
   /**
@@ -38,6 +39,7 @@ public class Calculation implements Observer{
     this.col = col;
     this.numVertices = numVertices;
     this.parkingLoc = parkingLoc;
+    previous = new int[numVertices];
   }
 
 
@@ -202,6 +204,43 @@ public class Calculation implements Observer{
     return path[stop];
   }
 
+//  public int fewestEdgePath(int start, int stop) {
+//    for (int i = 0; i < numVertices; i++) {
+//      previous[i] = -1;
+//      visited[i] = false;
+//    }
+//
+//    LinkedList l = new LinkedList();
+//    int p;
+//    int pathLength = 0;
+//    l.addLast(start);
+//    visited[start] = true;
+//
+//    while (!(l.isEmpty())) {
+//      p = (int) l.removeFirst();
+//
+//      if (p == stop) {
+//        // Keep track of the previous Vertex
+//        while (previous[p] != -1) {
+//          p = previous[p];
+//          pathLength++;
+//        }
+//        return pathLength;
+//      }
+//
+//      for (int i = 0; i < numVertices; i++) {
+//        if (adj[p][i] != 0 && visited[i] != true) {
+//          l.addLast(i);
+//          previous[i] = p;
+//          visited[i] = true;
+//        }
+//      }
+//    }
+////    System.out.println("Path : " + pathLength);
+//    return pathLength;
+//    // throw new Error("No such path exists");
+//  }
+
   /**
    * This method calculate the distance between two points.
    * 
@@ -232,8 +271,7 @@ public class Calculation implements Observer{
         if (dis > newDis) {
           dis = newDis;
           value = i;
-        }
-        else if (dis == -1.0) {
+        } else if (dis == -1.0) {
           dis = newDis;
           value = i;
         }
@@ -248,16 +286,18 @@ public class Calculation implements Observer{
    * @param userLoc referring to the position of user.
    * @param parkLoc referring to the parking structure locations.
    */
-  public void printInfo(Geoloc userLoc) {
+  public String printInfo(Geoloc userLoc) {
+    String str = "\n";
     int parkingStrNum = nearbyParkingStr(userLoc, parkingLoc);
     String car = null;
     if (parkingStrNum != -1) {
       int start = locToint(userLoc);
-      double distance = fewestEdgePath(start, parkingStrNum);
+//      System.out.println("start : " + start + " ");
+//      System.out.println("paring str num " + parkingStrNum);
+      double distance =
+          fewestEdgePath(start, locToint(parkingLoc.get(parkingStrNum).getPosition()));
       distance *= 0.027;
-      System.out.println("The nearest ParkingStructre is " + (parkingStrNum + 1));
-      System.out.println("Parking Spot #" + (parkingLoc.get(parkingStrNum).getSmallestSpotNum() + 1)
-          + " is the first available parking spot");
+      str += "The nearest ParkingStructre is P" + (parkingStrNum + 1) + "\n";
       if (user.getCarType() == 1) {
         car = "Compact";
       }
@@ -271,21 +311,21 @@ public class Calculation implements Observer{
         car = "Normal";
       }
       if (parkingLoc.get(parkingStrNum).getSmallestTypeNum(user.getCarType()) == -1) {
-        System.out.println(
-            car + " car that you are looking for is not available in parking " + parkingStrNum);
+        str += car + " car that you are looking for is not available in parking " + parkingStrNum
+            + "\n";
       } else {
-        System.out.println("Parking Spot #"
+        str += "Parking Spot #"
             + (parkingLoc.get(parkingStrNum).getSmallestTypeNum(user.getCarType()) + 1) + " is "
-            + car + " that you are looking for");
+            + car + " Parking Spot you are looking for\n";
       }
-      System.out.printf("The parking spot is about %.1f miles away\n", distance);
-      System.out.println("It is gonna take about " + ((int) (distance / 10 * 60)) + " minutes");
+      str += "The parking spot is about " + distance + "miles away\n";
+      str += "It is gonna take about " + ((double) (distance / 10 * 60)) + " minutes";
     } else {
-      System.out.println("Sorry, every parking spot is taken, try tomorrow, ---");
+      str += "Sorry, every parking spot is taken, try tomorrow, ---\n";
     }
-
+    return str;
   }
-  
+
   @Override
   public boolean equals(Object obj) {
     if (obj == null) {
@@ -294,7 +334,7 @@ public class Calculation implements Observer{
     if (!(obj instanceof Calculation)) {
       return false;
     }
-    
+
     Calculation cal = (Calculation) obj;
     for (int j = 0; j < row; j++) {
       for (int k = 0; k < col; k++) {
@@ -303,7 +343,7 @@ public class Calculation implements Observer{
         }
       }
     }
-    
+
     if (col != cal.getCol()) {
       return false;
     }
@@ -335,7 +375,7 @@ public class Calculation implements Observer{
   @Override
   public void updateUserLoc(Geoloc loc) {
     user.setPosition(loc);
-    
+
   }
 
   @Override
