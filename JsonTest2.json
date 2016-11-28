@@ -1,0 +1,4060 @@
+{
+	"Structure List": [
+		{
+			"Structure Number" : "0"
+			"x" : "15",
+			"y" : "18",
+			"Parking Spot List": [
+				{
+					"Parking Number": "0",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "1",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "2",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "3",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "4",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "5",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "6",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "7",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "8",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "9",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "10",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "11",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "12",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "13",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "14",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "15",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "16",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "17",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "18",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "19",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "20",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "21",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "22",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "23",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "24",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "25",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "26",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "27",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "28",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "29",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "30",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "31",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "32",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "33",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "34",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "35",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "36",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "37",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "38",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "39",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "40",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "41",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "42",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "43",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "44",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "45",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "46",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "47",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "48",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "49",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "50",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "51",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "52",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "53",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "54",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "55",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "56",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "57",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "58",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "59",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "60",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "61",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "62",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "63",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "64",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "65",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "66",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "67",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "68",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "69",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "70",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "71",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "72",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "73",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "74",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "75",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "76",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "77",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "78",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "79",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "80",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "81",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "82",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "83",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "84",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "85",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "86",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "87",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "88",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "89",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "90",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "91",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "92",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "93",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "94",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "95",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "96",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "97",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "98",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "99",
+					"Type": "3",
+					"availability":"0"
+				}
+			]
+		}
+		{
+			"Structure Number" : "1"
+			"x" : "15",
+			"y" : "10",
+			"Parking Spot List": [
+				{
+					"Parking Number": "0",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "1",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "2",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "3",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "4",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "5",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "6",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "7",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "8",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "9",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "10",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "11",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "12",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "13",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "14",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "15",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "16",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "17",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "18",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "19",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "20",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "21",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "22",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "23",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "24",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "25",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "26",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "27",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "28",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "29",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "30",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "31",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "32",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "33",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "34",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "35",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "36",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "37",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "38",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "39",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "40",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "41",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "42",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "43",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "44",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "45",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "46",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "47",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "48",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "49",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "50",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "51",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "52",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "53",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "54",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "55",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "56",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "57",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "58",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "59",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "60",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "61",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "62",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "63",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "64",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "65",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "66",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "67",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "68",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "69",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "70",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "71",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "72",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "73",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "74",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "75",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "76",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "77",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "78",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "79",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "80",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "81",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "82",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "83",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "84",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "85",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "86",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "87",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "88",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "89",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "90",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "91",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "92",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "93",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "94",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "95",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "96",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "97",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "98",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "99",
+					"Type": "1",
+					"availability":"0"
+				}
+			]
+		}
+		{
+			"Structure Number" : "2"
+			"x" : "22",
+			"y" : "4",
+			"Parking Spot List": [
+				{
+					"Parking Number": "0",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "1",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "2",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "3",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "4",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "5",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "6",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "7",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "8",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "9",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "10",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "11",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "12",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "13",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "14",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "15",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "16",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "17",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "18",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "19",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "20",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "21",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "22",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "23",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "24",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "25",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "26",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "27",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "28",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "29",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "30",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "31",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "32",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "33",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "34",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "35",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "36",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "37",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "38",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "39",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "40",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "41",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "42",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "43",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "44",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "45",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "46",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "47",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "48",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "49",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "50",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "51",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "52",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "53",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "54",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "55",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "56",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "57",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "58",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "59",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "60",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "61",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "62",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "63",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "64",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "65",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "66",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "67",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "68",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "69",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "70",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "71",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "72",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "73",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "74",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "75",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "76",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "77",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "78",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "79",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "80",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "81",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "82",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "83",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "84",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "85",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "86",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "87",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "88",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "89",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "90",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "91",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "92",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "93",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "94",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "95",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "96",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "97",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "98",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "99",
+					"Type": "3",
+					"availability":"0"
+				}
+			]
+		}
+		{
+			"Structure Number" : "3"
+			"x" : "32",
+			"y" : "1",
+			"Parking Spot List": [
+				{
+					"Parking Number": "0",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "1",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "2",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "3",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "4",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "5",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "6",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "7",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "8",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "9",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "10",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "11",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "12",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "13",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "14",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "15",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "16",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "17",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "18",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "19",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "20",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "21",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "22",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "23",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "24",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "25",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "26",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "27",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "28",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "29",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "30",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "31",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "32",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "33",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "34",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "35",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "36",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "37",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "38",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "39",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "40",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "41",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "42",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "43",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "44",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "45",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "46",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "47",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "48",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "49",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "50",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "51",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "52",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "53",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "54",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "55",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "56",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "57",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "58",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "59",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "60",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "61",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "62",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "63",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "64",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "65",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "66",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "67",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "68",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "69",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "70",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "71",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "72",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "73",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "74",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "75",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "76",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "77",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "78",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "79",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "80",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "81",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "82",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "83",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "84",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "85",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "86",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "87",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "88",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "89",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "90",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "91",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "92",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "93",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "94",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "95",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "96",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "97",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "98",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "99",
+					"Type": "2",
+					"availability":"0"
+				}
+			]
+		}
+		{
+			"Structure Number" : "4"
+			"x" : "31",
+			"y" : "15",
+			"Parking Spot List": [
+				{
+					"Parking Number": "0",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "1",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "2",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "3",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "4",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "5",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "6",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "7",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "8",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "9",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "10",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "11",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "12",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "13",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "14",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "15",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "16",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "17",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "18",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "19",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "20",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "21",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "22",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "23",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "24",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "25",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "26",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "27",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "28",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "29",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "30",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "31",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "32",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "33",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "34",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "35",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "36",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "37",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "38",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "39",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "40",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "41",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "42",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "43",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "44",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "45",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "46",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "47",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "48",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "49",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "50",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "51",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "52",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "53",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "54",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "55",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "56",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "57",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "58",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "59",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "60",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "61",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "62",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "63",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "64",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "65",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "66",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "67",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "68",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "69",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "70",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "71",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "72",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "73",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "74",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "75",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "76",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "77",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "78",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "79",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "80",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "81",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "82",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "83",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "84",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "85",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "86",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "87",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "88",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "89",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "90",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "91",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "92",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "93",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "94",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "95",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "96",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "97",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "98",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "99",
+					"Type": "1",
+					"availability":"1"
+				}
+			]
+		}
+		{
+			"Structure Number" : "5"
+			"x" : "49",
+			"y" : "22",
+			"Parking Spot List": [
+				{
+					"Parking Number": "0",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "1",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "2",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "3",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "4",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "5",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "6",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "7",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "8",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "9",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "10",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "11",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "12",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "13",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "14",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "15",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "16",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "17",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "18",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "19",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "20",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "21",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "22",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "23",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "24",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "25",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "26",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "27",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "28",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "29",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "30",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "31",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "32",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "33",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "34",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "35",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "36",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "37",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "38",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "39",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "40",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "41",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "42",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "43",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "44",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "45",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "46",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "47",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "48",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "49",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "50",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "51",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "52",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "53",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "54",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "55",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "56",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "57",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "58",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "59",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "60",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "61",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "62",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "63",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "64",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "65",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "66",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "67",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "68",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "69",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "70",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "71",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "72",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "73",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "74",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "75",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "76",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "77",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "78",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "79",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "80",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "81",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "82",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "83",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "84",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "85",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "86",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "87",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "88",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "89",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "90",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "91",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "92",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "93",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "94",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "95",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "96",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "97",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "98",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "99",
+					"Type": "3",
+					"availability":"0"
+				}
+			]
+		}
+		{
+			"Structure Number" : "6"
+			"x" : "46",
+			"y" : "46",
+			"Parking Spot List": [
+				{
+					"Parking Number": "0",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "1",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "2",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "3",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "4",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "5",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "6",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "7",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "8",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "9",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "10",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "11",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "12",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "13",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "14",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "15",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "16",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "17",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "18",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "19",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "20",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "21",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "22",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "23",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "24",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "25",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "26",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "27",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "28",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "29",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "30",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "31",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "32",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "33",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "34",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "35",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "36",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "37",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "38",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "39",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "40",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "41",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "42",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "43",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "44",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "45",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "46",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "47",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "48",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "49",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "50",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "51",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "52",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "53",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "54",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "55",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "56",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "57",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "58",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "59",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "60",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "61",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "62",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "63",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "64",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "65",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "66",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "67",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "68",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "69",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "70",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "71",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "72",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "73",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "74",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "75",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "76",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "77",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "78",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "79",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "80",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "81",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "82",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "83",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "84",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "85",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "86",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "87",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "88",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "89",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "90",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "91",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "92",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "93",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "94",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "95",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "96",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "97",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "98",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "99",
+					"Type": "4",
+					"availability":"0"
+				}
+			]
+		}
+		{
+			"Structure Number" : "7"
+			"x": "42",
+			"y": "55",
+			"Parking Spot List": [
+				{
+					"Parking Number": "0",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "1",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "2",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "3",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "4",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "5",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "6",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "7",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "8",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "9",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "10",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "11",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "12",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "13",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "14",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "15",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "16",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "17",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "18",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "19",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "20",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "21",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "22",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "23",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "24",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "25",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "26",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "27",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "28",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "29",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "30",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "31",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "32",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "33",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "34",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "35",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "36",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "37",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "38",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "39",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "40",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "41",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "42",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "43",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "44",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "45",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "46",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "47",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "48",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "49",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "50",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "51",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "52",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "53",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "54",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "55",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "56",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "57",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "58",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "59",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "60",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "61",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "62",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "63",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "64",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "65",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "66",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "67",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "68",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "69",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "70",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "71",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "72",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "73",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "74",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "75",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "76",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "77",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "78",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "79",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "80",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "81",
+					"Type": "3",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "82",
+					"Type": "4",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "83",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "84",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "85",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "86",
+					"Type": "1",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "87",
+					"Type": "3",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "88",
+					"Type": "4",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "89",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "90",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "91",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "92",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "93",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "94",
+					"Type": "2",
+					"availability":"1"
+				}
+				{
+					"Parking Number": "95",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "96",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "97",
+					"Type": "2",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "98",
+					"Type": "1",
+					"availability":"0"
+				}
+				{
+					"Parking Number": "99",
+					"Type": "2",
+					"availability":"1"
+				}
+			]
+		}
+	]
+}

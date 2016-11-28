@@ -1,10 +1,7 @@
 package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
 
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Scanner;
-
 import org.json.simple.parser.ParseException;
 
 import javafx.application.Application;
@@ -182,7 +179,7 @@ public class FXDriver extends Application {
      */
     double vboxspace = 30;
     VBox vbox = new VBox(vboxspace);
-    for (int i = 0; i < 7; i++) {
+    for (int i = 0; i < 8; i++) {
       vbox.setPadding(new Insets(labelheight + numtitleheight, tabwidth + numtitlewidth,
           labelheight + numtitleheight, tabwidth + numtitlewidth));
       String str = "Parking Structure " + (i + 1) + ": ";
@@ -260,6 +257,21 @@ public class FXDriver extends Application {
         } else {
           if (ta.getText() == null || ta.getText().isEmpty()) {
             cartype = 4;
+          } else if (ta.getText().equalsIgnoreCase("Normal")) {
+            cartype = 4;
+          } else if (ta.getText().equalsIgnoreCase("Handicap")) {
+            cartype = 3;
+          } else if (ta.getText().equalsIgnoreCase("Compact")) {
+            cartype = 2;
+          } else if (ta.getText().equalsIgnoreCase("Electric")) {
+            cartype = 1;
+          } else if (isInteger((String) ta.getText())) {
+            cartype = (int) Integer.valueOf((String) ta.getText());
+          }
+          if (cartype < 1 || cartype > 4) {
+            buttombox.getChildren().clear();
+            buttombox.getChildren().add(new Label("Please Enter valid Parking Type"));
+          } else {
             user = new User(userLoc, cartype);
             System.out.println(user.getCarType() + " " + user.getPosition().getX());
             Calculation cal = new Calculation(parkingPath.getAdj(), parkingPath.getVisited(), user,
@@ -274,49 +286,21 @@ public class FXDriver extends Application {
               info.getChildren().add(printlabel);
             }
             buttombox.getChildren().add(info);
-          } else {
-            if (ta.getText().equalsIgnoreCase("Normal")) {
-              cartype = 4;
-
-            } else if (ta.getText().equalsIgnoreCase("Handicap")) {
-              cartype = 3;
-
-            } else if (ta.getText().equalsIgnoreCase("Compact")) {
-              cartype = 2;
-            } else if (ta.getText().equalsIgnoreCase("Electric")) {
-              cartype = 1;
-            } else if (isInteger((String) ta.getText())) {
-              cartype = (int) Integer.valueOf((String) ta.getText());
-            }
-            if (cartype < 1 || cartype > 4) {
-              buttombox.getChildren().clear();
-              buttombox.getChildren().add(new Label("Please Enter valid Parking Type"));
-            } else {
-              user = new User(userLoc, cartype);
-              System.out.println(user.getCarType() + " " + user.getPosition().getX());
-              Calculation cal = new Calculation(parkingPath.getAdj(), parkingPath.getVisited(),
-                  user, parkingPath.getRows(), parkingPath.getCols(), parkingPath.getNumVer(),
-                  structJson.getStructArr());
-              String[] printinfo = cal.printInfo(userLoc).split("\n");
-              buttombox.getChildren().clear();
-              VBox info = new VBox();
-              for (String content : printinfo) {
-                Label printlabel = new Label(content);
-                info.setAlignment(Pos.CENTER);
-                info.getChildren().add(printlabel);
-              }
-              buttombox.getChildren().add(info);
-            }
+//            Circle circle = new Circle();
+//            circle.setRadius(20);
+//            circle.setFill(Color.TRANSPARENT);
+//            circle.setStroke(Color.BLACK);
+//            root.getChildren().add(circle);
+//            stage.show();
           }
-          cartype = -1;
-          userLoc = new Geoloc(-1, -1);
         }
-
+        cartype = -1;
       }
 
     });
 
     stage.show();
+
   }
 
   /**
@@ -344,7 +328,7 @@ public class FXDriver extends Application {
     parkingPath = new ParkingPath();
     parkingPath.setadjFromFile("test.txt");
     structJson = new ParkingStrJson();
-    structJson.setParkLocFromFile("JsonTest2.json");
+    structJson.setParkLocFromFile("JsonFull.json");
 
     Application.launch(args);
   }

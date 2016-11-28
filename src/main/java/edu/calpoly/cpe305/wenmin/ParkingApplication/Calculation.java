@@ -1,5 +1,6 @@
 package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 /**
@@ -204,42 +205,6 @@ public class Calculation implements Observer {
     return path[stop];
   }
 
-//  public int fewestEdgePath(int start, int stop) {
-//    for (int i = 0; i < numVertices; i++) {
-//      previous[i] = -1;
-//      visited[i] = false;
-//    }
-//
-//    LinkedList l = new LinkedList();
-//    int p;
-//    int pathLength = 0;
-//    l.addLast(start);
-//    visited[start] = true;
-//
-//    while (!(l.isEmpty())) {
-//      p = (int) l.removeFirst();
-//
-//      if (p == stop) {
-//        // Keep track of the previous Vertex
-//        while (previous[p] != -1) {
-//          p = previous[p];
-//          pathLength++;
-//        }
-//        return pathLength;
-//      }
-//
-//      for (int i = 0; i < numVertices; i++) {
-//        if (adj[p][i] != 0 && visited[i] != true) {
-//          l.addLast(i);
-//          previous[i] = p;
-//          visited[i] = true;
-//        }
-//      }
-//    }
-////    System.out.println("Path : " + pathLength);
-//    return pathLength;
-//    // throw new Error("No such path exists");
-//  }
 
   /**
    * This method calculate the distance between two points.
@@ -318,8 +283,11 @@ public class Calculation implements Observer {
             + (parkingLoc.get(parkingStrNum).getSmallestTypeNum(user.getCarType()) + 1) + " is "
             + car + " Parking Spot you are looking for\n";
       }
-      str += "The parking spot is about " + distance + "miles away\n";
-      str += "It is gonna take about " + ((double) (distance / 10 * 60)) + " minutes";
+
+      String dis = String.format("%.1f", distance);
+      str += "The parking spot is about " + dis + " miles away\n";
+      String time = String.format("%.1f", distance / 15 * 60);
+      str += "It is gonna take about " + time + " minutes";
     } else {
       str += "Sorry, every parking spot is taken, try tomorrow, ---\n";
     }
