@@ -1,8 +1,4 @@
-package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
-
-
-import java.io.IOException;
-import org.json.simple.parser.ParseException;
+package main.java.edu.calpoly.cpe305.wenmin.parkingapplication;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -29,13 +25,18 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 
+import org.json.simple.parser.ParseException;
+
+import java.io.IOException;
+
+
 /**
  * User Grphic Interface.
  * 
  * @author wenmin518
  *
  */
-public class FXDriver extends Application {
+public class Fxdriver extends Application {
   private static ParkingPath parkingPath;
   private static ParkingStrJson structJson;
   private static Geoloc userLoc = new Geoloc(-1, -1);
@@ -286,12 +287,7 @@ public class FXDriver extends Application {
               info.getChildren().add(printlabel);
             }
             buttombox.getChildren().add(info);
-//            Circle circle = new Circle();
-//            circle.setRadius(20);
-//            circle.setFill(Color.TRANSPARENT);
-//            circle.setStroke(Color.BLACK);
-//            root.getChildren().add(circle);
-//            stage.show();
+
           }
         }
         cartype = -1;
@@ -328,7 +324,7 @@ public class FXDriver extends Application {
     parkingPath = new ParkingPath();
     parkingPath.setadjFromFile("test.txt");
     structJson = new ParkingStrJson();
-    structJson.setParkLocFromFile("JsonFull.json");
+    structJson.setParkLocFromFile("JsonTest2.json");
 
     Application.launch(args);
   }

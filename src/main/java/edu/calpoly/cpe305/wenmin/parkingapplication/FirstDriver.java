@@ -1,4 +1,4 @@
-package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
+package main.java.edu.calpoly.cpe305.wenmin.parkingapplication;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -20,6 +20,7 @@ public class FirstDriver {
   private static boolean[] visited;
   private static int[] vertices;
   private static ArrayList<ParkingStructure> structArr;
+  private static Scanner scan;
 
   private FirstDriver() {}
 
@@ -145,10 +146,9 @@ public class FirstDriver {
    * Do the driver function.
    */
   public static void doFunctions() {
-    Scanner scan = new Scanner(System.in);
-    String permission;
+    scan = new Scanner(System.in);
     System.out.println("Welcome to POLYPARKTRACK, Press Y to continue");
-    while (scan.hasNext() && (permission = scan.nextLine()).equalsIgnoreCase("y")) {
+    while (scan.hasNext() && (scan.nextLine()).equalsIgnoreCase("y")) {
       System.out.println("Please Enter your current location as ");
       System.out.println("as x y");
       int xval = scan.nextInt();
@@ -172,7 +172,6 @@ public class FirstDriver {
         }
       }
       System.out.println("Press Y if you want to continue");
-      permission = scan.nextLine();
 
     }
   }

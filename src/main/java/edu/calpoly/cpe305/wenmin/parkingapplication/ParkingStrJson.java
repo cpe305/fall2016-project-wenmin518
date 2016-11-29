@@ -1,13 +1,15 @@
-package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
-
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
+package main.java.edu.calpoly.cpe305.wenmin.parkingapplication;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+
 
 /**
  * Referring to the parking structure array objects read from json file.
@@ -54,8 +56,7 @@ public class ParkingStrJson {
         if (avail == 1) {
           availability = true;
         }
-        ParkingSpot parkSpot =
-            new ParkingSpot(num, type, availability);
+        ParkingSpot parkSpot = new ParkingSpot(num, type, availability);
         ps.addtoSpotArr(parkSpot);
       }
       structArr.add(ps);

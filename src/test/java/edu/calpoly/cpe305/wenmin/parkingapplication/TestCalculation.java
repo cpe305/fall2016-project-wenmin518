@@ -1,13 +1,14 @@
-package test.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
+package test.java.edu.calpoly.cpe305.wenmin.parkingapplication;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import main.java.edu.calpoly.cpe305.wenmin.parkingapplication.Calculation;
+import main.java.edu.calpoly.cpe305.wenmin.parkingapplication.Geoloc;
+import main.java.edu.calpoly.cpe305.wenmin.parkingapplication.ParkingStructure;
+import main.java.edu.calpoly.cpe305.wenmin.parkingapplication.User;
 
 import org.junit.Test;
-
-import main.java.edu.calpoly.cpe305.wenmin.ParkingApplication.Calculation;
-import main.java.edu.calpoly.cpe305.wenmin.ParkingApplication.Geoloc;
-import main.java.edu.calpoly.cpe305.wenmin.ParkingApplication.ParkingStructure;
-import main.java.edu.calpoly.cpe305.wenmin.ParkingApplication.User;
 
 import java.util.ArrayList;
 

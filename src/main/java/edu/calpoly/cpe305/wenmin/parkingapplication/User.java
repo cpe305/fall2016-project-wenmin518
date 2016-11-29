@@ -1,4 +1,4 @@
-package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
+package main.java.edu.calpoly.cpe305.wenmin.parkingapplication;
 
 /**
  * User object has the position and car type.
@@ -45,12 +45,12 @@ public class User implements Subject {
   }
 
   /**
-   * @param referring the location that subject is changing to.
+   * @param loc referring the location that subject is changing to.
    */
   public void notifyObsLoc(Geoloc loc) {
     obs.updateUserLoc(loc);
   }
-  
+
   public void notifyObsType(int type) {
     obs.updateCartype(type);
   }

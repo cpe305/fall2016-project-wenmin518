@@ -1,11 +1,11 @@
-package test.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
+package test.java.edu.calpoly.cpe305.wenmin.parkingapplication;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
+import main.java.edu.calpoly.cpe305.wenmin.parkingapplication.LinkedList;
 import org.junit.Test;
-
-import main.java.edu.calpoly.cpe305.wenmin.ParkingApplication.LinkedList;
-
 
 
 public class TestLinkedList {
@@ -37,16 +37,15 @@ public class TestLinkedList {
     list.clear();
     listtwo.clear();
     assertEquals(listtwo, list);
-  }  
+  }
 
   @Test
   public void linekdListTest3() {
     LinkedList list = new LinkedList();
-    LinkedList listtwo = new LinkedList();
     list.addFirst(100);
     list.addLast(300);
     assertEquals(list.length(), 2);
     list.remove(100);
     assertEquals(list.length(), 1);
-  }  
+  }
 }

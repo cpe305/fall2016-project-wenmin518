@@ -1,9 +1,10 @@
-package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
+package main.java.edu.calpoly.cpe305.wenmin.parkingapplication;
+
+import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
 import java.util.Scanner;
 
-import org.json.simple.parser.ParseException;
 
 /**
  * this class reads in the json file and do the demo.
@@ -24,8 +25,7 @@ public class DemoDriver {
   public static void doFunctions() {
     scan = new Scanner(System.in);
     System.out.println("Welcome to POLYPARKTRACK, Press Y to continue");
-    String permission;
-    while (scan.hasNext() && (permission = scan.nextLine()).equalsIgnoreCase("y")) {
+    while (scan.hasNext() && (scan.nextLine()).equalsIgnoreCase("y")) {
       System.out.println("Please Enter your current location as ");
       System.out.println("as x y");
       int xval = scan.nextInt();
@@ -36,8 +36,7 @@ public class DemoDriver {
         xval = scan.nextInt();
         yval = scan.nextInt();
       }
-
-      Geoloc userLoc = new Geoloc(xval, yval);
+      
       System.out.println("You entered (" + xval + ", " + yval + ")");
       System.out.println("Please Enter the type of parking spot that you are looking for:");
       System.out.println("1: Compact. 2: Electric. 3: Handicap. 4: Normal");
@@ -47,6 +46,7 @@ public class DemoDriver {
         System.out.println("Please enter valid type input");
         typeInput = scan.nextInt();
       }
+      Geoloc userLoc = new Geoloc(xval, yval);
       User user = new User(userLoc, typeInput);
       Calculation cal = new Calculation(parkingPath.getAdj(), parkingPath.getVisited(), user,
           parkingPath.getRows(), parkingPath.getCols(), parkingPath.getNumVer(),
@@ -56,7 +56,6 @@ public class DemoDriver {
 
     }
     System.out.println("Press Y if you want to continue");
-    permission = scan.nextLine();
   }
 
 

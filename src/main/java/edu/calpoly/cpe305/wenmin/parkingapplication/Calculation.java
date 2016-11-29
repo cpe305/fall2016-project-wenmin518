@@ -1,6 +1,5 @@
-package main.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
+package main.java.edu.calpoly.cpe305.wenmin.parkingapplication;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 /**
@@ -17,7 +16,6 @@ public class Calculation implements Observer {
   private int row;
   private int col;
   private int numVertices;
-  private int[] previous;
   private ArrayList<ParkingStructure> parkingLoc;
 
   /**
@@ -40,7 +38,6 @@ public class Calculation implements Observer {
     this.col = col;
     this.numVertices = numVertices;
     this.parkingLoc = parkingLoc;
-    previous = new int[numVertices];
   }
 
 
@@ -249,7 +246,6 @@ public class Calculation implements Observer {
    * Print necessary information to find the nearest parking structure and parking spot.
    * 
    * @param userLoc referring to the position of user.
-   * @param parkLoc referring to the parking structure locations.
    */
   public String printInfo(Geoloc userLoc) {
     String str = "\n";
@@ -257,8 +253,7 @@ public class Calculation implements Observer {
     String car = null;
     if (parkingStrNum != -1) {
       int start = locToint(userLoc);
-//      System.out.println("start : " + start + " ");
-//      System.out.println("paring str num " + parkingStrNum);
+
       double distance =
           fewestEdgePath(start, locToint(parkingLoc.get(parkingStrNum).getPosition()));
       distance *= 0.027;

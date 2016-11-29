@@ -1,23 +1,25 @@
-package test.java.edu.calpoly.cpe305.wenmin.ParkingApplication;
+package test.java.edu.calpoly.cpe305.wenmin.parkingapplication;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-import java.io.FileNotFoundException;
+import main.java.edu.calpoly.cpe305.wenmin.parkingapplication.ParkingPath;
 
 import org.junit.Test;
 
-import main.java.edu.calpoly.cpe305.wenmin.ParkingApplication.ParkingPath;
+import java.io.FileNotFoundException;
+
+
 
 public class TestParkingPath {
 
   ParkingPath pp = new ParkingPath();
-  
+
   @Test
   public void testRead() throws FileNotFoundException {
     pp.setadjFromFile("pathTest.txt");
     assertEquals(pp.getNumVer(), 4);
   }
-  
+
   @Test
   public void testArr() throws FileNotFoundException {
     pp.setadjFromFile("pathTest.txt");
@@ -25,7 +27,7 @@ public class TestParkingPath {
     assertEquals(pp.getAdj()[1][0], 1);
     assertEquals(pp.getAdj()[1][1], 0);
   }
-  
+
   @Test
   public void testSetmethods() throws FileNotFoundException {
     pp.setadjFromFile("pathTest.txt");
@@ -40,11 +42,11 @@ public class TestParkingPath {
     for (int i = 0; i < 4; i++) {
       ver[i] = 0;
     }
-    
+
     pp.setAdj(ver, 2);
     assertEquals(pp.getAdj()[1][0], 1);
   }
-  
+
   @Test
   public void testGetters() throws FileNotFoundException {
     pp.setadjFromFile("pathTest.txt");
@@ -54,6 +56,6 @@ public class TestParkingPath {
     assertEquals(pp.getVisited().length, 4);
     assertEquals(pp.getVertices().length, 4);
   }
-  
+
 
 }
