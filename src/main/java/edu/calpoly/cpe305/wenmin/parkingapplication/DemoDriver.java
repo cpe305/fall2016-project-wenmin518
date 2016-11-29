@@ -36,7 +36,7 @@ public class DemoDriver {
         xval = scan.nextInt();
         yval = scan.nextInt();
       }
-      
+
       System.out.println("You entered (" + xval + ", " + yval + ")");
       System.out.println("Please Enter the type of parking spot that you are looking for:");
       System.out.println("1: Compact. 2: Electric. 3: Handicap. 4: Normal");

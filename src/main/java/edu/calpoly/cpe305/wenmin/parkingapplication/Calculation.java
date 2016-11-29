@@ -242,6 +242,88 @@ public class Calculation implements Observer {
     return value;
   }
 
+
+  /**
+   * returns the life distance.
+   * 
+   * @param start referring to the starting location or user location
+   * @param end referring to the structure locations
+   * @return the distance between user and the nearest structure location
+   */
+  public double getCalpolyDistance(int start, int end) {
+    double distance = fewestEdgePath(start, end);
+    distance *= 0.027;
+    return distance;
+  }
+
+  /**
+   * Print the distance with 1 decimal format.
+   * 
+   * @param distance referring to the distance between user and nearest parking structure
+   * @return the string referring to distance with 1 decimal format;
+   */
+  public String distanceString(double distance) {
+    String result = String.format("%.1f", distance);
+    return ("The parking spot is about " + result + " miles away\n");
+  }
+
+  /**
+   * get the info tells time requires to travel.
+   * 
+   * @param distance referring to the distance between user and nearest parking structure.
+   * @return string tells about time required with 1 decimal place.
+   */
+  public String timeString(double distance) {
+    String result = String.format("%.1f", distance / 15 * 60.0);
+    return ("It is gonna take about " + result + " minutes");
+  }
+
+  /**
+   * String tells the nearest parking Structure number.
+   * 
+   * @param num referring to he nearest parking structure number
+   * @return the string that displays parking structure number info.
+   */
+  public String printParkingNum(int num) {
+    String result = "";
+    result += "The nearest ParkingStructure is P" + (num + 1) + "\n";
+    return result;
+  }
+
+
+  /**
+   * Print the string saying which parking spot is available.
+   * 
+   * @param parkingStrNum referring to the nearest parking structure
+   * @return the string tells user about the nearest parking spot that he/she is looking for
+   */
+  public String printCarType(int parkingStrNum) {
+    String car = null;
+    String str = null;
+
+    if (user.getCarType() == 1) {
+      car = "Compact";
+    }
+    if (user.getCarType() == 2) {
+      car = "Electric";
+    }
+    if (user.getCarType() == 3) {
+      car = "Handicap";
+    }
+    if (user.getCarType() == 4) {
+      car = "Normal";
+    }
+    if (parkingLoc.get(parkingStrNum).getSmallestTypeNum(user.getCarType()) == -1) {
+      str +=
+          car + " car that you are looking for is not available in parking " + parkingStrNum + "\n";
+    } else {
+      str += "Parking Spot #"
+          + (parkingLoc.get(parkingStrNum).getSmallestTypeNum(user.getCarType()) + 1) + " is " + car
+          + " Parking Spot you are looking for\n";
+    }
+    return str;
+  }
+
   /**
    * Print necessary information to find the nearest parking structure and parking spot.
    * 
@@ -250,39 +332,15 @@ public class Calculation implements Observer {
   public String printInfo(Geoloc userLoc) {
     String str = "\n";
     int parkingStrNum = nearbyParkingStr(userLoc, parkingLoc);
-    String car = null;
     if (parkingStrNum != -1) {
+
       int start = locToint(userLoc);
-
-      double distance =
-          fewestEdgePath(start, locToint(parkingLoc.get(parkingStrNum).getPosition()));
-      distance *= 0.027;
-      str += "The nearest ParkingStructre is P" + (parkingStrNum + 1) + "\n";
-      if (user.getCarType() == 1) {
-        car = "Compact";
-      }
-      if (user.getCarType() == 2) {
-        car = "Electric";
-      }
-      if (user.getCarType() == 3) {
-        car = "Handicap";
-      }
-      if (user.getCarType() == 4) {
-        car = "Normal";
-      }
-      if (parkingLoc.get(parkingStrNum).getSmallestTypeNum(user.getCarType()) == -1) {
-        str += car + " car that you are looking for is not available in parking " + parkingStrNum
-            + "\n";
-      } else {
-        str += "Parking Spot #"
-            + (parkingLoc.get(parkingStrNum).getSmallestTypeNum(user.getCarType()) + 1) + " is "
-            + car + " Parking Spot you are looking for\n";
-      }
-
-      String dis = String.format("%.1f", distance);
-      str += "The parking spot is about " + dis + " miles away\n";
-      String time = String.format("%.1f", distance / 15 * 60);
-      str += "It is gonna take about " + time + " minutes";
+      int end = locToint(parkingLoc.get(parkingStrNum).getPosition());
+      str += printParkingNum(parkingStrNum);
+      str += printCarType(parkingStrNum);
+      double distance = getCalpolyDistance(start, end);
+      str += distanceString(distance);
+      str += timeString(distance);
     } else {
       str += "Sorry, every parking spot is taken, try tomorrow, ---\n";
     }
