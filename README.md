@@ -9,7 +9,7 @@ This is the prototype of how PolyParkTrack should behave. For this prototype, th
 
 Next to the field containing number of parking spots available in each parking structure, is a static cal poly map that allows users to hand pick the location he/she want to start. After picking the location, the user is able to input on the text field the car type he/she wants to find where 1: Compact, 2:Electric, 3: Handicap, 4: Normal. Then the user is able to press "find the spot" button on the right of the screen. After pressing "find the spot" button, a bunch of text on the button of the screen will be shown. The bottom text displays the information containing the nearest parking structure with the closest parking spot that user has picked. Under the parking spot information are the text containing the distance and time takes to reach that parking spot.
 
-### Getting Started
+## Getting Started
 1. This is the starting screen of the PolyParkTrack.
 	* Left side of the screen displays number of avialable parking spots in each parking structure.
 	* Next to the text, is the static Cal Poly Campus map.
@@ -44,7 +44,7 @@ Next to the field containing number of parking spots available in each parking s
 	* ![Alt text](/imagefiles/FindElectricPark.jpg?raw=true "Optional Title")
 
 
-### Implementation
+## Implementation
 1. Breath-First Search to find the distance between User picked location and nearest parking structure
 2. LinkedList as a queue in Breath-First Search to find the distance
 3. Observable pattern
