@@ -16,13 +16,13 @@ public class TestParkingPath {
 
   @Test
   public void testRead() throws FileNotFoundException {
-    pp.setadjFromFile("/Users/wenmin518/git/fall2016-project-wenmin518/textfiles/pathTest.txt");
+    pp.setadjFromFile("textfiles/pathTest.txt");
     assertEquals(pp.getNumVer(), 4);
   }
 
   @Test
   public void testArr() throws FileNotFoundException {
-    pp.setadjFromFile("/Users/wenmin518/git/fall2016-project-wenmin518/textfiles/pathTest.txt");
+    pp.setadjFromFile("textfiles/pathTest.txt");
     assertEquals(pp.getAdjAt(0, 0), 0);
     assertEquals(pp.getAdj()[1][0], 1);
     assertEquals(pp.getAdj()[1][1], 0);
