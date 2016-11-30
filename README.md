@@ -1,9 +1,13 @@
  PolyParkTrack
 ===============
  
+
 PolyParkTrack is an idea that I have with the intention to solve the parking jam in Cal Poly. I always heard my friends and roommates complaining about spending too much time in the morning finding a available parking spot. PolyParkTrack is able to solve this problem by keeping track of parking spots that are available for students and allow students in Cal Poly to know exactly where the nearest parking spot is available to them in real time.
 
+
 ## Introduction
+
+
 This is the prototype of how PolyParkTrack should behave. For this prototype, the application reads in the json file containing required information for each parking structure in Cal Poly campus. Then the GUI displays number of parking spot in each Parking Structure on cal poly are shown on the right with the format of Parking Structure #: #. The first # referring to the parking structure number, the second # is referring to number of available parking spots in that parking structure. 
  * ![Alt text](/imagefiles/LeftScreenFormat.jpg?raw=true "Optional Title")
 
@@ -44,7 +48,10 @@ Next to the field containing number of parking spots available in each parking s
 	* ![Alt text](/imagefiles/FindElectricPark.jpg?raw=true "Optional Title")
 
 
+
 ## Implementation
+
+
 1. Breath-First Search to find the distance between User picked location and nearest parking structure
 2. LinkedList as a queue in Breath-First Search to find the distance
 3. Observable pattern
@@ -53,18 +60,31 @@ Next to the field containing number of parking spots available in each parking s
 	* Calcation is the Observer
 		* If user changes the location or car type, then calculation object will find the new nearest parkig type available and display it on the screen.
 
+
 ## Architecture
+
+
 * 3-tier architecture
 
+
 ## Built With
+
+
 * [Maven](https://maven.apache.org/) - Dependency Management
 
+
 ## Framework used
+
+
 * [Javafx](http://docs.oracle.com/javase/8/javase-clienttechnologies.htm)
 
 
 ## Version
+
+
 *  1.0.0, the first prototype that works as expected, but need to implemented APIs and Databases in the future.
 
 ## Authors
+
+
 * **Wenmin He** - *Initial work* - [PurpleBooth](https://github.com/wenmin518)
