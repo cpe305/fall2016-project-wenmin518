@@ -13,7 +13,7 @@ Next to the field containing number of parking spots available in each parking s
 1. This is the starting screen of the PolyParkTrack.
 	* Left side of the screen displays number of avialable parking spots in each parking structure.
 	* Next to the text, is the static Cal Poly Campus map.
-	* Text fields and "find the spot" button is under the map.
+	* Text fields and "find the spot" button are under the static map.
 	* And text displaying "Welcome to PolyParkTrack" is shown on the bottom of the screen.
 	* ![Alt text](/imagefiles/StartScreen.jpg?raw=true "Optional Title")
 	
@@ -42,12 +42,12 @@ Next to the field containing number of parking spots available in each parking s
 	* The message will display the location of the nearest parking spot that you try to find and the distance and time it takes to get to the destination.
 	* ![Alt text](/imagefiles/PrintTextScreen.jpg?raw=true "Optional Title")
 	* ![Alt text](/imagefiles/FindElectricPark.jpg?raw=true "Optional Title")
-	
 
 
 ### Implementation
-1. Breath-First Search to find the shortest path between User picked location and nearest parking structure
-2. Observable pattern
+1. Breath-First Search to find the distance between User picked location and nearest parking structure
+2. LinkedList as a queue in Breath-First Search to find the distance
+3. Observable pattern
 	* User is the subject
 		* If user changes the location or changes the car type, then observer will be notified.
 	* Calcation is the Observer
@@ -63,8 +63,8 @@ Next to the field containing number of parking spots available in each parking s
 * [Javafx](http://docs.oracle.com/javase/8/javase-clienttechnologies.htm)
 
 
-## Versioning
-*  1.0.0
+## Version
+*  1.0.0, the first prototype that works as expected, but need to implemented APIs and Databases in the future.
 
 ## Authors
 * **Wenmin He** - *Initial work* - [PurpleBooth](https://github.com/wenmin518)
