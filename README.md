@@ -1,26 +1,141 @@
-	
-PolyParkTrack
-
-	PolyParkTrack is an idea that I have with the intention to solve the parking jam in Cal Poly. I always heard my friends and roommates complaining about spending too much time in the morning finding a available parking spot. PolyParkTrack is able to solve this problem by keeping track of parking spots that are available for students and allow students in Cal Poly to know exactly where the nearest parking spot is available to them.
-
 Getting Started
+ 
+ This is the prototype of how PolyParkTrack should behave. For this prototype, the application reads in the json file containing required information for each parking structure in. Then the GUI displays number of parking spot in each Parking Structure on cal poly are shown on the right with the format of Parking Structure #: #. The first # referring to the parking structure number, the second # is referring to number of available parking spots in that parking structure. 
+ Next to the field containing number of parking spots available in each parking structure, is a static cal poly map that allows users to hand pick the location he/she want to start. After picking the location, the user is able to input on the text field the car type he/she wants to find where 1: Compact, 2:Electric, 3: Handicap, 4: Normal. Then the user is able to press "find the spot" button on the right of the screen. After pressing "find the spot" button, a bunch of text on the button of the screen will be shown. The bottom text displays the information containing the nearest parking structure with the closest parking spot that user has picked. Under the parking spot information are the text containing the distance and time takes to reach that parking spot.
+ 
+ 1: User is able to pick a location he/she desire to start on the static cal poly map 
+ ![alt tag](https://github.com/cpe305/fall2016-project-wenmin518/blob/master/parking.jpg)
+ 
+ Built With
+ 
+ Javafx - Graphic User Interface	
+ Maven - Dependency Management
+ 
+ Versioning
+ 1.0.0
+ 
+ Author
+ Wenmin He
+ 
+ License
+ Do not use it, It does not work with API now
+ 
+ 
+PolyParkTrack
+===============
+ 
+PolyParkTrack is an idea that I have with the intention to solve the parking jam in Cal Poly. I always heard my friends and roommates complaining about spending too much time in the morning finding a available parking spot. PolyParkTrack is able to solve this problem by keeping track of parking spots that are available for students and allow students in Cal Poly to know exactly where the nearest parking spot is available to them.
+
+## Introduction
+This is the prototype of how PolyParkTrack should behave. For this prototype, the application reads in the json file containing required information for each parking structure in. Then the GUI displays number of parking spot in each Parking Structure on cal poly are shown on the right with the format of Parking Structure #: #. The first # referring to the parking structure number, the second # is referring to number of available parking spots in that parking structure. 
+
+Next to the field containing number of parking spots available in each parking structure, is a static cal poly map that allows users to hand pick the location he/she want to start. After picking the location, the user is able to input on the text field the car type he/she wants to find where 1: Compact, 2:Electric, 3: Handicap, 4: Normal. Then the user is able to press "find the spot" button on the right of the screen. After pressing "find the spot" button, a bunch of text on the button of the screen will be shown. The bottom text displays the information containing the nearest parking structure with the closest parking spot that user has picked. Under the parking spot information are the text containing the distance and time takes to reach that parking spot.
+
+### Getting Started
+1. This is the starting screen of the PolyParkTrack.
+	* Left side of the screen displays number of avialable parking spots in each parking structure.
+	* Next to the text, is the static Cal Poly Campus map.
+	* Text fields and "find the spot" button is under the map.
+	* And text displaying "Welcome to PolyParkTrack" is shown on the bottom of the screen.
+	* ![Alt text](/imagefiles/StartScreen.jpg?raw=true "Optional Title")
 	
-	This is the prototype of how PolyParkTrack should behave. For this prototype, the application reads in the json file containing required information for each parking structure in. Then the GUI displays number of parking spot in each Parking Structure on cal poly are shown on the right with the format of Parking Structure #: #. The first # referring to the parking structure number, the second # is referring to number of available parking spots in that parking structure. 
-	Next to the field containing number of parking spots available in each parking structure, is a static cal poly map that allows users to hand pick the location he/she want to start. After picking the location, the user is able to input on the text field the car type he/she wants to find where 1: Compact, 2:Electric, 3: Handicap, 4: Normal. Then the user is able to press "find the spot" button on the right of the screen. After pressing "find the spot" button, a bunch of text on the button of the screen will be shown. The bottom text displays the information containing the nearest parking structure with the closest parking spot that user has picked. Under the parking spot information are the text containing the distance and time takes to reach that parking spot.
+2. Then you are able to pick a starting location in the static map on the right.
+	* A transparent circle will be shown on the map if you pick a valid location in the static map.
+	* Otherwide, nothing would be happen.
+	* ![Alt text](/imagefiles/PickLocation.jpg?raw=true "Optional Title")
+	* If you press the "find the spaot" without a starting location, the application will complain about it and display "Pick a starting location".
+	* ![Alt text](/imagefiles/NoStartingLoc.jpg?raw=true "Optional Title")
 	
-	1: User is able to pick a location he/she desire to start on the static cal poly map 
-	![alt tag](https://github.com/cpe305/fall2016-project-wenmin518/blob/master/parking.jpg)
+
+
+3. After picking the location, you are able to enter the parking type for your car, 1: Compact, 2: Electric, 3: Hadicap, 4: Normal as shown below
+	* This field is not required to be filled to do find the nearest parking spot, it will be defaulted to be Normal.
+	* String or numbers are both valid for car type field
+		* 1 or Compact for Compact Car parking spot
+		* 2 or Electric for Electric Car Parking spot
+		* 3 or Handicap for Handicap Parking spot
+		* 4 or Normal for Normal Parking Spot
+		* ![Alt text](/imagefiles/PickCarType1.jpg?raw=true "Optional Title")
+		* ![Alt text](/imagefiles/PickElectricCarType.jpg?raw=true "Optional Title")
+	* The Message "Invalid Car Type" will display if you pick any type other than number and string referring to the car type
+	* ![Alt text](/imagefiles/InvalidCarTypeScreen.jpg?raw=true "Optional Title")
 	
-Built With
+4. The last step will be pressing the "find the spot" after you have pick the starting location and entered a valid car type.
+	* The message will display the location of the nearest parking spot that you try to find and the distance and time it takes to get to the destination.
+	* ![Alt text](/imagefiles/PrintTextScreen.jpg?raw=true "Optional Title")
+	* ![Alt text](/imagefiles/FindElectricPark.jpg?raw=true "Optional Title")
+	
 
-	Javafx - Graphic User Interface	
-	Maven - Dependency Management
 
-Versioning
-	1.0.0
 
-Author
-	Wenmin He
+### Installing
 
-License
-	Do not use it, It does not work with API now
+A step by step series of examples that tell you have to get a development env running
+
+Say what the step will be
+
+```
+Give the example
+```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo
+
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone who's code was used
+* Inspiration
+* etc
