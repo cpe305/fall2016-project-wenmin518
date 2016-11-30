@@ -1,4 +1,4 @@
-package main.java.edu.calpoly.cpe305.wenmin.parkingapplication;
+package main.java.edu.calpoly.cpe305.wenmin.polyparktrack;
 
 
 public class Geoloc {

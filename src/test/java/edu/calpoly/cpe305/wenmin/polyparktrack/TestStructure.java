@@ -1,12 +1,12 @@
-package test.java.edu.calpoly.cpe305.wenmin.parkingapplication;
+package test.java.edu.calpoly.cpe305.wenmin.polyparktrack;
 
 import static org.junit.Assert.assertEquals;
 
-import main.java.edu.calpoly.cpe305.wenmin.parkingapplication.Geoloc;
-import main.java.edu.calpoly.cpe305.wenmin.parkingapplication.ParkingSpot;
-import main.java.edu.calpoly.cpe305.wenmin.parkingapplication.ParkingStructure;
-
 import org.junit.Test;
+
+import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.Geoloc;
+import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.ParkingSpot;
+import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.ParkingStructure;
 
 public class TestStructure {
 

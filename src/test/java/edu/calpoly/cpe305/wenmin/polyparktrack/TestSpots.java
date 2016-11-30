@@ -1,12 +1,12 @@
-package test.java.edu.calpoly.cpe305.wenmin.parkingapplication;
+package test.java.edu.calpoly.cpe305.wenmin.polyparktrack;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import main.java.edu.calpoly.cpe305.wenmin.parkingapplication.ParkingSpot;
-
 import org.junit.Test;
+
+import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.ParkingSpot;
 
 
 public class TestSpots {
