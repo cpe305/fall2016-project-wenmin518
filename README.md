@@ -15,4 +15,6 @@ As mentioned above, this is the working prorotype of how PolyParkTrack should be
 *  1.0.0, the first prototype that works as expected, but need to implemented APIs and Databases in the future.
 
 ## Authors
-* **Wenmin He** - [github page](https://github.com/wenmin518)
+* Name : Wenmin He
+* Profile : [Wenmin He](https://github.com/wenmin518)
+* Email: whe01@calpoly.edu
