@@ -22,7 +22,7 @@ Next to the field containing number of parking spots available in each parking s
 	* Otherwide, nothing would be happen.
 	* ![Alt text](/imagefiles/PickLocation.jpg?raw=true "Optional Title")
 	* If you press the "find the spaot" without a starting location, the application will complain about it and display "Pick a starting location".
-	* ![Alt text](/imagefiles/NoStartingLoc.jpg?raw=true "Optional Title")
+	* ![Alt text](/imagefiles/NoStaringLoc.jpg?raw=true "Optional Title")
 	
 
 
