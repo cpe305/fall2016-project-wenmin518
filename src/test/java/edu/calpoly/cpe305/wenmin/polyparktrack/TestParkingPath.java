@@ -30,7 +30,7 @@ public class TestParkingPath {
 
   @Test
   public void testSetmethods() throws FileNotFoundException {
-    pp.setadjFromFile("/Users/wenmin518/git/fall2016-project-wenmin518/textfiles/pathTest.txt");
+    pp.setadjFromFile("textfiles/pathTest.txt");
     pp.setAdjAt(1, 0, 10);
     assertEquals(pp.getAdj().length, 4);
     pp.addEdge(0, 1);
@@ -49,7 +49,7 @@ public class TestParkingPath {
 
   @Test
   public void testGetters() throws FileNotFoundException {
-    pp.setadjFromFile("/Users/wenmin518/git/fall2016-project-wenmin518/textfiles/pathTest.txt");
+    pp.setadjFromFile("textfiles/pathTest.txt");
     assertEquals(pp.getRows(), 2);
     assertEquals(pp.getCols(), 2);
     assertEquals(pp.getNumVer(), 4);
