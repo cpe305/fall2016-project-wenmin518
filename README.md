@@ -4,7 +4,8 @@
 PolyParkTrack is an idea that I have with the intention to solve the parking jam in Cal Poly. I always heard my friends and roommates complaining about spending too much time in the morning finding a available parking spot. PolyParkTrack is able to solve this problem by keeping track of parking spots that are available for students and allow students in Cal Poly to know exactly where the nearest parking spot is available to them in real time.
 
 ## Introduction
-This is the prototype of how PolyParkTrack should behave. For this prototype, the application reads in the json file containing required information for each parking structure in. Then the GUI displays number of parking spot in each Parking Structure on cal poly are shown on the right with the format of Parking Structure #: #. The first # referring to the parking structure number, the second # is referring to number of available parking spots in that parking structure. 
+This is the prototype of how PolyParkTrack should behave. For this prototype, the application reads in the json file containing required information for each parking structure in Cal Poly campus. Then the GUI displays number of parking spot in each Parking Structure on cal poly are shown on the right with the format of Parking Structure #: #. The first # referring to the parking structure number, the second # is referring to number of available parking spots in that parking structure. 
+	* ![Alt text](/imagefiles/LeftScreenFormat.jpg?raw=true "Optional Title")
 
 Next to the field containing number of parking spots available in each parking structure, is a static cal poly map that allows users to hand pick the location he/she want to start. After picking the location, the user is able to input on the text field the car type he/she wants to find where 1: Compact, 2:Electric, 3: Handicap, 4: Normal. Then the user is able to press "find the spot" button on the right of the screen. After pressing "find the spot" button, a bunch of text on the button of the screen will be shown. The bottom text displays the information containing the nearest parking structure with the closest parking spot that user has picked. Under the parking spot information are the text containing the distance and time takes to reach that parking spot.
 
@@ -52,9 +53,10 @@ Next to the field containing number of parking spots available in each parking s
 	* Calcation is the Observer
 		* If user changes the location or car type, then calculation object will find the new nearest parkig type available and display it on the screen.
 
+## Architecture
+* 3-tier architecture
 
 ## Built With
-
 * [Maven](https://maven.apache.org/) - Dependency Management
 
 ## Framework used
@@ -65,5 +67,4 @@ Next to the field containing number of parking spots available in each parking s
 *  1.0.0
 
 ## Authors
-
 * **Wenmin He** - *Initial work* - [PurpleBooth](https://github.com/wenmin518)
