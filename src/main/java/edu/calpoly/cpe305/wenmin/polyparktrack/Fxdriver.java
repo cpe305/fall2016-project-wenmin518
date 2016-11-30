@@ -324,6 +324,14 @@ public class Fxdriver extends Application {
    */
   public static void main(String[] args) throws ParseException, IOException {
     parkingPath = new ParkingPath();
+    System.out.println("Working Directory = " + System.getProperty("user.dir"));
+//
+//    File directory = new File("/Users/wenmin518/git/fall2016-project-wenmin518/testfiles");
+//    File[] contents = directory.listFiles();
+//    for (File f : contents) {
+//      System.out.println(f.getAbsolutePath());
+//    }
+
     parkingPath
         .setadjFromFile("/Users/wenmin518/git/fall2016-project-wenmin518/textfiles/test.txt");
     structJson = new ParkingStrJson();
