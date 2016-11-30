@@ -27,6 +27,7 @@ import javafx.stage.Stage;
 
 import org.json.simple.parser.ParseException;
 
+import java.io.File;
 import java.io.IOException;
 
 
@@ -67,7 +68,8 @@ public class Fxdriver extends Application {
 
 
     // load the image
-    Image image = new Image("file:///Users/wenmin518/git/fall2016-project-wenmin518/parking.jpg");
+    Image image =
+        new Image("file:///Users/wenmin518/git/fall2016-project-wenmin518/imagefiles/parking.jpg");
     /**
      * style and variables.
      */
@@ -322,9 +324,11 @@ public class Fxdriver extends Application {
    */
   public static void main(String[] args) throws ParseException, IOException {
     parkingPath = new ParkingPath();
-    parkingPath.setadjFromFile("test.txt");
+    parkingPath
+        .setadjFromFile("/Users/wenmin518/git/fall2016-project-wenmin518/textfiles/test.txt");
     structJson = new ParkingStrJson();
-    structJson.setParkLocFromFile("JsonTest2.json");
+    structJson.setParkLocFromFile(
+        "/Users/wenmin518/git/fall2016-project-wenmin518/jsonfiles/JsonTest2.json");
 
     Application.launch(args);
   }

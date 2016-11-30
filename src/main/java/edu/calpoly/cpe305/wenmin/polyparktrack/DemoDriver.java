@@ -68,9 +68,9 @@ public class DemoDriver {
    */
   public static void main(String[] args) throws IOException, ParseException {
     parkingPath = new ParkingPath();
-    parkingPath.setadjFromFile("test.txt");
+    parkingPath.setadjFromFile("/Users/wenmin518/git/fall2016-project-wenmin518/textfiles/test.txt");
     structJson = new ParkingStrJson();
-    structJson.setParkLocFromFile("JsonTest2.json");
+    structJson.setParkLocFromFile("/Users/wenmin518/git/fall2016-project-wenmin518/jsonfiles/JsonTest2.json");
     doFunctions();
   }
 }
