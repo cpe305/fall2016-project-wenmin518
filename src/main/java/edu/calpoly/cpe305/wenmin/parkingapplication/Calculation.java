@@ -9,7 +9,7 @@ import java.util.ArrayList;
  *
  */
 public class Calculation implements Observer {
-
+  private double ratio = 0.027;
   private int[][] adj;
   private boolean[] visited;
   private User user;
@@ -157,20 +157,6 @@ public class Calculation implements Observer {
     adj[loc2Num][loc1Num] = 1;
   }
 
-  /**
-   * Depth search through the component.
-   * 
-   * @param ver any vertex in the component
-   */
-  public void visit(int ver) {
-    visited[ver] = true;
-    for (int idx = 0; idx < numVertices; idx++) {
-      if (adj[ver][idx] != 0 && visited[idx] == false) {
-        visit(idx);
-      }
-    }
-  }
-
 
   /**
    * @param start referring to the User location.
@@ -212,8 +198,9 @@ public class Calculation implements Observer {
    */
   public double distance(Geoloc user, Geoloc spotLoc) {
 
-    return Math.sqrt(Math.multiplyExact(user.getX() - spotLoc.getX(), user.getX() - spotLoc.getX())
-        + Math.multiplyExact(user.getY() - spotLoc.getY(), user.getY() - spotLoc.getY()));
+    return (double) Math
+        .sqrt(Math.multiplyExact(user.getX() - spotLoc.getX(), user.getX() - spotLoc.getX())
+            + Math.multiplyExact(user.getY() - spotLoc.getY(), user.getY() - spotLoc.getY()));
   }
 
   /**
@@ -252,7 +239,7 @@ public class Calculation implements Observer {
    */
   public double getCalpolyDistance(int start, int end) {
     double distance = fewestEdgePath(start, end);
-    distance *= 0.027;
+    distance *= ratio;
     return distance;
   }
 
@@ -264,7 +251,7 @@ public class Calculation implements Observer {
    */
   public String distanceString(double distance) {
     String result = String.format("%.1f", distance);
-    return ("The parking spot is about " + result + " miles away\n");
+    return "The parking spot is about " + result + " miles away\n";
   }
 
   /**
@@ -275,7 +262,7 @@ public class Calculation implements Observer {
    */
   public String timeString(double distance) {
     String result = String.format("%.1f", distance / 15 * 60.0);
-    return ("It is gonna take about " + result + " minutes");
+    return "It is gonna take about " + result + " minutes";
   }
 
   /**
@@ -328,6 +315,7 @@ public class Calculation implements Observer {
    * Print necessary information to find the nearest parking structure and parking spot.
    * 
    * @param userLoc referring to the position of user.
+   * @return the string referring to the information that user might want to know.
    */
   public String printInfo(Geoloc userLoc) {
     String str = "\n";

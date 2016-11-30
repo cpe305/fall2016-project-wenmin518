@@ -263,9 +263,9 @@ public class Fxdriver extends Application {
           } else if (ta.getText().equalsIgnoreCase("Handicap")) {
             cartype = 3;
           } else if (ta.getText().equalsIgnoreCase("Compact")) {
-            cartype = 2;
-          } else if (ta.getText().equalsIgnoreCase("Electric")) {
             cartype = 1;
+          } else if (ta.getText().equalsIgnoreCase("Electric")) {
+            cartype = 2;
           } else if (isInteger((String) ta.getText())) {
             cartype = (int) Integer.valueOf((String) ta.getText());
           }

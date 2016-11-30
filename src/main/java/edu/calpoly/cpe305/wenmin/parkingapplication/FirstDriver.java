@@ -56,16 +56,15 @@ public class FirstDriver {
 
   public static void setAdj(int[] ver, int cols) {
     for (int i = 0; i < numVertices; i++) {
-      if (ver[i] == 0) {
-        if (i - cols > 1 && (ver[i - cols] == 0)) {
-          addEdge(i, i - cols);
-        }
+      if (ver[i] == 0 && i - cols > 1 && (ver[i - cols] == 0)) {
+        addEdge(i, i - cols);
       }
 
       if (((i + 1) % cols != 0) && (ver[i + 1] == 0)) {
         addEdge(i, i + 1);
       }
     }
+
   }
 
 
