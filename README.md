@@ -1,7 +1,7 @@
  PolyParkTrack
 ===============
  
-PolyParkTrack is an idea that I have with the intention to solve the parking jam in Cal Poly. I always heard my friends and roommates complaining about spending too much time in the morning finding a available parking spot. PolyParkTrack is able to solve this problem by keeping track of parking spots that are available for students and allow students in Cal Poly to know exactly where the nearest parking spot is available to them.
+PolyParkTrack is an idea that I have with the intention to solve the parking jam in Cal Poly. I always heard my friends and roommates complaining about spending too much time in the morning finding a available parking spot. PolyParkTrack is able to solve this problem by keeping track of parking spots that are available for students and allow students in Cal Poly to know exactly where the nearest parking spot is available to them in real time.
 
 ## Introduction
 This is the prototype of how PolyParkTrack should behave. For this prototype, the application reads in the json file containing required information for each parking structure in. Then the GUI displays number of parking spot in each Parking Structure on cal poly are shown on the right with the format of Parking Structure #: #. The first # referring to the parking structure number, the second # is referring to number of available parking spots in that parking structure. 
