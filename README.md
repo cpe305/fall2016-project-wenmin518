@@ -87,4 +87,4 @@ Next to the field containing number of parking spots available in each parking s
 ## Authors
 
 
-* **Wenmin He** - *Initial work* - [PurpleBooth](https://github.com/wenmin518)
+* **Wenmin He** - [github page](https://github.com/wenmin518)
