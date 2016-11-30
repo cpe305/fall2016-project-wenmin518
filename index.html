@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fall2016-project-wenmin518 by cpe305</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Fall2016-project-wenmin518</h1>
+      <h2 class="project-tagline">fall2016-project-wenmin518 created by GitHub Classroom</h2>
+      <a href="https://github.com/cpe305/fall2016-project-wenmin518" class="btn">View on GitHub</a>
+      <a href="https://github.com/cpe305/fall2016-project-wenmin518/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/cpe305/fall2016-project-wenmin518/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h3>
+<a id="polyparktrack" class="anchor" href="#polyparktrack" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PolyParkTrack</h3>
+
+<h1></h1>
+
+<p>PolyParkTrack is an idea that I have with the intention to solve the parking jam in Cal Poly. I always heard my friends and roommates complaining about spending too much time in the morning finding a available parking spot. PolyParkTrack is able to solve this problem by keeping track of parking spots that are available for students and allow students in Cal Poly to know exactly where the nearest parking spot is available to them in real time.</p>
+
+<h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>This is the prototype of how PolyParkTrack should behave. For this prototype, the application reads in the json file containing required information for each parking structure in Cal Poly campus. Then the GUI displays number of parking spot in each Parking Structure on cal poly are shown on the right with the format of Parking Structure #: #. The first # referring to the parking structure number, the second # is referring to number of available parking spots in that parking structure. 
+<img src="https://github.com/cpe305/fall2016-project-wenmin518/blob/master/imagefiles/LeftScreenFormat.jpg" alt="Text format">
+<img src="/imagefiles/StartScreen.jpg?raw=true" alt="Starting Screen" title="Optional Title"></p>
+
+<p>Next to the field containing number of parking spots available in each parking structure, is a static cal poly map that allows users to hand pick the location he/she want to start. After picking the location, the user is able to input on the text field the car type he/she wants to find where 1: Compact, 2:Electric, 3: Handicap, 4: Normal. Then the user is able to press "find the spot" button on the right of the screen. After pressing "find the spot" button, a bunch of text on the button of the screen will be shown. The bottom text displays the information containing the nearest parking structure with the closest parking spot that user has picked. Under the parking spot information are the text containing the distance and time takes to reach that parking spot.</p>
+
+<h2>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting Started</h2>
+
+<ol>
+<li>
+<p>This is the starting screen of the PolyParkTrack.</p>
+
+<ul>
+<li>Left side of the screen displays number of avialable parking spots in each parking structure.</li>
+<li>Next to the text, is the static Cal Poly Campus map.</li>
+<li>Text fields and "find the spot" button are under the static map.</li>
+<li>And text displaying "Welcome to PolyParkTrack" is shown on the bottom of the screen.</li>
+<li><img src="/imagefiles/StartScreen.jpg?raw=true" alt="Alt text" title="Optional Title"></li>
+</ul>
+</li>
+<li>
+<p>Then you are able to pick a starting location in the static map on the right.</p>
+
+<ul>
+<li>A transparent circle will be shown on the map if you pick a valid location in the static map.</li>
+<li>Otherwide, nothing would be happen.</li>
+<li><img src="/imagefiles/PickLocation.jpg?raw=true" alt="Alt text" title="Optional Title"></li>
+<li>If you press the "find the spaot" without a starting location, the application will complain about it and display "Pick a starting location".</li>
+<li><img src="/imagefiles/NoStaringLoc.jpg?raw=true" alt="Alt text" title="Optional Title"></li>
+</ul>
+</li>
+<li>
+<p>After picking the location, you are able to enter the parking type for your car, 1: Compact, 2: Electric, 3: Hadicap, 4: Normal as shown below</p>
+
+<ul>
+<li>This field is not required to be filled to do find the nearest parking spot, it will be defaulted to be Normal.</li>
+<li>String or numbers are both valid for car type field
+
+<ul>
+<li>1 or Compact for Compact Car parking spot</li>
+<li>2 or Electric for Electric Car Parking spot</li>
+<li>3 or Handicap for Handicap Parking spot</li>
+<li>4 or Normal for Normal Parking Spot</li>
+<li><img src="/imagefiles/PickCarType1.jpg?raw=true" alt="Alt text" title="Optional Title"></li>
+<li><img src="/imagefiles/PickElectricCarType.jpg?raw=true" alt="Alt text" title="Optional Title"></li>
+</ul>
+</li>
+<li>The Message "Invalid Car Type" will display if you pick any type other than number and string referring to the car type</li>
+<li><img src="/imagefiles/InvalidCarTypeScreen.jpg?raw=true" alt="Alt text" title="Optional Title"></li>
+</ul>
+</li>
+<li>
+<p>The last step will be pressing the "find the spot" after you have pick the starting location and entered a valid car type.</p>
+
+<ul>
+<li>The message will display the location of the nearest parking spot that you try to find and the distance and time it takes to get to the destination.</li>
+<li><img src="/imagefiles/PrintTextScreen.jpg?raw=true" alt="Alt text" title="Optional Title"></li>
+<li><img src="/imagefiles/FindElectricPark.jpg?raw=true" alt="Alt text" title="Optional Title"></li>
+</ul>
+</li>
+</ol>
+
+<h2>
+<a id="implementation" class="anchor" href="#implementation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implementation</h2>
+
+<ol>
+<li>Breath-First Search to find the distance between User picked location and nearest parking structure</li>
+<li>LinkedList as a queue in Breath-First Search to find the distance</li>
+<li>Observable pattern
+
+<ul>
+<li>User is the subject
+
+<ul>
+<li>If user changes the location or changes the car type, then observer will be notified.</li>
+</ul>
+</li>
+<li>Calcation is the Observer
+
+<ul>
+<li>If user changes the location or car type, then calculation object will find the new nearest parkig type available and display it on the screen.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+
+<h2>
+<a id="architecture" class="anchor" href="#architecture" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Architecture</h2>
+
+<ul>
+<li>3-tier architecture</li>
+</ul>
+
+<h2>
+<a id="built-with" class="anchor" href="#built-with" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Built With</h2>
+
+<ul>
+<li>
+<a href="https://maven.apache.org/">Maven</a> - Dependency Management</li>
+</ul>
+
+<h2>
+<a id="framework-used" class="anchor" href="#framework-used" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Framework used</h2>
+
+<ul>
+<li><a href="http://docs.oracle.com/javase/8/javase-clienttechnologies.htm">Javafx</a></li>
+</ul>
+
+<h2>
+<a id="version" class="anchor" href="#version" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Version</h2>
+
+<ul>
+<li> 1.0.0, the first prototype that works as expected, but need to implemented APIs and Databases in the future.</li>
+</ul>
+
+<h2>
+<a id="authors" class="anchor" href="#authors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors</h2>
+
+<ul>
+<li>
+<strong>Wenmin He</strong> - <a href="https://github.com/wenmin518">github page</a>
+</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/cpe305/fall2016-project-wenmin518">Fall2016-project-wenmin518</a> is maintained by <a href="https://github.com/cpe305">cpe305</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
