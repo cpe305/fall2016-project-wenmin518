@@ -124,7 +124,8 @@ public class TestCalculation {
     assertEquals(cal.printUserCarType(), "Normal");
     cal.updateUserLoc(new Geoloc(2, 0));
     assertTrue(cal.getUser().getPosition().equals(new Geoloc(2, 0)));
-    assertEquals(cal.printInfo(userLoc), "Sorry, every parking spot is taken, try tomorrow, ---\n");
+    assertEquals(cal.printInfo(userLoc),
+        "\nSorry, every parking spot is taken, try tomorrow, ---\n");
     parkLoc.clear();
     parkLoc.add(new ParkingStructure(new Geoloc(0, 0)));
 
@@ -136,7 +137,9 @@ public class TestCalculation {
     assertEquals(cal.printStrNumwithCarType("Electric", 0),
         "Parking Spot #4 is Electric Parking Spot you are looking for\n");
     assertEquals(cal.printInfo(userLoc),
-        "The nearest ParkingStructure is P1\nParking Spot #4 is Normal Parking Spot you are looking for\nThe parking spot is about 0.0 miles away\nIt is gonna take about 0.0 minutes");
+        "\nThe nearest ParkingStructure is P1\nParking Spot #4 is Normal "
+            + "Parking Spot you are looking for\nThe parking spot is about 0.0 miles away"
+            + "\nIt is gonna take about 0.0 minutes");
   }
 
   @Test
@@ -147,7 +150,7 @@ public class TestCalculation {
     assertFalse(cal.equals(null));
     Calculation newCal = new Calculation(adj, visited, user, vert, vert, vert * 2, parkLoc);
     assertTrue(cal.equals(newCal));
-//    System.out.println(cal.hashCode());
+    // System.out.println(cal.hashCode());
     assertEquals(cal.hashCode(), 182);
   }
 
