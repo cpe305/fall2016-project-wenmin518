@@ -1,6 +1,7 @@
 package test.java.edu.calpoly.cpe305.wenmin.polyparktrack;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 import org.junit.Test;
 
@@ -44,6 +45,9 @@ public class TestParkingPath {
     }
 
     pp.setAdj(ver, 2);
+    pp.setRows(2);
+    pp.setCols(10);
+    pp.setNumVer(15);
     assertEquals(pp.getAdj()[1][0], 1);
   }
 
@@ -53,6 +57,9 @@ public class TestParkingPath {
     assertEquals(pp.getRows(), 2);
     assertEquals(pp.getCols(), 2);
     assertEquals(pp.getNumVer(), 4);
+    pp.setVisited(0, false);
+    System.out.println(pp.getVerticesAt(0));
+    assertEquals(pp.getVerticesAt(0), 0);
     assertEquals(pp.getVisited().length, 4);
     assertEquals(pp.getVertices().length, 4);
   }
