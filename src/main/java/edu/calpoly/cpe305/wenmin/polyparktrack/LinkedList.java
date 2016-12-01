@@ -1,8 +1,5 @@
 package main.java.edu.calpoly.cpe305.wenmin.polyparktrack;
 
-
-import java.util.Iterator;
-
 /**
  * My own linkedlist class that has the the functionality of java linkedlist.
  * 
@@ -137,7 +134,7 @@ public class LinkedList implements Cloneable {
     }
     return false;
   }
-  
+
   @Override
   public int hashCode() {
     int hash = 7 * 3 + this.last.hashCode();
@@ -152,7 +149,12 @@ public class LinkedList implements Cloneable {
   public Object removeFirst() {
     // Supply details as in the assignment description
     if (this.isEmpty()) {
-      throw new Error("The LinkedList is empty");
+      try {
+        throw new RemoveElementFromEmptyListException();
+      } catch (RemoveElementFromEmptyListException excep) {
+        // TODO Auto-generated catch block
+        excep.printStackTrace();
+      }
     }
     Object obj = first.item;
     if (first == last) {
@@ -175,7 +177,12 @@ public class LinkedList implements Cloneable {
   public Object removeLast() {
     // Supply details as in the assignment description
     if (this.isEmpty()) {
-      throw new Error("The LinkedList is empty");
+      try {
+        throw new RemoveElementFromEmptyListException();
+      } catch (RemoveElementFromEmptyListException excep) {
+        // TODO Auto-generated catch block
+        excep.printStackTrace();
+      }
     }
 
     Object obj = last.item;
@@ -263,6 +270,12 @@ public class LinkedList implements Cloneable {
    */
   @Override
   public Object clone() {
+    try {
+      super.clone();
+    } catch (CloneNotSupportedException excep) {
+      // TODO Auto-generated catch block
+      excep.printStackTrace();
+    }
     LinkedList theClone = new LinkedList();
     Node previous = this.first;
 
