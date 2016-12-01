@@ -17,7 +17,7 @@ public interface Subject {
   /**
    * notify observer to change car type
    * 
-   * @param loc referring to the car type to be changed.
+   * @param type referring to the car type to be changed.
    */
   public void notifyObsType(int type);
 }

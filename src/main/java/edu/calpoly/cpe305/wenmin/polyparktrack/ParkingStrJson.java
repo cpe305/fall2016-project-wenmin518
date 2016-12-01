@@ -8,6 +8,7 @@ import org.json.simple.parser.ParseException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 
 
@@ -83,7 +84,7 @@ public class ParkingStrJson {
    * 
    * @return the memory containing the parking strucuture arraylist.
    */
-  public ArrayList<ParkingStructure> getStructArr() {
+  public List<ParkingStructure> getStructArr() {
     return structArr;
   }
 

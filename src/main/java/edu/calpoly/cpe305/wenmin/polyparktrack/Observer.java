@@ -14,7 +14,7 @@ public interface Observer {
 
   /**
    * updates subject car type.
-   * @param loc referring to the new user car type.
+   * @param type referring to the new user car type.
    */
   public void updateCartype(int type);
 }

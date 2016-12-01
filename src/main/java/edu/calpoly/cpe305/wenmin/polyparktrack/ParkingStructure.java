@@ -1,6 +1,7 @@
 package main.java.edu.calpoly.cpe305.wenmin.polyparktrack;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -28,7 +29,7 @@ public class ParkingStructure {
    * 
    * @return memory address that contains parking spot array.
    */
-  public ArrayList<ParkingSpot> getspotArr() {
+  public List<ParkingSpot> getspotArr() {
     return spotArr;
   }
 

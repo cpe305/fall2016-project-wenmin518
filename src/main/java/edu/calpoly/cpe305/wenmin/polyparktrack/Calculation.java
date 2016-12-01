@@ -1,6 +1,7 @@
 package main.java.edu.calpoly.cpe305.wenmin.polyparktrack;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Observer that does caluclation when user changes the location.
@@ -30,14 +31,14 @@ public class Calculation implements Observer {
    * @param parkingLoc give the location of Parking structures
    */
   public Calculation(int[][] adj, boolean[] visited, User user, int row, int col, int numVertices,
-      ArrayList<ParkingStructure> parkingLoc) {
+      List<ParkingStructure> parkingLoc) {
     this.adj = adj;
     this.visited = visited;
     this.user = user;
     this.row = row;
     this.col = col;
     this.numVertices = numVertices;
-    this.parkingLoc = parkingLoc;
+    this.parkingLoc = (ArrayList<ParkingStructure>) parkingLoc;
   }
 
 
@@ -139,7 +140,7 @@ public class Calculation implements Observer {
    * 
    * @return the memory that contains parking structure arraylist.
    */
-  public ArrayList<ParkingStructure> getParkStr() {
+  public List<ParkingStructure> getParkStr() {
     return parkingLoc;
   }
 
@@ -210,7 +211,7 @@ public class Calculation implements Observer {
    * @param parkStrLoc referring to the parking structure locations
    * @return the number of blocks to parking the closest parking structure
    */
-  public int nearbyParkingStr(Geoloc user, ArrayList<ParkingStructure> parkStrLoc) {
+  public int nearbyParkingStr(Geoloc user, List<ParkingStructure> parkStrLoc) {
     double newDis;
     int value = -1;
     boolean emptyDis = true;
