@@ -64,7 +64,23 @@ public class ParkingStructure {
     }
     return count;
   }
-  
+
+  /**
+   * boolean referring whether the current parking structure is full.
+   * 
+   * @return boolean
+   */
+  public boolean parkingStrIsFull() {
+    return getNumavailable() == 0;
+  }
+
+  /**
+   * Prevent for futher implementation when user is actually taking the post.
+   */
+  public void parktoTheNearest() {
+    int num = getSmallestSpotNum();
+    spotArr.get(num).setAvailability(false);
+  }
 
   /**
    *
