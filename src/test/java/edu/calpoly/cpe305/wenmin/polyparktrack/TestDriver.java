@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import javafx.scene.Group;
+import javafx.scene.shape.Circle;
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.Fxdriver;
 
 public class TestDriver {
@@ -32,6 +34,17 @@ public class TestDriver {
     assertTrue(Fxdriver.inboundblick(300, 300, 200, 600, 600));
     assertFalse(Fxdriver.inboundblick(100, 300, 200, 600, 600));
     assertFalse(Fxdriver.inboundblick(300, 300, 200, 10000, 100));
+  }
+  
+  @Test
+  public void testhandler() {
+    Group group = new Group();
+    Circle circle = new Circle();
+    circle.prefHeight(100);
+    circle.prefWidth(100);
+    Fxdriver.addEventHandler(group, circle);
+    assertEquals(1, 1);
+    
   }
 
 }

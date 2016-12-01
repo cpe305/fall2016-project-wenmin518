@@ -15,9 +15,11 @@ public class TestLinkedList {
   @Test
   public void linekdListTest1() throws CloneNotSupportedException {
     LinkedList list = new LinkedList();
-    LinkedList listtwo = new LinkedList();
+    assertTrue(list.isEmpty());
     list.addLast(3);
     list.addFirst(3);
+    LinkedList listtwo = new LinkedList();
+    listtwo.contains(2);
     listtwo = (LinkedList) list.clone();
     assertEquals(list.length(), 2);
     assertFalse(list.isEmpty());
@@ -49,6 +51,7 @@ public class TestLinkedList {
     assertEquals(list.length(), 2);
     list.remove(100);
     assertEquals(list.length(), 1);
+    assertTrue(list.removeFirst().equals(300));
 //    System.out.println(list.hashCode());
 //    assertEquals(list.hashCode(), 1972439122);
   }

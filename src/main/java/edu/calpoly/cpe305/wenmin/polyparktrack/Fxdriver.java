@@ -330,7 +330,7 @@ public class Fxdriver extends Application {
    * @param parent refers to the root
    * @param node refers to the node to be added
    */
-  public void addEventHandler(Group parent, Node node) {
+  public static void addEventHandler(Group parent, Node node) {
     node.addEventHandler(MouseEvent.MOUSE_CLICKED, (MouseEvent me) -> {
       if (me.getButton().equals(MouseButton.SECONDARY)) {
         parent.getChildren().remove(node);
