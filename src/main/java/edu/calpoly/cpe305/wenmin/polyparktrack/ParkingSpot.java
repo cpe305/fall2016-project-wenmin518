@@ -84,7 +84,7 @@ public class ParkingSpot {
       return false;
     }
     ParkingSpot ps = (ParkingSpot) obj;
-    if (num != ps.getNum() && type != ps.getType()) {
+    if (num != ps.getNum() || type != ps.getType() || available != ps.isAvailable()) {
       return false;
     }
     return true;

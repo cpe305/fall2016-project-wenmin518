@@ -49,6 +49,6 @@ public class TestStructure {
     structure.parktoTheNearest();
     assertTrue(structure.parkingStrIsFull());
     structure.setPosition(new Geoloc(3, 2));
-    System.out.println(structure.getSmallestSpotNum());
+    assertEquals(structure.getSmallestSpotNum(), -1);
   }
 }
