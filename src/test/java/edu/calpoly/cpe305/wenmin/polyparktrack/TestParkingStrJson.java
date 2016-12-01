@@ -16,7 +16,7 @@ public class TestParkingStrJson {
   @Test
   public void testAllMethods() throws ParseException, IOException {
     structJson.setParkLocFromFile(
-        "/Users/wenmin518/git/fall2016-project-wenmin518/jsonfiles/JsonTest2.json");
+        "jsonfiles/JsonTest2.json");
     assertEquals(structJson.getStrcutre(0).getNumavailable(), 51);
     assertEquals(structJson.getStructArr().get(1).getNumavailable(), 46);
     structJson.setStrArrAt(0, structJson.getStrcutre(1));

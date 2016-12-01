@@ -63,6 +63,30 @@ public class Fxdriver extends Application {
     return true;
   }
 
+  /**
+   * gets the integer corresponding to the car type.
+   * 
+   * @param textfield referring to the text field on the application
+   * @return an integer
+   */
+  public int getCarType(TextField textfield) {
+    cartype = 4;
+    if (textfield.getText() == null || textfield.getText().isEmpty()
+        || "Normal".equalsIgnoreCase(textfield.getText())) {
+      cartype = 4;
+
+    } else if ("Handicap".equalsIgnoreCase(textfield.getText())) {
+      cartype = 3;
+    } else if ("Compact".equalsIgnoreCase(textfield.getText())) {
+      cartype = 1;
+    } else if ("Electric".equalsIgnoreCase(textfield.getText())) {
+      cartype = 2;
+    } else if (isInteger((String) textfield.getText())) {
+      cartype = (int) Integer.valueOf((String) textfield.getText());
+    }
+    return cartype;
+  }
+
   @Override
   public void start(Stage stage) {
 
@@ -93,14 +117,15 @@ public class Fxdriver extends Application {
      * create leftbox for the cartype input from user.
      */
     HBox leftbox = new HBox();
-    TextField ta = new TextField();
+    TextField textfield = new TextField();
 
     double inputwidth = 500;
-    ta.setPrefWidth(inputwidth);
-    ta.setPromptText("Enter the Parking Type: 1: Electric, 2: Compact, 3: Hadicap, 4: Normal");
+    textfield.setPrefWidth(inputwidth);
+    textfield
+        .setPromptText("Enter the Parking Type: 1: Electric, 2: Compact, 3: Hadicap, 4: Normal");
     leftbox.setPadding(new Insets(0, rectwidth, 0, rectwidth));
 
-    leftbox.getChildren().add(ta);
+    leftbox.getChildren().add(textfield);
 
 
     /**
@@ -253,19 +278,7 @@ public class Fxdriver extends Application {
           buttombox.getChildren().clear();
           buttombox.getChildren().add(new Label("Please Select a starting location."));
         } else {
-          if (ta.getText() == null || ta.getText().isEmpty()
-              || "Normal".equalsIgnoreCase(ta.getText())) {
-            cartype = 4;
-
-          } else if ("Handicap".equalsIgnoreCase(ta.getText())) {
-            cartype = 3;
-          } else if ("Compact".equalsIgnoreCase(ta.getText())) {
-            cartype = 1;
-          } else if ("Electric".equalsIgnoreCase(ta.getText())) {
-            cartype = 2;
-          } else if (isInteger((String) ta.getText())) {
-            cartype = (int) Integer.valueOf((String) ta.getText());
-          }
+          cartype = getCarType(textfield);
           if (cartype < 1 || cartype > 4) {
             buttombox.getChildren().clear();
             buttombox.getChildren().add(new Label("Please Enter valid Parking Type"));
