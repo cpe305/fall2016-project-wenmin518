@@ -124,8 +124,7 @@ public class User implements Subject {
 
   @Override
   public int hashCode() {
-    int hash = 3;
-    hash = 7 * hash + this.getPosition().hashCode();
+    int hash = 7 * 3 + this.getPosition().hashCode();
     return hash;
   }
 

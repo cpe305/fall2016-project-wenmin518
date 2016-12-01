@@ -1,7 +1,7 @@
 package main.java.edu.calpoly.cpe305.wenmin.polyparktrack;
 
 /**
- * Observer which observes the subject behavior
+ * Observer which observes the subject behavior.
  * @author wenmin518
  *
  */

@@ -394,11 +394,7 @@ public class Calculation implements Observer {
 
   @Override
   public int hashCode() {
-    int hash = 3;
-    hash = 7 * this.adj.hashCode();
-    hash = 7 * this.parkingLoc.hashCode();
-    hash = 7 * this.user.hashCode();
-    hash = 7 * this.user.hashCode();
+    int hash = 7 * this.hashCode();
     return hash;
   }
   

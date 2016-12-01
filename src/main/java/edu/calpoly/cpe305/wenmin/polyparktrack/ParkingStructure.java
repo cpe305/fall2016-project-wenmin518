@@ -175,9 +175,7 @@ public class ParkingStructure {
   }
   @Override
   public int hashCode() {
-    int hash = 3;
-    hash = 7 * hash + this.spotArr.hashCode();
-    hash = 7 * hash + this.pos.hashCode();
+    int hash = 7 * 3 + this.hashCode();
     return hash;
   }
 }

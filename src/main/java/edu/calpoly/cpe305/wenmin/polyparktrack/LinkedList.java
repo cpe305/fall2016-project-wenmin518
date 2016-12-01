@@ -140,9 +140,7 @@ public class LinkedList implements Cloneable {
   
   @Override
   public int hashCode() {
-    int hash = 3;
-    hash = 7 * this.first.hashCode();
-    hash = 7 * this.last.hashCode();
+    int hash = 7 * 3 + this.hashCode();
     return hash;
   }
 
