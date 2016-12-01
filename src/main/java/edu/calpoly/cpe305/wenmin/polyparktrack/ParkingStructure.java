@@ -155,7 +155,7 @@ public class ParkingStructure {
     if (obj == null) {
       return false;
     }
-    if (!(obj instanceof LinkedList)) {
+    if (!(obj instanceof ParkingStructure)) {
       return false;
     }
 

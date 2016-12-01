@@ -58,14 +58,32 @@ public class TestStructure {
   @Test
   public void testequals() {
     ParkingSpot spot = new ParkingSpot(10, 2, true);
-    assertFalse(spot.equals(null));
-    assertFalse(spot.equals(new Geoloc(2, 2)));
     ParkingSpot spot2 = new ParkingSpot(20, 2, true);
     ParkingSpot spot3 = new ParkingSpot(10, 4, true);
     ParkingSpot spot4 = new ParkingSpot(10, 2, false);
-    assertFalse(spot.equals(spot2));
-    assertFalse(spot.equals(spot3));
-    assertFalse(spot.equals(spot4));
-    assertTrue(spot.equals(spot));
+    ParkingStructure structure = new ParkingStructure(new Geoloc(1, 1));
+    structure.addtoSpotArr(spot);
+    structure.addtoSpotArr(spot2);
+    structure.addtoSpotArr(spot3);
+    structure.addtoSpotArr(spot4);
+    assertEquals(structure.getSmallestTypeNum(4), 2);
+    assertEquals(structure.getSmallestSpotNum(), 0);
+    structure.setSpotAt(2, spot4);
+    assertFalse(structure.equals(spot4));
+  }
+  
+  @Test
+  public void testmoreEquals() {
+    ParkingStructure ps = new ParkingStructure(new Geoloc(1, 1));
+    ParkingStructure ps2 = new ParkingStructure(new Geoloc(2, 1));
+    assertFalse(ps.equals(ps2));
+    ParkingSpot spot1 = new ParkingSpot(10, 2, true);
+    ParkingSpot spot2 = new ParkingSpot(5, 3, false);
+    ps.addtoSpotArr(spot1);
+    ps.addtoSpotArr(spot2);
+    ps2.addtoSpotArr(spot1);
+    assertFalse(ps.equals(ps2));
+    ps2.addtoSpotArr(spot1);
+    assertFalse(ps.equals(ps2));
   }
 }
