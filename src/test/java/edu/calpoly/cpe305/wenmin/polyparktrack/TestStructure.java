@@ -1,6 +1,8 @@
 package test.java.edu.calpoly.cpe305.wenmin.polyparktrack;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
@@ -11,7 +13,7 @@ import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.ParkingStructure;
 public class TestStructure {
 
   @Test
-  public void structureTest1() {
+  public void testGetter() {
     ParkingSpot ps1 = new ParkingSpot(10, 3, true);
     ParkingSpot ps2 = new ParkingSpot(5, 1, false);
     ParkingStructure ps = new ParkingStructure(new Geoloc(4, 4));
@@ -28,7 +30,7 @@ public class TestStructure {
   }
 
   @Test
-  public void structureTest2() {
+  public void moreGetterTests() {
     ParkingSpot ps1 = new ParkingSpot(10, 2, false);
     ParkingStructure ps = new ParkingStructure(new Geoloc(3, 3));
     ps.addtoSpotArr(ps1);
@@ -36,5 +38,17 @@ public class TestStructure {
     assertEquals(ps.getNumoccupied(), 1);
     assertEquals(ps.getspotArr().get(0).getType(), 2);
     assertEquals(ps.getspotArr().get(0).isAvailable(), false);
+  }
+  
+  @Test
+  public void setterandOthers() {
+    ParkingSpot spot = new ParkingSpot(10, 2, true);
+    ParkingStructure structure = new ParkingStructure(new Geoloc(3, 3));
+    structure.addtoSpotArr(spot);
+    assertFalse(structure.parkingStrIsFull());
+    structure.parktoTheNearest();
+    assertTrue(structure.parkingStrIsFull());
+    structure.setPosition(new Geoloc(3, 2));
+    System.out.println(structure.getSmallestSpotNum());
   }
 }

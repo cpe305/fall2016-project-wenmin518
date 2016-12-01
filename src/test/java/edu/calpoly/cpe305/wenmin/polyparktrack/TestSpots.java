@@ -52,8 +52,12 @@ public class TestSpots {
     ParkingSpot ps = new ParkingSpot(20, 3, true);
     assertFalse(ps.equals(null));
     assertFalse(ps.equals(new Geoloc(1, 1)));
-    ParkingSpot newPs = new ParkingSpot(5, 2, false);
+    ParkingSpot newPs = new ParkingSpot(5, 3, true);
+    ParkingSpot newPs2 = new ParkingSpot(20, 2, true);
+    ParkingSpot newPs3 = new ParkingSpot(20, 3 ,false);
     assertFalse(ps.equals(newPs));
+    assertFalse(ps.equals(newPs2));
+    assertFalse(ps.equals(newPs3));
     newPs.setAvailability(true);
     newPs.setNum(20);
     newPs.setType(3);
