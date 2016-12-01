@@ -1,5 +1,8 @@
 package main.java.edu.calpoly.cpe305.wenmin.polyparktrack;
 
+
+import java.util.Iterator;
+
 /**
  * My own linkedlist class that has the the functionality of java linkedlist.
  * 
@@ -134,7 +137,7 @@ public class LinkedList implements Cloneable {
     }
     return false;
   }
-
+  
   @Override
   public int hashCode() {
     int hash = 7 * 3 + this.last.hashCode();
@@ -145,16 +148,12 @@ public class LinkedList implements Cloneable {
    * Remove first item on the list and return it.
    * 
    * @return the last item removed from the linkedlist
+   * @throws RemoveElementFromEmptyListException 
    */
-  public Object removeFirst() {
+  public Object removeFirst() throws RemoveElementFromEmptyListException {
     // Supply details as in the assignment description
     if (this.isEmpty()) {
-      try {
-        throw new RemoveElementFromEmptyListException();
-      } catch (RemoveElementFromEmptyListException excep) {
-        // TODO Auto-generated catch block
-        excep.printStackTrace();
-      }
+      throw new RemoveElementFromEmptyListException();
     }
     Object obj = first.item;
     if (first == last) {
@@ -177,12 +176,7 @@ public class LinkedList implements Cloneable {
   public Object removeLast() {
     // Supply details as in the assignment description
     if (this.isEmpty()) {
-      try {
-        throw new RemoveElementFromEmptyListException();
-      } catch (RemoveElementFromEmptyListException excep) {
-        // TODO Auto-generated catch block
-        excep.printStackTrace();
-      }
+      throw new Error("The LinkedList is empty");
     }
 
     Object obj = last.item;
@@ -242,8 +236,9 @@ public class LinkedList implements Cloneable {
    * 
    * @param obj refering the object to be removed
    * @return if the object is removeble
+   * @throws RemoveElementFromEmptyListException 
    */
-  public boolean remove(Object obj) {
+  public boolean remove(Object obj) throws RemoveElementFromEmptyListException {
     Node previous = first;
     for (int i = 0; i < this.length(); i++) {
       if (obj.equals(previous.item)) {
@@ -267,15 +262,11 @@ public class LinkedList implements Cloneable {
    * copy the linkedList.
    * 
    * @return the same linkedlist object
+   * @throws CloneNotSupportedException 
    */
   @Override
-  public Object clone() {
-    try {
-      super.clone();
-    } catch (CloneNotSupportedException excep) {
-      // TODO Auto-generated catch block
-      excep.printStackTrace();
-    }
+  public Object clone() throws CloneNotSupportedException {
+    super.clone();
     LinkedList theClone = new LinkedList();
     Node previous = this.first;
 
