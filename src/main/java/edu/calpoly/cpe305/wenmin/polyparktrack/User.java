@@ -48,11 +48,15 @@ public class User implements Subject {
    * @param loc referring the location that subject is changing to.
    */
   public void notifyObsLoc(Geoloc loc) {
-    obs.updateUserLoc(loc);
+    if (hasObs) {
+      obs.updateUserLoc(loc);
+    }
   }
 
   public void notifyObsType(int type) {
-    obs.updateCartype(type);
+    if (hasObs) {
+      obs.updateCartype(type);
+    }
   }
 
   /**

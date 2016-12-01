@@ -42,13 +42,14 @@ public class TestUser {
   
   @Test
   public void testUserEquals() {
-    
+//    
     User user = new User(new Geoloc(0, 1), 3);
     Calculation cal = new Calculation(adj, visited, user, vert, vert, vert * 2, parkLoc);
+    user.registerObs(cal);
     user.notifyObsType(1);
     user.notifyObsLoc(new Geoloc(1, 1));
-    user.registerObs(cal);
     user.unregisterObs();
+    user = new User(new Geoloc(0, 1), 3);
     assertFalse(user.equals(new User(new Geoloc(1, 1), 2)));
     assertFalse(user.equals(null));
     assertFalse(user.equals(new Geoloc(1, 1)));
