@@ -283,19 +283,16 @@ public class Calculation implements Observer {
   /**
    * Print the string saying which parking spot is available.
    * 
-   * @param parkingStrNum referring to the nearest parking structure
    * @return the string tells user about the nearest parking spot that he/she is looking for
    */
-  public String printCarType() {
+  public String printUserCarType() {
     String car = null;
 
     if (user.getCarType() == 1) {
       car = "Compact";
-    }
-    if (user.getCarType() == 2) {
+    } else if (user.getCarType() == 2) {
       car = "Electric";
-    }
-    if (user.getCarType() == 3) {
+    } else if (user.getCarType() == 3) {
       car = "Handicap";
     } else {
       car = "Normal";
@@ -337,7 +334,7 @@ public class Calculation implements Observer {
       int start = locToint(userLoc);
       int end = locToint(parkingLoc.get(parkingStrNum).getPosition());
       str += printParkingNum(parkingStrNum);
-      str += printStrNumwithCarType(printCarType(), parkingStrNum);
+      str += printStrNumwithCarType(printUserCarType(), parkingStrNum);
       double distance = getCalpolyDistance(start, end);
       str += distanceString(distance);
       str += timeString(distance);

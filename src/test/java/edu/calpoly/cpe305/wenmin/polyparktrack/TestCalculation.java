@@ -1,6 +1,7 @@
 package test.java.edu.calpoly.cpe305.wenmin.polyparktrack;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -35,7 +36,7 @@ public class TestCalculation {
   }
 
   @Test
-  public void calculationTest1() {
+  public void testPath1() {
     parkLoc.add(new ParkingStructure(new Geoloc(1, 1)));
 
     initAdjVis();
@@ -54,7 +55,7 @@ public class TestCalculation {
   }
 
   @Test
-  public void calculationTest2() {
+  public void testPath2() {
     User user = new User(userLoc, 2);
     Calculation cal = new Calculation(adj, visited, user, vert / 2, vert / 2, vert, parkLoc);
     cal.addEdge(new Geoloc(0, 0), new Geoloc(1, 0));
@@ -72,6 +73,49 @@ public class TestCalculation {
     User user = new User(userLoc, 1);
     Calculation cal = new Calculation(adj, visited, user, vert / 2, vert / 2, vert, parkLoc);
     assertTrue(cal.distancebetween(new Geoloc(0, 0), new Geoloc(3, 4)) == 5);
+    assertFalse(cal.equals(
+        new Calculation(adj, visited, new User(userLoc, 2), vert, vert, 2 * vert, parkLoc)));
+  }
+
+  @Test
+  public void testGetter() {
+    User user = new User(userLoc, 1);
+    Calculation cal = new Calculation(adj, visited, user, vert / 2, vert / 2, vert, parkLoc);
+    assertEquals(adj[1][1], cal.getAdj()[1][2]);
+    assertEquals(adj[1][2], cal.getAdjAt(1, 2));
+    int start = cal.locToint(new Geoloc(0, 0));
+    int end = cal.locToint(new Geoloc(0, 1));
+    double distance = (double) cal.fewestEdgePath(start, end) * 0.27;
+    assertTrue(distance == cal.getCalpolyDistance(start, end));
+    assertEquals(vert / 2, cal.getCol());
+    assertEquals(vert / 2, cal.getRow());
+    assertEquals(vert, cal.getNumVer());
+    parkLoc.clear();
+    ParkingStructure ps = new ParkingStructure(new Geoloc(1, 1));
+    parkLoc.add(new ParkingStructure(new Geoloc(1, 1)));
+    assertEquals(cal.getParkStr().get(0).getPosition(), new Geoloc(1, 1));
+    assertTrue(ps.getPosition().equals(cal.getStrAt(0).getPosition()));
+    assertEquals(cal.getUser(), user);
+    assertEquals(cal.getVisited()[1], cal.getVisitedAt(1));
+    assertEquals(cal.nearbyParkingStr(user.getPosition(), parkLoc), -1);
+
+  }
+
+  @Test
+  public void testprint() {
+    User user = new User(userLoc, 1);
+    Calculation cal = new Calculation(adj, visited, user, vert / 2, vert / 2, vert, parkLoc);
+    assertEquals(cal.distanceString(2.70001), "The parking spot is about " + 2.7 + " miles away\n");
+    assertEquals(cal.printUserCarType(), "Compact");
+    assertEquals(cal.printParkingNum(-1), "The nearest ParkingStructure is P0\n");
+    parkLoc.add(new ParkingStructure(userLoc));
+    assertEquals(cal.printStrNumwithCarType("Compact", 0),
+        "Compact car that you are looking for is not available in parking 0\n");
+    assertEquals(cal.timeString(1.009), "It is gonna take about 4.0 minutes");
+    cal.updateCartype(2);
+    assertEquals(cal.getUser().getCarType(), 2);
+    cal.updateUserLoc(new Geoloc(2, 0));
+    assertTrue(cal.getUser().getPosition().equals(new Geoloc(2, 0)));
   }
 
 }
