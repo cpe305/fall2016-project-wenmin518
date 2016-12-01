@@ -147,7 +147,7 @@ public class TestCalculation {
     assertFalse(cal.equals(null));
     Calculation newCal = new Calculation(adj, visited, user, vert, vert, vert * 2, parkLoc);
     assertTrue(cal.equals(newCal));
-
+//    System.out.println(cal.hashCode());
     assertEquals(cal.hashCode(), 182);
   }
 
