@@ -50,5 +50,22 @@ public class TestStructure {
     assertTrue(structure.parkingStrIsFull());
     structure.setPosition(new Geoloc(3, 2));
     assertEquals(structure.getSmallestSpotNum(), -1);
+    structure.setSpotAt(0, new ParkingSpot(1, 2, false));
+    structure.setPosition(new Geoloc(22, 2));
+    assertTrue(structure.getPosition().equals(new Geoloc(22, 2)));
+  }
+  
+  @Test
+  public void testequals() {
+    ParkingSpot spot = new ParkingSpot(10, 2, true);
+    assertFalse(spot.equals(null));
+    assertFalse(spot.equals(new Geoloc(2, 2)));
+    ParkingSpot spot2 = new ParkingSpot(20, 2, true);
+    ParkingSpot spot3 = new ParkingSpot(10, 4, true);
+    ParkingSpot spot4 = new ParkingSpot(10, 2, false);
+    assertFalse(spot.equals(spot2));
+    assertFalse(spot.equals(spot3));
+    assertFalse(spot.equals(spot4));
+    assertTrue(spot.equals(spot));
   }
 }
