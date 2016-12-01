@@ -287,7 +287,7 @@ public class Calculation implements Observer {
    * @return the string tells user about the nearest parking spot that he/she is looking for
    */
   public String printUserCarType() {
-    String car = null;
+    String car = "";
 
     if (user.getCarType() == 1) {
       car = "Compact";

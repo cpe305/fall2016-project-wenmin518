@@ -42,7 +42,7 @@ public class Fxdriver extends Application {
   private static Geoloc userLoc = new Geoloc(-1, -1);
   private static int cartype = -1;
   private static User user = new User(userLoc, cartype);
-
+  private static String imagePath;
 
 
   /**
@@ -52,12 +52,13 @@ public class Fxdriver extends Application {
    * @return boolean referring to whether the string is an integer
    */
   public static boolean isInteger(String str) {
+    int value = 0;
     try {
-      Integer.parseInt(str);
+      value = Integer.parseInt(str);
     } catch (NumberFormatException err) {
       return false;
     }
-    if (Integer.parseInt(str) < 0) {
+    if (value < 0) {
       return false;
     }
     return true;
@@ -87,13 +88,30 @@ public class Fxdriver extends Application {
     return cartype;
   }
 
+  /**
+   * Inbound click returns true if the click lands in the static image.
+   * 
+   * @param xloc referring to the x location of the click
+   * @param yloc referring to the y location of the click
+   * @param rectwidth referring to the rectangle width in the javafx
+   * @param imagewidth referring to the width of image
+   * @param imageheight referring to the height of image
+   * @return boolean whether user click on the static map
+   */
+  public boolean inboundblick(double xloc, double yloc, double rectwidth, double imagewidth,
+      double imageheight) {
+    if (xloc >= rectwidth && xloc <= (rectwidth + imagewidth) && (yloc <= imageheight)) {
+      return true;
+    }
+    return false;
+  }
+
   @Override
   public void start(Stage stage) {
-
+    imagePath = "file:///Users/wenmin518/git/fall2016-project-wenmin518/imagefiles/parking.jpg";
 
     // load the image
-    Image image =
-        new Image("file:///Users/wenmin518/git/fall2016-project-wenmin518/imagefiles/parking.jpg");
+    Image image = new Image(imagePath);
     /**
      * style and variables.
      */
@@ -119,7 +137,7 @@ public class Fxdriver extends Application {
     HBox leftbox = new HBox();
     TextField textfield = new TextField();
 
-    double inputwidth = 500;
+    double inputwidth = 470;
     textfield.setPrefWidth(inputwidth);
     textfield
         .setPromptText("Enter the Parking Type: 1: Electric, 2: Compact, 3: Hadicap, 4: Normal");
@@ -138,8 +156,6 @@ public class Fxdriver extends Application {
     Button btn = new Button("Find the Spot");
     btn.setPrefWidth(buttonwidth);
     btn.setPrefHeight(20);
-    // Setting an action for the btn button
-
     rightbox.getChildren().add(btn);
 
 
@@ -183,8 +199,6 @@ public class Fxdriver extends Application {
     numlabel.setTextFill(Color.YELLOW);
     double numtitleheight = 130;
     double numtitlewidth = 10;
-
-
     /**
      * Creating new group.
      */
@@ -205,8 +219,9 @@ public class Fxdriver extends Application {
      * Vbox set up showing number of parking spots on each parking structure.
      */
     double vboxspace = 30;
+    int maxnumLines = 4;
     VBox vbox = new VBox(vboxspace);
-    for (int i = 0; i < 8; i++) {
+    for (int i = 0; i < maxnumLines; i++) {
       vbox.setPadding(new Insets(labelheight + numtitleheight, tabwidth + numtitlewidth,
           labelheight + numtitleheight, tabwidth + numtitlewidth));
       String str = "Parking Structure " + (i + 1) + ": ";
@@ -258,8 +273,9 @@ public class Fxdriver extends Application {
         clicky.setRadius(5);
         clicky.setFill(Color.TRANSPARENT);
         clicky.setStroke(Color.BLACK);
-        if (e.getX() >= rectwidth && e.getX() <= (rectwidth + image.getWidth())
-            && (e.getY() <= imageheight)) {
+        // inboundblick(int xloc, int yloc, int rectanglewidth, int imagewidth,
+        // int imageheight);
+        if (inboundblick(e.getX(), e.getY(), rectwidth, image.getWidth(), imageheight)) {
           clicky.setCenterX(e.getX());
           clicky.setCenterY(e.getY());
           int userX = (int) ((e.getX() - rectwidth) / 10);
