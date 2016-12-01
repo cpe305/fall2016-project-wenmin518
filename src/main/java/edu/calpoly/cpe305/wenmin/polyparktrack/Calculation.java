@@ -220,7 +220,7 @@ public class Calculation implements Observer {
         if (dis > newDis) {
           dis = newDis;
           value = i;
-        } else if (dis == -1.0) {
+        } else if (dis == 0.0) {
           dis = newDis;
           value = i;
         }

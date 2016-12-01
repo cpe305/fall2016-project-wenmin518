@@ -8,6 +8,7 @@ import org.junit.Test;
 
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.Calculation;
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.Geoloc;
+import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.ParkingSpot;
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.ParkingStructure;
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.User;
 
@@ -92,6 +93,7 @@ public class TestCalculation {
     assertEquals(vert, cal.getNumVer());
     parkLoc.clear();
     ParkingStructure ps = new ParkingStructure(new Geoloc(1, 1));
+
     parkLoc.add(new ParkingStructure(new Geoloc(1, 1)));
     assertEquals(cal.getParkStr().get(0).getPosition(), new Geoloc(1, 1));
     assertTrue(ps.getPosition().equals(cal.getStrAt(0).getPosition()));
@@ -103,6 +105,7 @@ public class TestCalculation {
 
   @Test
   public void testprint() {
+
     User user = new User(userLoc, 1);
     Calculation cal = new Calculation(adj, visited, user, vert / 2, vert / 2, vert, parkLoc);
     assertEquals(cal.distanceString(2.70001), "The parking spot is about " + 2.7 + " miles away\n");
@@ -114,8 +117,39 @@ public class TestCalculation {
     assertEquals(cal.timeString(1.009), "It is gonna take about 4.0 minutes");
     cal.updateCartype(2);
     assertEquals(cal.getUser().getCarType(), 2);
+    assertEquals(cal.printUserCarType(), "Electric");
+    cal.updateCartype(3);
+    assertEquals(cal.printUserCarType(), "Handicap");
+    cal.updateCartype(4);
+    assertEquals(cal.printUserCarType(), "Normal");
     cal.updateUserLoc(new Geoloc(2, 0));
     assertTrue(cal.getUser().getPosition().equals(new Geoloc(2, 0)));
+    assertEquals(cal.printInfo(userLoc), "Sorry, every parking spot is taken, try tomorrow, ---\n");
+    parkLoc.clear();
+    parkLoc.add(new ParkingStructure(new Geoloc(0, 0)));
+
+    for (int i = 0; i < 4; i++) {
+      ParkingSpot spot = new ParkingSpot(i, i + 1, true);
+      parkLoc.get(0).addtoSpotArr(spot);
+    }
+    cal = new Calculation(adj, visited, user, vert / 2, vert / 2, vert, parkLoc);
+    assertEquals(cal.printStrNumwithCarType("Electric", 0),
+        "Parking Spot #4 is Electric Parking Spot you are looking for\n");
+    assertEquals(cal.printInfo(userLoc),
+        "The nearest ParkingStructure is P1\nParking Spot #4 is Normal Parking Spot you are looking for\nThe parking spot is about 0.0 miles away\nIt is gonna take about 0.0 minutes");
+  }
+  
+  @Test
+  public void testequalsMethod() {
+    User user = new User(userLoc, 1);
+    Calculation cal = new Calculation(adj, visited, user, vert , vert , vert * 2, parkLoc);
+    assertFalse(cal.equals(new Geoloc(1, 1)));
+    assertFalse(cal.equals(null));
+    Calculation newCal = cal;
+    newCal.getAdj()[0][0] = 5;
+    assertFalse(cal.equals(newCal));
+    
+    
   }
 
 }
