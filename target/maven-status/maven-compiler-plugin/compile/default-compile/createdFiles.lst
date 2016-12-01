@@ -1,7 +1,6 @@
 main/java/edu/calpoly/cpe305/wenmin/polyparktrack/ParkingPath.class
 main/java/edu/calpoly/cpe305/wenmin/polyparktrack/Subject.class
 main/java/edu/calpoly/cpe305/wenmin/polyparktrack/Calculation.class
-main/java/edu/calpoly/cpe305/wenmin/polyparktrack/LinkedList$Iter.class
 main/java/edu/calpoly/cpe305/wenmin/polyparktrack/Fxdriver.class
 main/java/edu/calpoly/cpe305/wenmin/polyparktrack/ParkingSpot.class
 main/java/edu/calpoly/cpe305/wenmin/polyparktrack/ParkingStrJson.class
