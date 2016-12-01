@@ -41,6 +41,18 @@ public class ParkingStructure {
   }
 
   /**
+   * Setter method for spot array.
+   * 
+   * @param index referring to the index of the parking spot
+   * @param spot referring to the spot object to change to
+   */
+  public void setSpotAt(int index, ParkingSpot spot) {
+    if (index < spotArr.size() - 1) {
+      spotArr.set(index, spot);
+    }
+  }
+
+  /**
    * @return number of parking spots available in that parking structure.
    */
   public int getNumavailable() {
@@ -52,13 +64,20 @@ public class ParkingStructure {
     }
     return count;
   }
+  
 
   /**
    *
    * @return integer indicates number of parking spots occupied.
    */
   public int getNumoccupied() {
-    return spotArr.size() - getNumavailable();
+    int count = 0;
+    for (int i = 0; i < spotArr.size(); i++) {
+      if (!(spotArr.get(i).isAvailable())) {
+        count++;
+      }
+    }
+    return count;
   }
 
   /**

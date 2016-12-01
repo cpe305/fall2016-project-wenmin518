@@ -71,7 +71,7 @@ public class TestCalculation {
   public void testDistance() {
     User user = new User(userLoc, 1);
     Calculation cal = new Calculation(adj, visited, user, vert / 2, vert / 2, vert, parkLoc);
-    assertTrue(cal.distance(new Geoloc(0, 0), new Geoloc(3, 4)) == 5);
+    assertTrue(cal.distancebetween(new Geoloc(0, 0), new Geoloc(3, 4)) == 5);
   }
 
 }

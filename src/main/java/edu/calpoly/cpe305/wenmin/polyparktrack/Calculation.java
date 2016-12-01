@@ -196,7 +196,7 @@ public class Calculation implements Observer {
    * @param spotLoc referring to the parking structure entrance location
    * @return the distance between two points
    */
-  public double distance(Geoloc user, Geoloc spotLoc) {
+  public double distancebetween(Geoloc user, Geoloc spotLoc) {
 
     return (double) Math
         .sqrt(Math.multiplyExact(user.getX() - spotLoc.getX(), user.getX() - spotLoc.getX())
@@ -213,9 +213,9 @@ public class Calculation implements Observer {
   public int nearbyParkingStr(Geoloc user, ArrayList<ParkingStructure> parkStrLoc) {
     double newDis;
     int value = -1;
-    double dis = -1.0;
+    double dis = 0.0;
     for (int i = 0; i < parkStrLoc.size(); i++) {
-      newDis = distance(user, parkStrLoc.get(i).getPosition());
+      newDis = distancebetween(user, parkStrLoc.get(i).getPosition());
       if (parkStrLoc.get(i).getNumavailable() > 0) {
         if (dis > newDis) {
           dis = newDis;
@@ -251,7 +251,8 @@ public class Calculation implements Observer {
    */
   public String distanceString(double distance) {
     String result = String.format("%.1f", distance);
-    return "The parking spot is about " + result + " miles away\n";
+    String finalStr = "The parking spot is about " + result + " miles away\n";
+    return finalStr;
   }
 
   /**
@@ -262,7 +263,8 @@ public class Calculation implements Observer {
    */
   public String timeString(double distance) {
     String result = String.format("%.1f", distance / 15 * 60.0);
-    return "It is gonna take about " + result + " minutes";
+    String finalStr = "It is gonna take about " + result + " minutes";
+    return finalStr;
   }
 
   /**
@@ -284,9 +286,8 @@ public class Calculation implements Observer {
    * @param parkingStrNum referring to the nearest parking structure
    * @return the string tells user about the nearest parking spot that he/she is looking for
    */
-  public String printCarType(int parkingStrNum) {
+  public String printCarType() {
     String car = null;
-    String str = null;
 
     if (user.getCarType() == 1) {
       car = "Compact";
@@ -296,18 +297,29 @@ public class Calculation implements Observer {
     }
     if (user.getCarType() == 3) {
       car = "Handicap";
-    }
-    if (user.getCarType() == 4) {
+    } else {
       car = "Normal";
     }
+    return car;
+  }
+
+  /**
+   * get second line of the display info.
+   * 
+   * @param car referring to the string of car type
+   * @param parkingStrNum referring to the nearest parking structure number
+   * @return the string or the second line to user.
+   */
+  public String printStrNumwithCarType(String car, int parkingStrNum) {
+    String str = "";
     if (parkingLoc.get(parkingStrNum).getSmallestTypeNum(user.getCarType()) == -1) {
-      str +=
-          car + " car that you are looking for is not available in parking " + parkingStrNum + "\n";
+      str += car + " car that you are looking for is not available in parking " + parkingStrNum;
     } else {
       str += "Parking Spot #"
           + (parkingLoc.get(parkingStrNum).getSmallestTypeNum(user.getCarType()) + 1) + " is " + car
-          + " Parking Spot you are looking for\n";
+          + " Parking Spot you are looking for";
     }
+    str += "\n";
     return str;
   }
 
@@ -318,14 +330,14 @@ public class Calculation implements Observer {
    * @return the string referring to the information that user might want to know.
    */
   public String printInfo(Geoloc userLoc) {
-    String str = "\n";
+    String str = "";
     int parkingStrNum = nearbyParkingStr(userLoc, parkingLoc);
     if (parkingStrNum != -1) {
 
       int start = locToint(userLoc);
       int end = locToint(parkingLoc.get(parkingStrNum).getPosition());
       str += printParkingNum(parkingStrNum);
-      str += printCarType(parkingStrNum);
+      str += printStrNumwithCarType(printCarType(), parkingStrNum);
       double distance = getCalpolyDistance(start, end);
       str += distanceString(distance);
       str += timeString(distance);
@@ -384,7 +396,6 @@ public class Calculation implements Observer {
   @Override
   public void updateUserLoc(Geoloc loc) {
     user.setPosition(loc);
-
   }
 
   @Override

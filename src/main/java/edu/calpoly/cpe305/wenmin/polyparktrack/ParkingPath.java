@@ -70,6 +70,7 @@ public class ParkingPath {
     return adj;
   }
 
+
   /**
    * gets number of rows in adj matrix.
    * 
@@ -77,6 +78,15 @@ public class ParkingPath {
    */
   public int getRows() {
     return rows;
+  }
+
+  /**
+   * setter method for rows.
+   * 
+   * @param num referring to the number to be changed to
+   */
+  public void setRows(int num) {
+    rows = num;
   }
 
   /**
@@ -89,12 +99,30 @@ public class ParkingPath {
   }
 
   /**
+   * setter method for cols.
+   * 
+   * @param num referring to the number to be changed to
+   */
+  public void setCols(int num) {
+    cols = num;
+  }
+
+  /**
    * gets number of vertices adj matrix.
    * 
    * @return integer indicates the number of vertices.
    */
   public int getNumVer() {
     return numVertices;
+  }
+
+  /**
+   * setter method for number of vertices.
+   * 
+   * @param num referring to the number to be changed to
+   */
+  public void setNumVer(int num) {
+    numVertices = num;
   }
 
   /**
@@ -117,12 +145,32 @@ public class ParkingPath {
   }
 
   /**
+   * setter method for visited.
+   * 
+   * @param index referring to to index of visited to be changed
+   * @param choice referring to the boolean to be changed to
+   */
+  public void setVisited(int index, boolean choice) {
+    visited[index] = choice;
+  }
+
+  /**
    * gets vertices array.
    * 
    * @return memory of vertices array.
    */
   public int[] getVertices() {
     return vertices;
+  }
+
+  /**
+   * Getter method for certain vertex in the vertices array.
+   * 
+   * @param idx referring to the index to be change to.
+   * @return the num of the vertex in the array.
+   */
+  public int getVerticesAt(int idx) {
+    return vertices[idx];
   }
 
   /**

@@ -41,17 +41,23 @@ public class ParkingStrJson {
 
     for (Object newObj : structureList) {
       JSONObject structObj = (JSONObject) newObj;
-      int xloc = Integer.valueOf((String) structObj.get("x"));
-      int yloc = Integer.valueOf((String) structObj.get("y"));
+      String xstr = (String) structObj.get("x");
+      int xloc = Integer.valueOf(xstr);
+      String ystr = (String) structObj.get("y");
+      int yloc = Integer.valueOf(ystr);
 
-      ParkingStructure ps = new ParkingStructure(new Geoloc(xloc, yloc));
+      Geoloc strLoc = new Geoloc(xloc, yloc);
+      ParkingStructure ps = new ParkingStructure(strLoc);
 
       JSONArray parkingList = (JSONArray) structObj.get("Parking Spot List");
       for (Object o : parkingList) {
         JSONObject parkingSpot = (JSONObject) o;
-        int num = (int) Integer.valueOf((String) parkingSpot.get("Parking Number"));
-        int type = (int) Integer.valueOf((String) parkingSpot.get("Type"));
-        int avail = (int) Integer.valueOf((String) parkingSpot.get("availability"));
+        String numStr = (String) parkingSpot.get("Parking Number");
+        int num = (int) Integer.valueOf(numStr);
+        String typeStr = (String) parkingSpot.get("Type");
+        int type = (int) Integer.valueOf(typeStr);
+        String availStr = (String) parkingSpot.get("availability");
+        int avail = (int) Integer.valueOf(availStr);
         boolean availability = false;;
         if (avail == 1) {
           availability = true;
@@ -79,5 +85,15 @@ public class ParkingStrJson {
    */
   public ArrayList<ParkingStructure> getStructArr() {
     return structArr;
+  }
+
+  /**
+   * Setter method for ParkingStructure array.
+   * 
+   * @param idx referring to the index to be changed
+   * @param ps referring to the parking structure that you want it to change to
+   */
+  public void setStrArrAt(int idx, ParkingStructure ps) {
+    structArr.set(idx, ps);
   }
 }
