@@ -138,18 +138,17 @@ public class TestCalculation {
     assertEquals(cal.printInfo(userLoc),
         "The nearest ParkingStructure is P1\nParking Spot #4 is Normal Parking Spot you are looking for\nThe parking spot is about 0.0 miles away\nIt is gonna take about 0.0 minutes");
   }
-  
+
   @Test
   public void testequalsMethod() {
     User user = new User(userLoc, 1);
-    Calculation cal = new Calculation(adj, visited, user, vert , vert , vert * 2, parkLoc);
+    Calculation cal = new Calculation(adj, visited, user, vert, vert, vert * 2, parkLoc);
     assertFalse(cal.equals(new Geoloc(1, 1)));
     assertFalse(cal.equals(null));
-    Calculation newCal = cal;
-    newCal.getAdj()[0][0] = 5;
-    assertFalse(cal.equals(newCal));
-    
-    
+    Calculation newCal = new Calculation(adj, visited, user, vert, vert, vert * 2, parkLoc);
+    assertTrue(cal.equals(newCal));
+
+
   }
 
 }

@@ -5,10 +5,8 @@ main/java/edu/calpoly/cpe305/wenmin/polyparktrack/Fxdriver.class
 main/java/edu/calpoly/cpe305/wenmin/polyparktrack/ParkingSpot.class
 main/java/edu/calpoly/cpe305/wenmin/polyparktrack/ParkingStrJson.class
 main/java/edu/calpoly/cpe305/wenmin/polyparktrack/Observer.class
-main/java/edu/calpoly/cpe305/wenmin/polyparktrack/FirstDriver.class
 main/java/edu/calpoly/cpe305/wenmin/polyparktrack/LinkedList$1.class
 main/java/edu/calpoly/cpe305/wenmin/polyparktrack/ParkingStructure.class
-main/java/edu/calpoly/cpe305/wenmin/polyparktrack/DemoDriver.class
 main/java/edu/calpoly/cpe305/wenmin/polyparktrack/User.class
 main/java/edu/calpoly/cpe305/wenmin/polyparktrack/LinkedList.class
 main/java/edu/calpoly/cpe305/wenmin/polyparktrack/LinkedList$iter.class
