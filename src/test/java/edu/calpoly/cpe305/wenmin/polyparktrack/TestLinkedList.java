@@ -7,12 +7,13 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.LinkedList;
+import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.RemoveElementFromEmptyListException;
 
 
 public class TestLinkedList {
 
   @Test
-  public void linekdListTest1() {
+  public void linekdListTest1() throws CloneNotSupportedException {
     LinkedList list = new LinkedList();
     LinkedList listtwo = new LinkedList();
     list.addLast(3);
@@ -26,7 +27,7 @@ public class TestLinkedList {
   }
 
   @Test
-  public void linekdListTest2() {
+  public void linekdListTest2() throws RemoveElementFromEmptyListException {
     LinkedList list = new LinkedList();
     LinkedList listtwo = new LinkedList();
     listtwo.addFirst(100);
@@ -41,7 +42,7 @@ public class TestLinkedList {
   }
 
   @Test
-  public void linekdListTest3() {
+  public void linekdListTest3() throws RemoveElementFromEmptyListException {
     LinkedList list = new LinkedList();
     list.addFirst(100);
     list.addLast(300);
