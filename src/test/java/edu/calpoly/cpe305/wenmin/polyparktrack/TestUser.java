@@ -21,7 +21,7 @@ public class TestUser {
   public int[][] adj = new int[vert][vert];
   public boolean[] visited = new boolean[vert];
   public ArrayList<ParkingStructure> parkLoc = new ArrayList<ParkingStructure>();
-  
+
   @Test
   public void userTest1() {
     User user = new User(new Geoloc(10, 10), 3);
@@ -39,10 +39,9 @@ public class TestUser {
     assertEquals(user.getPosition().getX(), 0);
     assertEquals(user.getPosition().getY(), 1);
   }
-  
+
   @Test
   public void testUserEquals() {
-//    
     User user = new User(new Geoloc(0, 1), 3);
     Calculation cal = new Calculation(adj, visited, user, vert, vert, vert * 2, parkLoc);
     user.registerObs(cal);
@@ -53,7 +52,9 @@ public class TestUser {
     assertFalse(user.equals(new User(new Geoloc(1, 1), 2)));
     assertFalse(user.equals(null));
     assertFalse(user.equals(new Geoloc(1, 1)));
-    
+    assertEquals(user.hashCode(), 26);
   }
+
+
 
 }

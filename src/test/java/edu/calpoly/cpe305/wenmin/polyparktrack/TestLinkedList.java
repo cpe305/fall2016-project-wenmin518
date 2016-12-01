@@ -48,5 +48,6 @@ public class TestLinkedList {
     assertEquals(list.length(), 2);
     list.remove(100);
     assertEquals(list.length(), 1);
+    assertEquals(list.hashCode(), 922171819);
   }
 }

@@ -173,6 +173,12 @@ public class ParkingStructure {
     }
     return true;
   }
-
+  @Override
+  public int hashCode() {
+    int hash = 3;
+    hash = 7 * hash + this.spotArr.hashCode();
+    hash = 7 * hash + this.pos.hashCode();
+    return hash;
+  }
 }
 

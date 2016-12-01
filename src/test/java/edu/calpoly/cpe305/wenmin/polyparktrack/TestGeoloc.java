@@ -42,5 +42,6 @@ public class TestGeoloc {
     assertFalse(loc1.equals(loc2));
     loc1.setX(5);
     assertFalse(loc1.equals(loc2));
+    assertEquals(loc1.hashCode(), 5);
   }
 }

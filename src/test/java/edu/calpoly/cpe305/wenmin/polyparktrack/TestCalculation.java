@@ -148,7 +148,7 @@ public class TestCalculation {
     Calculation newCal = new Calculation(adj, visited, user, vert, vert, vert * 2, parkLoc);
     assertTrue(cal.equals(newCal));
 
-
+    assertEquals(cal.hashCode(), 182);
   }
 
 }

@@ -85,5 +85,6 @@ public class TestStructure {
     assertFalse(ps.equals(ps2));
     ps2.addtoSpotArr(spot1);
     assertFalse(ps.equals(ps2));
+    assertEquals(ps.hashCode(), 7551);
   }
 }

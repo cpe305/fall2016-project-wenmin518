@@ -137,6 +137,14 @@ public class LinkedList implements Cloneable {
     }
     return false;
   }
+  
+  @Override
+  public int hashCode() {
+    int hash = 3;
+    hash = 7 * this.first.hashCode();
+    hash = 7 * this.last.hashCode();
+    return hash;
+  }
 
   /**
    * Remove first item on the list and return it.

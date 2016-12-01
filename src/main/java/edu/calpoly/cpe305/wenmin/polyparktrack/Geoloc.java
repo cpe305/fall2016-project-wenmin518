@@ -75,5 +75,10 @@ public class Geoloc {
 
     return true;
   }
+  
+  @Override
+  public int hashCode() {
+    return 5;
+  }
 
 }

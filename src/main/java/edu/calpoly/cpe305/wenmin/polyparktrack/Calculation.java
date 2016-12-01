@@ -287,7 +287,7 @@ public class Calculation implements Observer {
    * @return the string tells user about the nearest parking spot that he/she is looking for
    */
   public String printUserCarType() {
-    String car = "";
+    String car;
 
     if (user.getCarType() == 1) {
       car = "Compact";
@@ -390,7 +390,18 @@ public class Calculation implements Observer {
     }
     return true;
   }
+  
 
+  @Override
+  public int hashCode() {
+    int hash = 3;
+    hash = 7 * this.adj.hashCode();
+    hash = 7 * this.parkingLoc.hashCode();
+    hash = 7 * this.user.hashCode();
+    hash = 7 * this.user.hashCode();
+    return hash;
+  }
+  
   @Override
   public void updateUserLoc(Geoloc loc) {
     user.setPosition(loc);

@@ -89,5 +89,10 @@ public class ParkingSpot {
     }
     return true;
   }
+  
+  @Override
+  public int hashCode() {
+    return 3;
+  }
 }
 

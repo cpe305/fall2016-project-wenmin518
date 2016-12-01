@@ -62,6 +62,7 @@ public class TestSpots {
     newPs.setNum(20);
     newPs.setType(3);
     assertTrue(ps.equals(newPs));
+    assertEquals(ps.hashCode(), 3);
   }
 
 }
