@@ -42,9 +42,9 @@ public class ParkingStrJson {
     for (Object newObj : structureList) {
       JSONObject structObj = (JSONObject) newObj;
       String xstr = (String) structObj.get("x");
-      int xloc = Integer.valueOf(xstr);
+      int xloc = Integer.parseInt(xstr);
       String ystr = (String) structObj.get("y");
-      int yloc = Integer.valueOf(ystr);
+      int yloc = Integer.parseInt(ystr);
 
       Geoloc strLoc = new Geoloc(xloc, yloc);
       ParkingStructure ps = new ParkingStructure(strLoc);
@@ -58,7 +58,7 @@ public class ParkingStrJson {
         int type = (int) Integer.valueOf(typeStr);
         String availStr = (String) parkingSpot.get("availability");
         int avail = (int) Integer.valueOf(availStr);
-        boolean availability = false;;
+        boolean availability = false;
         if (avail == 1) {
           availability = true;
         }

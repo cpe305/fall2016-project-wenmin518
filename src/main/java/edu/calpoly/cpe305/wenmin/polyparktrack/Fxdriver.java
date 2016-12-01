@@ -27,7 +27,6 @@ import javafx.stage.Stage;
 
 import org.json.simple.parser.ParseException;
 
-import java.io.File;
 import java.io.IOException;
 
 
@@ -45,6 +44,7 @@ public class Fxdriver extends Application {
   private static User user = new User(userLoc, cartype);
 
 
+
   /**
    * Check if the input is an integer.
    * 
@@ -56,10 +56,10 @@ public class Fxdriver extends Application {
       Integer.parseInt(str);
     } catch (NumberFormatException err) {
       return false;
-    } catch (NullPointerException err) {
+    }
+    if (Integer.parseInt(str) < 0) {
       return false;
     }
-    // only got here if we didn't return false
     return true;
   }
 
@@ -101,7 +101,6 @@ public class Fxdriver extends Application {
     leftbox.setPadding(new Insets(0, rectwidth, 0, rectwidth));
 
     leftbox.getChildren().add(ta);
-
 
 
     /**
@@ -189,7 +188,7 @@ public class Fxdriver extends Application {
       if (structJson.getStrcutre(i).getNumavailable() == 0) {
         str += "full";
       } else {
-        str += structJson.getStrcutre(i).getNumavailable();
+        str += Integer.toString(structJson.getStrcutre(i).getNumavailable());
       }
       Label pslabel = new Label(str);
       pslabel.setTextFill(Color.YELLOW);
@@ -234,19 +233,15 @@ public class Fxdriver extends Application {
         clicky.setRadius(5);
         clicky.setFill(Color.TRANSPARENT);
         clicky.setStroke(Color.BLACK);
-        if (e.getX() >= rectwidth && e.getX() <= (rectwidth + image.getWidth())) {
-          if (e.getY() <= imageheight) {
-            clicky.setCenterX(e.getX());
-            clicky.setCenterY(e.getY());
-            int userX = (int) ((e.getX() - rectwidth) / 10);
-            int userY = (int) e.getY() / 10;
-            System.out.println(userX + " " + userY);
-            userLoc = new Geoloc(userX, userY);
-          }
+        if (e.getX() >= rectwidth && e.getX() <= (rectwidth + image.getWidth())
+            && (e.getY() <= imageheight)) {
+          clicky.setCenterX(e.getX());
+          clicky.setCenterY(e.getY());
+          int userX = (int) ((e.getX() - rectwidth) / 10);
+          int userY = (int) e.getY() / 10;
+          userLoc = new Geoloc(userX, userY);
         }
         root.getChildren().addAll(clicky);
-      } else {
-        userLoc = new Geoloc(-1, -1);
       }
     });
 
@@ -258,15 +253,15 @@ public class Fxdriver extends Application {
           buttombox.getChildren().clear();
           buttombox.getChildren().add(new Label("Please Select a starting location."));
         } else {
-          if (ta.getText() == null || ta.getText().isEmpty()) {
+          if (ta.getText() == null || ta.getText().isEmpty()
+              || "Normal".equalsIgnoreCase(ta.getText())) {
             cartype = 4;
-          } else if (ta.getText().equalsIgnoreCase("Normal")) {
-            cartype = 4;
-          } else if (ta.getText().equalsIgnoreCase("Handicap")) {
+
+          } else if ("Handicap".equalsIgnoreCase(ta.getText())) {
             cartype = 3;
-          } else if (ta.getText().equalsIgnoreCase("Compact")) {
+          } else if ("Compact".equalsIgnoreCase(ta.getText())) {
             cartype = 1;
-          } else if (ta.getText().equalsIgnoreCase("Electric")) {
+          } else if ("Electric".equalsIgnoreCase(ta.getText())) {
             cartype = 2;
           } else if (isInteger((String) ta.getText())) {
             cartype = (int) Integer.valueOf((String) ta.getText());
@@ -276,7 +271,6 @@ public class Fxdriver extends Application {
             buttombox.getChildren().add(new Label("Please Enter valid Parking Type"));
           } else {
             user = new User(userLoc, cartype);
-            System.out.println(user.getCarType() + " " + user.getPosition().getX());
             Calculation cal = new Calculation(parkingPath.getAdj(), parkingPath.getVisited(), user,
                 parkingPath.getRows(), parkingPath.getCols(), parkingPath.getNumVer(),
                 structJson.getStructArr());
@@ -324,14 +318,6 @@ public class Fxdriver extends Application {
    */
   public static void main(String[] args) throws ParseException, IOException {
     parkingPath = new ParkingPath();
-    System.out.println("Working Directory = " + System.getProperty("user.dir"));
-//
-//    File directory = new File("/Users/wenmin518/git/fall2016-project-wenmin518/testfiles");
-//    File[] contents = directory.listFiles();
-//    for (File f : contents) {
-//      System.out.println(f.getAbsolutePath());
-//    }
-
     parkingPath
         .setadjFromFile("/Users/wenmin518/git/fall2016-project-wenmin518/textfiles/test.txt");
     structJson = new ParkingStrJson();

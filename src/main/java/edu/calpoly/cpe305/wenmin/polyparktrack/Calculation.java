@@ -198,9 +198,9 @@ public class Calculation implements Observer {
    */
   public double distancebetween(Geoloc user, Geoloc spotLoc) {
 
-    return (double) Math
-        .sqrt(Math.multiplyExact(user.getX() - spotLoc.getX(), user.getX() - spotLoc.getX())
-            + Math.multiplyExact(user.getY() - spotLoc.getY(), user.getY() - spotLoc.getY()));
+    return Math.sqrt((double) Math.multiplyExact(user.getX() - spotLoc.getX(),
+        user.getX() - spotLoc.getX())
+        + (double) Math.multiplyExact(user.getY() - spotLoc.getY(), user.getY() - spotLoc.getY()));
   }
 
   /**
@@ -213,6 +213,7 @@ public class Calculation implements Observer {
   public int nearbyParkingStr(Geoloc user, ArrayList<ParkingStructure> parkStrLoc) {
     double newDis;
     int value = -1;
+    boolean emptyDis = true;
     double dis = 0.0;
     for (int i = 0; i < parkStrLoc.size(); i++) {
       newDis = distancebetween(user, parkStrLoc.get(i).getPosition());
@@ -220,9 +221,10 @@ public class Calculation implements Observer {
         if (dis > newDis) {
           dis = newDis;
           value = i;
-        } else if (dis == 0.0) {
+        } else if (emptyDis) {
           dis = newDis;
           value = i;
+          emptyDis = false;
         }
       }
     }
@@ -251,8 +253,7 @@ public class Calculation implements Observer {
    */
   public String distanceString(double distance) {
     String result = String.format("%.1f", distance);
-    String finalStr = "The parking spot is about " + result + " miles away\n";
-    return finalStr;
+    return "The parking spot is about " + result + " miles away\n";
   }
 
   /**
@@ -263,8 +264,7 @@ public class Calculation implements Observer {
    */
   public String timeString(double distance) {
     String result = String.format("%.1f", distance / 15 * 60.0);
-    String finalStr = "It is gonna take about " + result + " minutes";
-    return finalStr;
+    return "It is gonna take about " + result + " minutes";
   }
 
   /**

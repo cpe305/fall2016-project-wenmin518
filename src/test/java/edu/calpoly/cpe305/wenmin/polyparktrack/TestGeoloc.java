@@ -32,4 +32,18 @@ public class TestGeoloc {
     Geoloc loc = new Geoloc(5, 5);
     assertFalse(loc == new Geoloc(3, 2));
   }
+  
+  @Test
+  public void testSetterandEquals() {
+    Geoloc loc1 = new Geoloc(5, 5);
+    Geoloc loc2 = loc1;
+    loc1.setX(3);
+    loc1.setY(2);
+    System.out.println(loc1.getX() + loc2.getX());
+//    assertFalse(loc1.equals(loc2));
+//    loc1.setX(5);
+//    assertFalse(loc1.equals(loc2));
+//    loc1.setY(5);
+//    assertTrue(loc1.equals(loc2));
+  }
 }
