@@ -47,12 +47,19 @@ public class User implements Subject {
   /**
    * @param loc referring the location that subject is changing to.
    */
+  @Override
   public void notifyObsLoc(Geoloc loc) {
     if (hasObs) {
       obs.updateUserLoc(loc);
     }
   }
 
+  /**
+   * tells the observer to change car type.
+   * 
+   * @param type referring to the car type that subject has changed to.
+   */
+  @Override
   public void notifyObsType(int type) {
     if (hasObs) {
       obs.updateCartype(type);

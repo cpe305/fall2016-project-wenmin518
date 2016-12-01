@@ -274,7 +274,7 @@ public class LinkedList implements Cloneable {
    * @return the iterator of the linkedlist.
    */
   public Iterator iterator() {
-    return new iter();
+    return new Iter();
   }
 
   /**
@@ -282,19 +282,20 @@ public class LinkedList implements Cloneable {
    * 
    * @author wenmin518
    */
-  public class iter implements Iterator {
+  public class Iter implements Iterator {
     private Node current;
 
     /**
      * returns the iterator.
      */
-    public iter() {
+    public Iter() {
       current = first;
     }
 
     /**
      * @return whether the linkedlist has next element.
      */
+    @Override
     public boolean hasNext() {
       if (current == null) {
         return false;
@@ -305,6 +306,7 @@ public class LinkedList implements Cloneable {
     /**
      * remove which is not void operation in linkedlist.
      */
+    @Override
     public void remove() {
       // should throw a specific exception than generic
       throw new UnsupportedOperationException();
@@ -312,8 +314,10 @@ public class LinkedList implements Cloneable {
 
     /**
      * next return the next object in the linkedlist.
+     * 
      * @return the next object in the linkedlist.
      */
+    @Override
     public Object next() {
       if (current == null) {
         throw new Error(" No items in the list.");

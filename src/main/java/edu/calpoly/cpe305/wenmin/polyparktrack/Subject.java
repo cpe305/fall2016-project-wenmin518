@@ -10,9 +10,14 @@ public interface Subject {
   /**
    * notify observer to change location
    * 
-   * @param loc referrin to the location to be changed.
+   * @param loc referring to the location to be changed.
    */
   public void notifyObsLoc(Geoloc loc);
 
+  /**
+   * notify observer to change car type
+   * 
+   * @param loc referring to the car type to be changed.
+   */
   public void notifyObsType(int type);
 }
