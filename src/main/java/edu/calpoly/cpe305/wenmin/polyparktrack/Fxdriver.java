@@ -70,20 +70,20 @@ public class Fxdriver extends Application {
    * @param textfield referring to the text field on the application
    * @return an integer
    */
-  public int getCarType(TextField textfield) {
+  public static int getCarType(String textfield) {
     cartype = 4;
-    if (textfield.getText() == null || textfield.getText().isEmpty()
-        || "Normal".equalsIgnoreCase(textfield.getText())) {
+    if (textfield == null || textfield.isEmpty()
+        || "Normal".equalsIgnoreCase(textfield)) {
       cartype = 4;
 
-    } else if ("Handicap".equalsIgnoreCase(textfield.getText())) {
+    } else if ("Handicap".equalsIgnoreCase(textfield)) {
       cartype = 3;
-    } else if ("Compact".equalsIgnoreCase(textfield.getText())) {
+    } else if ("Compact".equalsIgnoreCase(textfield)) {
       cartype = 1;
-    } else if ("Electric".equalsIgnoreCase(textfield.getText())) {
+    } else if ("Electric".equalsIgnoreCase(textfield)) {
       cartype = 2;
-    } else if (isInteger((String) textfield.getText())) {
-      cartype = (int) Integer.valueOf((String) textfield.getText());
+    } else if (isInteger((String) textfield)) {
+      cartype = (int) Integer.valueOf((String) textfield);
     }
     return cartype;
   }
@@ -98,7 +98,7 @@ public class Fxdriver extends Application {
    * @param imageheight referring to the height of image
    * @return boolean whether user click on the static map
    */
-  public boolean inboundblick(double xloc, double yloc, double rectwidth, double imagewidth,
+  public static boolean inboundblick(double xloc, double yloc, double rectwidth, double imagewidth,
       double imageheight) {
     if (xloc >= rectwidth && xloc <= (rectwidth + imagewidth) && (yloc <= imageheight)) {
       return true;
@@ -294,7 +294,7 @@ public class Fxdriver extends Application {
           buttombox.getChildren().clear();
           buttombox.getChildren().add(new Label("Please Select a starting location."));
         } else {
-          cartype = getCarType(textfield);
+          cartype = getCarType(textfield.getText());
           if (cartype < 1 || cartype > 4) {
             buttombox.getChildren().clear();
             buttombox.getChildren().add(new Label("Please Enter valid Parking Type"));

@@ -1,8 +1,5 @@
 package main.java.edu.calpoly.cpe305.wenmin.polyparktrack;
 
-
-import java.util.Iterator;
-
 /**
  * My own linkedlist class that has the the functionality of java linkedlist.
  * 
@@ -137,7 +134,7 @@ public class LinkedList implements Cloneable {
     }
     return false;
   }
-  
+
   @Override
   public int hashCode() {
     int hash = 7 * 3 + this.last.hashCode();
@@ -148,7 +145,7 @@ public class LinkedList implements Cloneable {
    * Remove first item on the list and return it.
    * 
    * @return the last item removed from the linkedlist
-   * @throws RemoveElementFromEmptyListException 
+   * @throws RemoveElementFromEmptyListException prevent the invalid remove operation.
    */
   public Object removeFirst() throws RemoveElementFromEmptyListException {
     // Supply details as in the assignment description
@@ -236,7 +233,7 @@ public class LinkedList implements Cloneable {
    * 
    * @param obj refering the object to be removed
    * @return if the object is removeble
-   * @throws RemoveElementFromEmptyListException 
+   * @throws RemoveElementFromEmptyListException
    */
   public boolean remove(Object obj) throws RemoveElementFromEmptyListException {
     Node previous = first;
@@ -262,7 +259,7 @@ public class LinkedList implements Cloneable {
    * copy the linkedList.
    * 
    * @return the same linkedlist object
-   * @throws CloneNotSupportedException 
+   * @throws CloneNotSupportedException prevent the invalid clone operation.
    */
   @Override
   public Object clone() throws CloneNotSupportedException {

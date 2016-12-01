@@ -328,7 +328,7 @@ public class Calculation implements Observer {
    * @return the string referring to the information that user might want to know.
    */
   public String printInfo(Geoloc userLoc) {
-    String str = "";
+    String str = "\n";
     int parkingStrNum = nearbyParkingStr(userLoc, parkingLoc);
     if (parkingStrNum != -1) {
 
