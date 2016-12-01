@@ -173,7 +173,7 @@ public class LinkedList implements Cloneable {
   public Object removeLast() {
     // Supply details as in the assignment description
     if (this.isEmpty()) {
-      throw new Error("The LinkedList is empty");
+      System.out.println("Can not remove element from empty list");
     }
 
     Object obj = last.item;
@@ -233,7 +233,7 @@ public class LinkedList implements Cloneable {
    * 
    * @param obj refering the object to be removed
    * @return if the object is removeble
-   * @throws RemoveElementFromEmptyListException
+   * @throws RemoveElementFromEmptyListException prevent from invalid remove method to perform.
    */
   public boolean remove(Object obj) throws RemoveElementFromEmptyListException {
     Node previous = first;
