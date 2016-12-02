@@ -87,5 +87,8 @@ public class TestStructure {
     assertFalse(ps.equals(ps2));
 //    System.out.println(ps.hashCode());
     assertEquals(ps.hashCode(), 1078);
+    assertFalse(ps.equals(null));
+    assertTrue(ps.equals(ps));
+    
   }
 }
