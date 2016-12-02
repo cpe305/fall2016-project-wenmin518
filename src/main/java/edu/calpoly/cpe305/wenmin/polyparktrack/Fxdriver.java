@@ -219,7 +219,7 @@ public class Fxdriver extends Application {
      * Vbox set up showing number of parking spots on each parking structure.
      */
     double vboxspace = 30;
-    int maxnumLines = 4;
+    int maxnumLines = 8;
     VBox vbox = new VBox(vboxspace);
     for (int i = 0; i < maxnumLines; i++) {
       vbox.setPadding(new Insets(labelheight + numtitleheight, tabwidth + numtitlewidth,
@@ -351,7 +351,7 @@ public class Fxdriver extends Application {
         .setadjFromFile("/Users/wenmin518/git/fall2016-project-wenmin518/textfiles/test.txt");
     structJson = new ParkingStrJson();
     structJson.setParkLocFromFile(
-        "/Users/wenmin518/git/fall2016-project-wenmin518/jsonfiles/JsonTest2.json");
+        "/Users/wenmin518/git/fall2016-project-wenmin518/jsonfiles/JsonTest3.json");
 
     Application.launch(args);
   }
