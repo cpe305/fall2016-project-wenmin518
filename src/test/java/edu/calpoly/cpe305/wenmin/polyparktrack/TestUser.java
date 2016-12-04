@@ -4,14 +4,14 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import java.util.ArrayList;
-
-import org.junit.Test;
-
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.Calculation;
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.Geoloc;
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.ParkingStructure;
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.User;
+
+import org.junit.Test;
+
+import java.util.ArrayList;
 
 
 

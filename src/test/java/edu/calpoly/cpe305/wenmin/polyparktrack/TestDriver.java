@@ -1,12 +1,18 @@
 package test.java.edu.calpoly.cpe305.wenmin.polyparktrack;
 
-import static org.junit.Assert.*;
-
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import javafx.scene.Group;
 import javafx.scene.shape.Circle;
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.Fxdriver;
+
+
+
+import org.junit.Test;
+
+
 
 public class TestDriver {
 

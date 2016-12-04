@@ -274,7 +274,7 @@ public class Calculation implements Observer {
    * @param num referring to he nearest parking structure number
    * @return the string that displays parking structure number info.
    */
-  public String printParkingNum(int num) {
+  public String parkingNumString(int num) {
     String result = "";
     result += "The nearest ParkingStructure is P" + (num + 1) + "\n";
     return result;
@@ -286,7 +286,7 @@ public class Calculation implements Observer {
    * 
    * @return the string tells user about the nearest parking spot that he/she is looking for
    */
-  public String printUserCarType() {
+  public String carTypeString() {
     String car;
 
     if (user.getCarType() == 1) {
@@ -308,7 +308,7 @@ public class Calculation implements Observer {
    * @param parkingStrNum referring to the nearest parking structure number
    * @return the string or the second line to user.
    */
-  public String printStrNumwithCarType(String car, int parkingStrNum) {
+  public String numCarTypeString(String car, int parkingStrNum) {
     String str = "";
     if (parkingLoc.get(parkingStrNum).getSmallestTypeNum(user.getCarType()) == -1) {
       str += car + " car that you are looking for is not available in parking " + parkingStrNum;
@@ -327,15 +327,15 @@ public class Calculation implements Observer {
    * @param userLoc referring to the position of user.
    * @return the string referring to the information that user might want to know.
    */
-  public String printInfo(Geoloc userLoc) {
+  public String parkingSpotInfo(Geoloc userLoc) {
     String str = "\n";
     int parkingStrNum = nearbyParkingStr(userLoc, parkingLoc);
     if (parkingStrNum != -1) {
 
       int start = locToint(userLoc);
       int end = locToint(parkingLoc.get(parkingStrNum).getPosition());
-      str += printParkingNum(parkingStrNum);
-      str += printStrNumwithCarType(printUserCarType(), parkingStrNum);
+      str += parkingNumString(parkingStrNum);
+      str += numCarTypeString(carTypeString(), parkingStrNum);
       double distance = getCalpolyDistance(start, end);
       str += distanceString(distance);
       str += timeString(distance);

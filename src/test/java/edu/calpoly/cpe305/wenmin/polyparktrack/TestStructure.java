@@ -4,11 +4,12 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import org.junit.Test;
-
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.Geoloc;
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.ParkingSpot;
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.ParkingStructure;
+
+import org.junit.Test;
+
 
 public class TestStructure {
 
@@ -70,6 +71,7 @@ public class TestStructure {
     assertEquals(structure.getSmallestSpotNum(), 0);
     structure.setSpotAt(2, spot4);
     assertFalse(structure.equals(spot4));
+
   }
   
   @Test

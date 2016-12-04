@@ -1,11 +1,10 @@
 package test.java.edu.calpoly.cpe305.wenmin.polyparktrack;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-
-import org.junit.Test;
 
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.ParkingPath;
+
+import org.junit.Test;
 
 import java.io.FileNotFoundException;
 

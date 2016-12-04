@@ -4,10 +4,11 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import org.junit.Test;
-
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.Geoloc;
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.ParkingSpot;
+
+import org.junit.Test;
+
 
 
 public class TestSpots {
@@ -35,7 +36,7 @@ public class TestSpots {
     assertEquals(ps.getType(), 3);
     assertEquals(ps.isAvailable(), true);
   }
-  
+
   @Test
   public void testSetters() {
     ParkingSpot ps = new ParkingSpot(20, 3, true);
@@ -46,7 +47,7 @@ public class TestSpots {
     assertEquals(ps.getNum(), 10);
     assertEquals(ps.getType(), 2);
   }
-  
+
   @Test
   public void testEquals() {
     ParkingSpot ps = new ParkingSpot(20, 3, true);
@@ -54,7 +55,7 @@ public class TestSpots {
     assertFalse(ps.equals(new Geoloc(1, 1)));
     ParkingSpot newPs = new ParkingSpot(5, 3, true);
     ParkingSpot newPs2 = new ParkingSpot(20, 2, true);
-    ParkingSpot newPs3 = new ParkingSpot(20, 3 ,false);
+    ParkingSpot newPs3 = new ParkingSpot(20, 3, false);
     assertFalse(ps.equals(newPs));
     assertFalse(ps.equals(newPs2));
     assertFalse(ps.equals(newPs3));

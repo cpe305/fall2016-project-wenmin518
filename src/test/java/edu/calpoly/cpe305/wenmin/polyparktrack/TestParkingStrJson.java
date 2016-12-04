@@ -1,13 +1,15 @@
 package test.java.edu.calpoly.cpe305.wenmin.polyparktrack;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-import java.io.IOException;
+import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.ParkingStrJson;
 
 import org.json.simple.parser.ParseException;
 import org.junit.Test;
 
-import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.ParkingStrJson;
+import java.io.IOException;
+
+
 
 public class TestParkingStrJson {
   ParkingStrJson structJson = new ParkingStrJson();
@@ -15,8 +17,7 @@ public class TestParkingStrJson {
 
   @Test
   public void testAllMethods() throws ParseException, IOException {
-    structJson.setParkLocFromFile(
-        "jsonfiles/JsonTest2.json");
+    structJson.setParkLocFromFile("jsonfiles/JsonTest2.json");
     assertEquals(structJson.getStrcutre(0).getNumavailable(), 51);
     assertEquals(structJson.getStructArr().get(1).getNumavailable(), 46);
     structJson.setStrArrAt(0, structJson.getStrcutre(1));

@@ -4,10 +4,11 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import org.junit.Test;
-
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.LinkedList;
 import main.java.edu.calpoly.cpe305.wenmin.polyparktrack.RemoveElementFromEmptyListException;
+
+import org.junit.Test;
+
 
 
 public class TestLinkedList {
@@ -54,7 +55,6 @@ public class TestLinkedList {
     assertTrue(list.removeFirst().equals(300));
     assertFalse(list.contains(2));
     assertFalse(list.equals(null));
-//    System.out.println(list.hashCode());
-//    assertEquals(list.hashCode(), 1972439122);
+
   }
 }

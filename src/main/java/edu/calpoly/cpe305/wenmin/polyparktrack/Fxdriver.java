@@ -72,8 +72,7 @@ public class Fxdriver extends Application {
    */
   public static int getCarType(String textfield) {
     cartype = 4;
-    if (textfield == null || textfield.isEmpty()
-        || "Normal".equalsIgnoreCase(textfield)) {
+    if (textfield == null || textfield.isEmpty() || "Normal".equalsIgnoreCase(textfield)) {
       cartype = 4;
 
     } else if ("Handicap".equalsIgnoreCase(textfield)) {
@@ -273,8 +272,6 @@ public class Fxdriver extends Application {
         clicky.setRadius(5);
         clicky.setFill(Color.TRANSPARENT);
         clicky.setStroke(Color.BLACK);
-        // inboundblick(int xloc, int yloc, int rectanglewidth, int imagewidth,
-        // int imageheight);
         if (inboundblick(e.getX(), e.getY(), rectwidth, image.getWidth(), imageheight)) {
           clicky.setCenterX(e.getX());
           clicky.setCenterY(e.getY());
@@ -303,7 +300,7 @@ public class Fxdriver extends Application {
             Calculation cal = new Calculation(parkingPath.getAdj(), parkingPath.getVisited(), user,
                 parkingPath.getRows(), parkingPath.getCols(), parkingPath.getNumVer(),
                 structJson.getStructArr());
-            String[] printinfo = cal.printInfo(userLoc).split("\n");
+            String[] printinfo = cal.parkingSpotInfo(userLoc).split("\n");
             buttombox.getChildren().clear();
             VBox info = new VBox();
             for (String content : printinfo) {
