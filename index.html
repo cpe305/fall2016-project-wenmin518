@@ -25,11 +25,11 @@
 <h2>
 <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h2>
 
-<p>This is the prototype of how PolyParkTrack should behave. For this prototype, the application reads in the json file containing required information for each parking structure in Cal Poly campus. Then the GUI displays number of parking spot in each Parking Structure on cal poly are shown on the right with the format of Parking Structure #: #. The first # referring to the parking structure number, the second # is referring to number of available parking spots in that parking structure. </p>
+<p>This is the prototype of how PolyParkTrack should behave. For this prototype, the application reads in the JSON file containing required information for each parking structure in Cal Poly campus. Then the GUI displays the number of the parking spot in each Parking Structure on cal poly are shown on the right with the format of Parking Structure #: #. The first # referring to the parking structure number, the second # is referring to the number of available parking spots in that parking structure. </p>
 
 <p><img src="https://raw.githubusercontent.com/cpe305/fall2016-project-wenmin518/master/imagefiles/LeftScreenFormat.jpg" alt="Text format"></p>
 
-<p>Next to the field containing number of parking spots available in each parking structure, is a static cal poly map that allows users to hand pick the location he/she want to start. After picking the location, the user is able to input on the text field the car type he/she wants to find where 1: Compact, 2:Electric, 3: Handicap, 4: Normal. Then the user is able to press "find the spot" button on the right of the screen. After pressing "find the spot" button, a bunch of text on the button of the screen will be shown. The bottom text displays the information containing the nearest parking structure with the closest parking spot that user has picked. Under the parking spot information are the text containing the distance and time takes to reach that parking spot.
+<p>Next to the field containing the number of parking spots available in each parking structure, is a static cal poly map that allows users to pick the location he/she want to start. After picking the location, the user is able to input on the text field the car type he/she wants to find where 1: Compact, 2:Electric, 3: Handicap, 4: Normal. Then the user is able to press "find the spot" button on the right of the screen. After pressing "find the spot" button, a bunch of text on the button of the screen will be shown. The bottom text displays the information containing the nearest parking structure with the closest parking spot that user has picked. Under the parking spot information, are the text containing the distance and time takes to reach that parking spot.
 <img src="https://raw.githubusercontent.com/cpe305/fall2016-project-wenmin518/master/imagefiles/StartScreen.jpg" alt="StartScreen"></p>
 
 <h2>
@@ -40,8 +40,8 @@
 <p>This is the starting screen of the PolyParkTrack.</p>
 
 <ul>
-<li>Left side of the screen displays number of available parking spots in each parking structure.</li>
-<li>Next to the text, is the static Cal Poly Campus map.</li>
+<li>Left side of the screen displays a number of available parking spots in each parking structure.</li>
+<li>Next to the text is the static Cal Poly Campus map.</li>
 <li>Text fields and "find the spot" button are under the static map.</li>
 <li>And text displaying "Welcome to PolyParkTrack" is shown on the bottom of the screen.
 
@@ -56,13 +56,13 @@
 
 <ul>
 <li>A transparent circle will be shown on the map if you pick a valid location in the static map.</li>
-<li>Otherwide, nothing would be happen.
+<li>Otherwise, nothing should be happening.
 
 <ul>
 <li><img src="https://raw.githubusercontent.com/cpe305/fall2016-project-wenmin518/master/imagefiles/PickLocation.jpg" alt="PickLocation"></li>
 </ul>
 </li>
-<li>If you press the "find the spaot" without a starting location, the application will complain about it and display "Pick a starting location".
+<li>If you press the "find the spot" without a starting location, the application will complain about it and display "Pick a starting location".
 
 <ul>
 <li><img src="https://raw.githubusercontent.com/cpe305/fall2016-project-wenmin518/master/imagefiles/NoStaringLoc.jpg" alt="NoStartingLocaiton"></li>
@@ -71,7 +71,7 @@
 </ul>
 </li>
 <li>
-<p>After picking the location, you are able to enter the parking type for your car, 1: Compact, 2: Electric, 3: Hadicap, 4: Normal as shown below</p>
+<p>After picking the location, you are able to enter the parking type for your car, 1: Compact, 2: Electric, 3: Handicap, 4: Normal as shown below</p>
 
 <ul>
 <li>This field is not required to be filled to do find the nearest parking spot, it will be defaulted to be Normal.</li>
@@ -99,7 +99,7 @@
 </ul>
 </li>
 <li>
-<p>The last step will be pressing the "find the spot" after you have pick the starting location and entered a valid car type.</p>
+<p>The last step will be pressing the "find the spot" after you have to pick the starting location and entered a valid car type.</p>
 
 <ul>
 <li>The message will display the location of the nearest parking spot that you try to find and the distance and time it takes to get to the destination.
@@ -125,13 +125,13 @@
 <li>User is the subject
 
 <ul>
-<li>If user changes the location or changes the car type, then observer will be notified.</li>
+<li>If the user changes the location or changes the car type, then the observer will be notified.</li>
 </ul>
 </li>
-<li>Calcation is the Observer
+<li>Calculation is the Observer
 
 <ul>
-<li>If user changes the location or car type, then calculation object will find the new nearest parkig type available and display it on the screen.</li>
+<li>If the user changes the location or car type, then calculation object will find the new nearest parking type available and display it on the screen.</li>
 </ul>
 </li>
 </ul>
@@ -155,10 +155,21 @@
 <li>Presentation layer -- <a href="http://docs.oracle.com/javase/8/javase-clienttechnologies.htm">Javafx</a>
 </li>
 <li>Business logic -- Calculation object that contains all the finding the nearest parking spot logics: Breath-first search, distance calculation, time calculation and others</li>
-<li>Database layer -- Read in the written json file to set up the parking structures for this application.</li>
+<li>Database layer -- Read in the written JSON file to set up the parking structures for this application.</li>
 <li><img src="https://raw.githubusercontent.com/cpe305/fall2016-project-wenmin518/master/imagefiles/3tierarchitecture.png" alt="3Tier"></li>
 </ul>
 </li>
+</ul>
+
+<h2>
+<a id="useful-features" class="anchor" href="#useful-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Useful Features</h2>
+
+<ul>
+<li>The purpose of this software is to help useful finding the nearest parking structure available. The current status of PolyParkTrack has fulfilled this requirement by giving the user location and the nearest parking spot will be shown to the bottom of the screen as shown in the example above.</li>
+<li>I have implemented numbers of parking spots available for each parking structure to PolyParkTrack as well.</li>
+<li>It also shows the distance between user location and the nearest parking structure.</li>
+<li>Implemented the time takes to travel from user location to nearest parking structure.</li>
+<li>Other than that, the current status of PolyParkTrack allows the user to pick the parking spot he/she wants to find in Cal Poly.</li>
 </ul>
 
 <h2>
